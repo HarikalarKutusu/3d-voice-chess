@@ -1,13 +1,42 @@
-# voice-chess
+# 3D Voice Chess
 
 A voice driven 3D chess game for learning and teaching Voice AI.
 
+Current capabilities:
 
-## Acoustic and Language Models
+- Single user server for Speach To Text STT inference (nodejs)
+- 3D Frontend (voice only interface with some buttons & output areas)
+- Currently Supported Languages: de (German), en (English), tr (Turkish)
+
+## Content Summary
+
+- /acoustic-model-creation: Example notebook model
+- /language-model-creation: All files to create your domain specific language model
+- /voice-chess-react: Frontend
+- /voice-chess-server: Server
+
+## How to Contribute
+
+- Creation of new acoustic and language models in your language
+- Better chess related wording if needed
+- Commits & PR's
+
+### How can I add my language?
+
+1. Collect information on chess terminology (if you don't know).
+2. Examine existing sentences/programming in sentence generators.
+3. Copy an appropriate sentence generator, rename it with your language code and translate/adapt.
+4. Find a compatible Coqui STT acoustic model (.tflite file) or train one from Common Voice datasets.
+5. Test the results on your forked server/client locally and improve your models if needed.
+6. Make a PR to add your acoustic model (.tflite), language model (.scorer) and changes in the client & server code.
+
+## Other Information
+
+### Current Acoustic and Language Models
 
 Detailed information can be found here. TODO - Link.
 
-## Open source projects used
+### Open source projects used
 
 - 3D UI: three.js & react-three-fiber (with drei)
 - VOICE: Coqui STT, Coqui examples, KenLM, Mozilla Common Voice datasets
@@ -16,7 +45,7 @@ Detailed information can be found here. TODO - Link.
 The client and server voice related code is adapted from the following Coqui example:
 <https://github.com/coqui-ai/STT-examples/tree/r1.0/web_microphone_websocket>
 
-## Historical information
+### Historical information
 
 THe project is created during coqui.ai's "Hack the Planet" hackathon in Mozilla Festival 2022 between 8-15 March.
 
