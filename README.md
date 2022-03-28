@@ -6,6 +6,7 @@ A voice driven 3D chess game for learning and teaching Voice AI.
 ## Acoustic and Language Models
 
 Detailed information can be found here. TODO - Link.
+
 ## Open source projects used
 
 - 3D UI: three.js & react-three-fiber (with drei)
@@ -32,10 +33,17 @@ Due to the limited timeframe and individual time constraints, the group kept the
 
 - The UI part is kept minimal, but working. E.g. there is no manual play, enhanced UI features etc.
 - A sample of languages got selected, but it can be expanded with other languages.
-- There are many commanding formats for chess. To simplify things, user is forced to use a single format: "Move <piece> from <fromCell> to <targetCell>". Here <piece> is the chess piece name, such as King, Bishop etc, <cell> is the board coordinate col-row (columns: A-Z, rows: 1-8).
-- After several trials with English and Turkish, we found out recognition of the single characters are now robust enough, so we used NATO alphabet: Alpha, Bravo, ... Hotel. Except the NATO naming, other wording got translated into respective languages.
-- Include support for follwoing languages: - German, English, French, Hindi, Russian, Turkish
+- There are many commanding formats for chess. To simplify things, user is forced to use a single format:
 
-At the end of the duration, a semi-working software has been presented for English and Turkish.
+```txt
+"Move <piece> from <fromCell> to <targetCell>".
+```
+
+Here "piece" is the chess piece name, such as King, Bishop etc, "cell" is the board coordinate col-row (columns: A-Z, rows: 1-8).
+
+- After several trials with English and Turkish, we found out recognition of the single characters are now robust enough, so we used NATO alphabet: Alpha, Bravo, ... Hotel. Except the NATO naming, other wording got translated into respective languages.
+- Include support for following languages: - German, English, French, Hindi, Russian, Turkish
+
+At the end of the project duration, a semi-working software has been presented for English and Turkish.
 
 TODO - Add links to project presentation videos.

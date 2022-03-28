@@ -1,0 +1,39 @@
+# Each line in this file represents the Unicode codepoint (UTF-8 encoded)
+# associated with a numeric index.
+# A line that starts with # is a comment. You can escape it with \# if you wish
+# to use '#' in the Alphabet.
+ 
+а
+б
+в
+г
+д
+е
+ж
+з
+и
+й
+к
+л
+м
+н
+о
+п
+р
+с
+т
+у
+ф
+х
+ц
+ч
+ш
+щ
+ъ
+ы
+ь
+э
+ю
+я
+ё
+# The last (non-comment) line needs to end with a newline.
