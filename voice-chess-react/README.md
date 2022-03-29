@@ -22,7 +22,7 @@ The main usage/algorithm is as follows (also explaining the UI flow):
 
 ## Voice Commands
 
-We try to implement natural commands from a chess player, not only "move x from y to z" style very strict format. These are defined in Language Model preparation. Please check the [Chess Sentence Generator]<https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/language-model-creation/chess-sentence-generators> section's readme file for English. For others, have a peek at the Python files.
+We try to implement natural commands from a chess player, not only "move x from y to z" style very strict format. These are defined in Language Model preparation. Please check the [Chess Sentence Generator](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/language-model-creation/chess-sentence-generators) section's readme file for English. For others, have a peek at the Python files.
 
 ## Missing parts and To-Do's
 
