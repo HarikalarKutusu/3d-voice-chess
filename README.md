@@ -8,6 +8,9 @@ Current capabilities:
 - 3D Frontend (voice only interface with some buttons & output areas)
 - Currently Supported Languages: de (German), en (English), tr (Turkish)
 
+![image](https://user-images.githubusercontent.com/8849617/160528210-26fd85c0-5d49-478f-bb5b-05466171590a.png)
+
+
 ## Content Summary
 
 - /acoustic-model-creation: Example notebook model
