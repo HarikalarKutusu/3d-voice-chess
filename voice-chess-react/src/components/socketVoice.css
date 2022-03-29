@@ -1,0 +1,134 @@
+.svPanel {
+  position: absolute;
+  top: 5px;
+  left: 1%;
+  z-index: 999;
+  background: #333;
+  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  line-height: 40px;
+  width: 98%;
+  margin: 0 auto;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 900;
+  display: table-cell;
+}
+
+.language-selector{
+  display: inline-block;
+  height: 30px;
+  min-width: 100px;
+  vertical-align: middle;
+  line-height: normal;
+  background: #999;
+  color: #f0f0f0;
+  margin: 4px;
+  margin-top: -26px;
+  padding: 4px;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.svIcon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  color: #fff;
+  text-align: center;
+  margin: 4px;
+  padding: 4px;
+}
+
+.svIconButton {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  background: #f0f0f0;
+  color: #303030;
+  border-radius: 4px;
+  text-align: center;
+  margin: 4px;
+  padding: 4px;
+  cursor: grab;
+}
+
+.svIconButton:hover {
+  background: #3cc;
+  color: #fff !important;
+}
+
+.svIconButtonDisabled {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  background: #666;
+  color: #303030;
+  border-radius: 4px;
+  text-align: center;
+  margin: 4px;
+  padding: 4px;
+}
+
+.svText {
+  display: inline-block;
+  height: 24px;
+  min-width: 24px;
+  vertical-align: middle;
+  line-height: normal;
+  color: #099;
+  margin: 4px;
+  margin-top: -30px;
+  padding: 4px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.svTextDisabled {
+  display: inline-block;
+  height: 24px;
+  min-width: 24px;
+  vertical-align: middle;
+  line-height: normal;
+  color: #666;
+  margin: 4px;
+  margin-top: -30px;
+  padding: 4px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.svPanelText {
+  display: inline-block;
+  height: 24px;
+  min-width: 25%;
+  vertical-align: middle;
+  line-height: normal;
+  background: #999;
+  color: #111;
+  margin: 4px;
+  margin-top: -24px;
+  padding: 4px;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+}

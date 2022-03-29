@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+#root {
+  overflow: auto;
+}
+
+body {
+  position: fixed;
+  overflow: hidden;
+  overscroll-behavior-y: none;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  background: #111;
+}
+
+#overlay {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  margin: 0 auto;
+  padding: 4px;
+  background-color: #272730f0;
+  color: #fff;
+  z-index: 9999;
+  width: 50%;
+  height: 50%;
+  min-width: 50%;
+  min-height: 50%;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.icon-button {
+  /* position: relative;
+  top: 10px;
+  z-index: 1000; */
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  overflow: hidden;
+  background: #f0f0f0;
+  color: #303030;
+  border-radius: 4px;
+  text-align: center;
+  margin: 10px 0 0 10px;
+  padding: 4px;
+  cursor: grab;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.icon-button :hover {
+  color: #c33;
+}
+
+
+.icon-button-selected {
+  background: #c33;
+  color: #f0f0f0;
+}
