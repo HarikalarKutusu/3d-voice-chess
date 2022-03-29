@@ -10,51 +10,52 @@ Current capabilities:
 
 ![image](https://user-images.githubusercontent.com/8849617/160528210-26fd85c0-5d49-478f-bb5b-05466171590a.png)
 
-
 ## Content Summary
 
-- /acoustic-model-creation: Example notebook model
-- /language-model-creation: All files to create your domain specific language model
-- /voice-chess-react: Frontend
-- /voice-chess-server: Server
+- [acoustic-model-creation](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/acoustic-model-creation): Example notebook model (TODO)
+- [language-model-creation](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/language-model-creation): All files to create your domain specific language model
+- [voice-chess-react](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/voice-chess-react): Frontend - React & three.js implementation
+- [voice-chess-server](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/voice-chess-server): Server - Simple nodejs implementation
 
 ## How to Contribute
 
 - Creation of new acoustic and language models in your language
-- Better chess related wording if needed
+- Better chess related wording for existing languages if needed
+- Testing
+- Ideas, feedback in issues
 - Commits & PR's
 
 ### How can I add my language?
 
-1. Collect information on chess terminology (if you don't know).
-2. Examine existing sentences/programming in sentence generators.
+1. Get information on chess terminology in your language (if you don't know already - Wikipedia and Youtube helps).
+2. Examine existing sentences/programming in [chess sentence generators](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/language-model-creation/chess-sentence-generators).
 3. Copy an appropriate sentence generator, rename it with your language code and translate/adapt.
-4. Find a compatible Coqui STT acoustic model (.tflite file) or train one from Common Voice datasets.
-5. Test the results on your forked server/client locally and improve your models if needed.
-6. Make a PR to add your acoustic model (.tflite), language model (.scorer) and changes in the client & server code.
+4. Find a compatible [Coqui](https://coqui.ai/) [STT](https://stt.readthedocs.io/en/latest/index.html) [acoustic model](https://coqui.ai/models) (.tflite file) or [train](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/acoustic-model-creation) one from [Mozilla Common Voice datasets](https://commonvoice.mozilla.org/en/datasets).
+5. Test your results on your forked server/client locally and improve your models if needed.
+6. Make a [Pull Request (PR)](https://github.com/HarikalarKutusu/3d-voice-chess/pulls) to add your acoustic model (.tflite), language model (.scorer) and changes in the client & server code.
+7. You also need to make some UI translations (TODO - coming soon)
+
+If you cannot do some of these, please [open an issue](https://github.com/HarikalarKutusu/3d-voice-chess/issues) so we can help.
 
 ## Other Information
 
 ### Current Acoustic and Language Models
 
-Detailed information can be found here. TODO - Link.
+Detailed information can be found [here](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/voice-chess-server/voice).
 
 ### Open source projects used
 
-- 3D UI: three.js & react-three-fiber (with drei)
-- VOICE: Coqui STT, Coqui examples, KenLM, Mozilla Common Voice datasets
-- CHESS: chess.js for chess data and controls (no AI or GUI)
+- 3D UI: [three.js](https://threejs.org/) & [react-three-fiber](https://github.com/pmndrs/react-three-fiber) (with [drei](https://github.com/pmndrs/drei) and [zustand](https://github.com/pmndrs/zustand))
+- VOICE: [Coqui STT](https://github.com/coqui-ai/STT), [Coqui example](https://github.com/coqui-ai/STT-examples/tree/r1.0/web_microphone_websocket), [KenLM](https://github.com/kpu/kenlm), [Mozilla Common Voice datasets](https://commonvoice.mozilla.org/en/datasets).
+- CHESS: [chess.js](https://github.com/jhlywa/chess.js) for chess data and controls (no AI or GUI).
 
-The client and server voice related code is adapted from the following Coqui example:
-<https://github.com/coqui-ai/STT-examples/tree/r1.0/web_microphone_websocket>
+The client and server voice related code is adapted from the Coqui example [web_microphone_websocket](https://github.com/coqui-ai/STT-examples/tree/r1.0/web_microphone_websocket).
 
 ### Historical information
 
-THe project is created during coqui.ai's "Hack the Planet" hackathon in Mozilla Festival 2022 between 8-15 March.
+The first version of the project is created during [coqui.ai](https://coqui.ai/)'s "[Hack the Planet](https://schedule.mozillafestival.org/session/JVHV3M-1)" hackathon in [Mozilla Festival](https://www.mozillafestival.org/) 2022, between 8-15 March.
 
-The main idea was to implement a speech enabled application in one week. A group of people voted for implementation of a voice controlled game (tic-tac-toe), but the idea became a multi-lingual voice driven 3D chess.
-
-A team was formed and implementing a chess application became the goal. Team members were BÖ, JF, KM, MK.
+The main idea was to implement a speech enabled application in one week. A group of people voted for implementation of a voice controlled game (tic-tac-toe), but the idea became a multi-lingual voice driven 3D chess. A team was formed and implementing a chess application became the goal. Team members were BÖ, JF, KM, MK.
 
 This was a two part application aat the start:
 
@@ -73,9 +74,9 @@ Due to the limited timeframe and individual time constraints, the group kept the
 
 Here "piece" is the chess piece name, such as King, Bishop etc, "cell" is the board coordinate col-row (columns: A-Z, rows: 1-8).
 
-- After several trials with English and Turkish, we found out recognition of the single characters are now robust enough, so we used NATO alphabet: Alpha, Bravo, ... Hotel. Except the NATO naming, other wording got translated into respective languages.
+- After several trials with English and Turkish, we found out recognition of single alphabetic characters are not robust enough (nearly impossible), so we used NATO alphabet: Alpha, Bravo, ... Hotel. Except the NATO naming, other wording got translated into respective languages.
 - Include support for following languages: - German, English, French, Hindi, Russian, Turkish
 
 At the end of the project duration, a semi-working software has been presented for English and Turkish.
 
-TODO - Add links to project presentation videos.
+You can watch the initial project presentation video [here](https://drive.google.com/file/d/1d_BE-IY3_0EIcv-PH2cGf9sS-8Jo7Xn4/view?usp=sharing).
