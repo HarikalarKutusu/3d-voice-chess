@@ -1,6 +1,6 @@
 {
   "name": "3d-voice-chess",
-  "version": "0.1.0",
+  "version": "00.01.00",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
