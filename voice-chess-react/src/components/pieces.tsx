@@ -10,6 +10,7 @@ import {
 // fiber
 import { GroupProps, MeshProps, MaterialProps } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
+import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
 // helpers
 import {
   PIECECOLOR_BLACK,
@@ -21,6 +22,69 @@ import {
 const debugPieces = false;
 
 // extend({ DragControls });
+
+//
+// Types from gltfjsx output running on pieces
+//
+
+type BishopGLTFResult = GLTF & {
+  nodes: {
+    Bishop: THREE.Mesh
+  }
+  materials: {
+    ['Black Glass']: THREE.MeshStandardMaterial
+  }
+}
+
+type KingGLTFResult = GLTF & {
+  nodes: {
+    Dark_King: THREE.Mesh
+  }
+  materials: {
+    ['Black Glass']: THREE.MeshStandardMaterial
+  }
+}
+
+type KnightGLTFResult = GLTF & {
+  nodes: {
+    Dark_Knight_2: THREE.Mesh
+  }
+  materials: {
+    ['Black Glass']: THREE.MeshStandardMaterial
+  }
+}
+
+type PawnGLTFResult = GLTF & {
+  nodes: {
+    Dark_Pawn_2: THREE.Mesh
+  }
+  materials: {
+    ['Black Glass']: THREE.MeshStandardMaterial
+  }
+}
+
+type QueenGLTFResult = GLTF & {
+  nodes: {
+    Dark_Queen: THREE.Mesh
+  }
+  materials: {
+    ['Black Glass']: THREE.MeshStandardMaterial
+  }
+}
+
+type RookGLTFResult = GLTF & {
+  nodes: {
+    Dark_Rock_1: THREE.Mesh
+  }
+  materials: {
+    ['Black Glass']: THREE.MeshStandardMaterial
+  }
+}
+
+
+//
+//
+//
 
 type PieceProps = GroupProps &
   MeshProps &
@@ -71,7 +135,7 @@ const Bishop = (props: PieceProps) => {
   const [hovered, setHover] = useState(false);
   // ref
   const ref = useRef();
-  const { nodes } = useGLTF("assets/models/Bishop.gltf");
+  const { nodes } = useGLTF("assets/models/Bishop.gltf") as unknown as BishopGLTFResult;
   const mesh = nodes.Bishop as Mesh;
   const geo = mesh.geometry;
   const mat =
@@ -103,7 +167,7 @@ const King = (props: PieceProps) => {
   const [hovered, setHover] = useState(false);
   // ref
   //const group = useRef();
-  const { nodes } = useGLTF("assets/models/King.gltf");
+  const { nodes } = useGLTF("assets/models/King.gltf") as unknown as KingGLTFResult;
   const mesh = nodes.Dark_King as Mesh;
   const geo = mesh.geometry;
   const mat =
@@ -139,7 +203,7 @@ const Knight = (props: PieceProps) => {
   const [hovered, setHover] = useState(false);
   // ref
   //const group = useRef();
-  const { nodes } = useGLTF("assets/models/Knight.gltf");
+  const { nodes } = useGLTF("assets/models/Knight.gltf") as unknown as KnightGLTFResult;
   const mesh = nodes.Dark_Knight_2 as Mesh;
   const geo = mesh.geometry;
   const mat =
@@ -175,7 +239,7 @@ const Pawn = (props: PieceProps) => {
   const [hovered, setHover] = useState(false);
   // ref
   //const group = useRef();
-  const { nodes } = useGLTF("assets/models/Pawn.gltf");
+  const { nodes } = useGLTF("assets/models/Pawn.gltf") as unknown as PawnGLTFResult;
   const mesh = nodes.Dark_Pawn_2 as Mesh;
   const geo = mesh.geometry;
   const mat =
@@ -207,7 +271,7 @@ const Queen = (props: PieceProps) => {
   const [hovered, setHover] = useState(false);
   // ref
   //const group = useRef();
-  const { nodes } = useGLTF("assets/models/Queen.gltf");
+  const { nodes } = useGLTF("assets/models/Queen.gltf") as unknown as QueenGLTFResult;
   const mesh = nodes.Dark_Queen as Mesh;
   const geo = mesh.geometry;
   const mat =
@@ -239,7 +303,7 @@ const Rook = (props: PieceProps) => {
   const [hovered, setHover] = useState(false);
   // ref
   //const group = useRef();
-  const { nodes } = useGLTF("assets/models/Rook.gltf");
+  const { nodes } = useGLTF("assets/models/Rook.gltf") as unknown as RookGLTFResult;
   const mesh = nodes.Dark_Rock_1 as Mesh;
   const geo = mesh.geometry;
   const mat =
