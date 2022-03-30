@@ -4,9 +4,10 @@ A multi-lingual voice driven 3D chess game for learning and teaching Voice AI us
 
 Current capabilities:
 
-- Single user server for Speach To Text STT inference (nodejs) (i.e. it works on a single core free node)
+- Single user server for Speech To Text STT inference (nodejs) (i.e. it works on a single core free node)
 - 3D Frontend (voice only interface with some buttons & output areas)
 - Currently Supported Languages: de (German), en (English), tr (Turkish)
+- You play against yourself :)
 
 ![image](https://user-images.githubusercontent.com/8849617/160528210-26fd85c0-5d49-478f-bb5b-05466171590a.png)
 
@@ -16,6 +17,11 @@ Current capabilities:
 - [language-model-creation](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/language-model-creation): All files for creating your domain specific language model
 - [voice-chess-react](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/voice-chess-react): Frontend - React & three.js implementation
 - [voice-chess-server](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/voice-chess-server): Server - Simple single connection nodejs implementation
+
+
+## How to Install
+
+TODO
 
 ## How to Contribute
 
