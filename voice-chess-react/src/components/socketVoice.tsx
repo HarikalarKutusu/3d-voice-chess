@@ -17,7 +17,7 @@ Provided JSX:
 */
 
 // Imports
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { io, Socket } from "socket.io-client";
 // Store
 import { useStore } from "../stores/vcstore";
@@ -32,15 +32,17 @@ import { BiHelpCircle as HelpIcon } from "@react-icons/all-files/bi/BiHelpCircle
 import {
   SERVER_PORT_DEFAULT,
   SERVER_URL_DEFAULT,
+} from "../helpers/voiceHelper";
+import {
   VoiceLanguageType,
   VOICE_LANGUAGES,
-} from "../helpers/voiceHelper";
+} from "../helpers/localeHelper";
+
 import { STTValidator } from "./sttValidator";
 import "./socketVoice.css";
-import fs from "fs";
 
 // DEBUG
-const debugSocketVoice = true;
+const debugSocketVoice = false;
 
 // Worker
 const DOWNSAMPLING_WORKER = "./downsampling_worker.js";
@@ -93,28 +95,52 @@ const SocketVoice = (props: ISocketVoiceProps) => {
   //--------------------------------------------------------------
   // Language Selector Component
   //--------------------------------------------------------------
-  // Return Language record
-  const findLanguageRecord = (langCode: string) => {
-    const inx = VOICE_LANGUAGES.findIndex(
-      (langRecord) => langRecord.code === langCode,
-    );
-    return inx > -1 ? VOICE_LANGUAGES[inx] : null;
-  };
 
-  const calcAlgorithms = (langRec: VoiceLanguageType) => {
+  // For each sentence
+  // - make everthing lowercase
+  // - precalculate intent algorithms ("pft")
+  // Possible values
+  // 001 - echofour
+  // 011 - move echotwo to echofour
+  // 101 - pawn to echofour
+  // 111 - move pawn from echotwo to echofour
+  // 200 - bishop takes pawn
+  // 201 - bishop takes pawn at echofive
+  // 210 - bishop at echofive takes pawn
+  // 211 - pawn at echofour takes pawn at deltafive
+  /*
+  const prepLanguage = (langRec: VoiceLanguageType) => {
     const rec = langRec;
-    rec.sentences.forEach((s) => {
+    const langCode = rec.code;
+    debugSocketVoice && console.log("LANG Prepare:", langCode);
+    // make them lowercase
+    rec.pieces.forEach((p, i) => {
+      rec.pieces[i].nativeName = p.nativeName.toLocaleLowerCase(langCode);
+    });
+    rec.colNames.forEach((s, i) => {
+      rec.colNames[i] = s.toLocaleLowerCase(langCode);
+    });
+    rec.rowNames.forEach((s, i) => {
+      rec.rowNames[i] = s.toLocaleLowerCase(langCode);
+    });
+    // sentences -> intents
+    rec.sentences.forEach((s, index) => {
+      // make sure they are lowercase
+      rec.sentences[index] = s.toLocaleLowerCase(langCode);
       // pieces / from / to
-      const numPieces = (s.match(/{piece}/g) || []).length;
-      const numFrom = (s.match(/{fromCol}/g) || []).length;
-      const numTo = (s.match(/{toCol}/g) || []).length;
+      const numPieces = (s.match(/{piece}/gi) || []).length;
+      const numFrom = (s.match(/{fromcol}/gi) || []).length;
+      const numTo = (s.match(/{tocol}/gi) || []).length;
       // decide algo / intent
       const algo = "" + numPieces + numFrom + numTo;
+      // put to intent array (sentence index & intent index do match)
       rec.intent.push(algo);
     });
     return rec;
-  }
-  
+  };
+  */
+
+  /*
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLangCode = e.target.value;
     debugSocketVoice && console.log("LANG Changed to:", newLangCode);
@@ -122,12 +148,34 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     // calculate intents / algorithms
     const langRec = findLanguageRecord(newLangCode);
     if (langRec) {
-      setLangRecord(calcAlgorithms(langRec));
+      setLangRecord(prepLanguage(langRec));
     }
+  };
+  */
+
+  /*
+  const initLanguage = () => {
+    // calculate intents / algorithms
+    const langRec = findLanguageRecord(langCode);
+    if (langRec) {
+      setLangRecord(prepLanguage(langRec));
+    }
+  };
+  */
+
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const newLangCode = e.target.value;
+    debugSocketVoice && console.log("LANG Changed to:", newLangCode);
+    setLangCode(newLangCode);
+    // calculate intents / algorithms
+    // const langRec = findLanguageRecord(newLangCode);
+    // if (langRec) {
+    //   setLangRecord(prepLanguage(langRec));
+    // }
   };
 
   const LanguageSelector = (props: any) => {
-    const enabledLanguages = VOICE_LANGUAGES.filter((l) => l.enabled === true);
+    const enabledLanguages = VOICE_LANGUAGES.filter((l) => l.enabled === 1);
     return (
       <select
         title="Select your voice language"
@@ -175,7 +223,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
 
     // localVars
     let aContext: AudioContext;
-    let mStream: MediaStream;
+    //let mStream: MediaStream;
     let mStreamSource: MediaStreamAudioSourceNode;
     let proc: ScriptProcessorNode;
 
@@ -353,7 +401,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
         onClick={handleMicrophoneClick}
       />
     );
-  };
+  }; // client audio
 
   //--------------------------------------------------------------
   // ServerConnection Component
@@ -472,7 +520,14 @@ const SocketVoice = (props: ISocketVoiceProps) => {
         onClick={handleNetworkClick}
       />
     );
-  };
+  }; // server connection
+
+  useEffect(() => {
+    // if not initialized yet, do init the lang record to default.
+    // if (!langRecord || langRecord.intent.length === 0) {
+    //   initLanguage();
+    // }
+  });
 
   //--------------------------------------------------------------
   // Click handlers
@@ -532,7 +587,11 @@ const SocketVoice = (props: ISocketVoiceProps) => {
       >
         {serverLangCode}
       </span>
-      <STTValidator sttTxt={lastRecognition} errTxt={lastError} />
+      <STTValidator
+        // langRecord={langRecord}
+        sttTxt={lastRecognition}
+        errTxt={lastError}
+      />
       <HelpIcon
         title="Help"
         className="svIconButton"
