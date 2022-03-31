@@ -1,16 +1,11 @@
-Bauernumwandlung zum bauer
 Bauernumwandlung zum dame
-Bauernumwandlung zum koenig
 Bauernumwandlung zum laeufer
 Bauernumwandlung zum springer
 Bauernumwandlung zum turm
-Bauernumwandlung zur bauer
 Bauernumwandlung zur dame
-Bauernumwandlung zur koenig
 Bauernumwandlung zur laeufer
 Bauernumwandlung zur springer
 Bauernumwandlung zur turm
-alphaacht
 alphaacht alphadrei
 alphaacht alphaeins
 alphaacht alphafuenf
@@ -34,7 +29,7 @@ alphaacht golfacht
 alphaacht golfzwei
 alphaacht hotelacht
 alphaacht hoteleins
-alphadrei
+alphaacht
 alphadrei alphaacht
 alphadrei alphaeins
 alphadrei alphafuenf
@@ -60,7 +55,7 @@ alphadrei foxtrotacht
 alphadrei foxtrotdrei
 alphadrei golfdrei
 alphadrei hoteldrei
-alphaeins
+alphadrei
 alphaeins alphaacht
 alphaeins alphadrei
 alphaeins alphafuenf
@@ -84,7 +79,7 @@ alphaeins golfeins
 alphaeins golfsieben
 alphaeins hotelacht
 alphaeins hoteleins
-alphafuenf
+alphaeins
 alphafuenf alphaacht
 alphafuenf alphadrei
 alphafuenf alphaeins
@@ -110,7 +105,7 @@ alphafuenf echofuenf
 alphafuenf foxtrotfuenf
 alphafuenf golffuenf
 alphafuenf hotelfuenf
-alphasechs
+alphafuenf
 alphasechs alphaacht
 alphasechs alphadrei
 alphasechs alphaeins
@@ -136,7 +131,7 @@ alphasechs foxtroteins
 alphasechs foxtrotsechs
 alphasechs golfsechs
 alphasechs hotelsechs
-alphasieben
+alphasechs
 alphasieben alphaacht
 alphasieben alphadrei
 alphasieben alphaeins
@@ -161,7 +156,7 @@ alphasieben foxtrotzwei
 alphasieben golfeins
 alphasieben golfsieben
 alphasieben hotelsieben
-alphavier
+alphasieben
 alphavier alphaacht
 alphavier alphadrei
 alphavier alphaeins
@@ -187,7 +182,7 @@ alphavier echovier
 alphavier foxtrotvier
 alphavier golfvier
 alphavier hotelvier
-alphazwei
+alphavier
 alphazwei alphaacht
 alphazwei alphadrei
 alphazwei alphaeins
@@ -212,6 +207,7 @@ alphazwei foxtrotzwei
 alphazwei golfacht
 alphazwei golfzwei
 alphazwei hotelzwei
+alphazwei
 bauer alphadrei nach alphavier
 bauer alphadrei schlaegt alphavier
 bauer alphadrei zieht nach alphavier
@@ -435,7 +431,6 @@ bauer schlaegt alphasechs
 bauer schlaegt alphasieben
 bauer schlaegt alphavier
 bauer schlaegt alphazwei
-bauer schlaegt bauer
 bauer schlaegt bauer auf alphaacht
 bauer schlaegt bauer auf alphadrei
 bauer schlaegt bauer auf alphafuenf
@@ -464,6 +459,7 @@ bauer schlaegt bauer auf deltasechs
 bauer schlaegt bauer auf deltasieben
 bauer schlaegt bauer auf deltavier
 bauer schlaegt bauer auf deltazwei
+bauer schlaegt bauer
 bauer schlaegt bravoacht
 bauer schlaegt bravodrei
 bauer schlaegt bravofuenf
@@ -545,8 +541,16 @@ bauer zieht von deltasieben nach deltaacht
 bauer zieht von deltavier nach deltafuenf
 bauer zieht von deltazwei nach deltadrei
 bauer zieht von deltazwei nach deltavier
+betrete raum acht
+betrete raum drei
+betrete raum eins
+betrete raum fuenf
+betrete raum sechs
+betrete raum sieben
+betrete raum vier
+betrete raum zwei
+betrete raum {number}
 bewegung rueckgaengig machen
-bravoacht
 bravoacht alphaacht
 bravoacht alphasechs
 bravoacht alphasieben
@@ -571,7 +575,7 @@ bravoacht golfacht
 bravoacht golfdrei
 bravoacht hotelacht
 bravoacht hotelzwei
-bravodrei
+bravoacht
 bravodrei alphadrei
 bravodrei alphaeins
 bravodrei alphafuenf
@@ -601,7 +605,7 @@ bravodrei foxtrotsieben
 bravodrei golfacht
 bravodrei golfdrei
 bravodrei hoteldrei
-bravoeins
+bravodrei
 bravoeins alphadrei
 bravoeins alphaeins
 bravoeins alphazwei
@@ -626,7 +630,7 @@ bravoeins golfeins
 bravoeins golfsechs
 bravoeins hoteleins
 bravoeins hotelsieben
-bravofuenf
+bravoeins
 bravofuenf alphadrei
 bravofuenf alphafuenf
 bravofuenf alphasechs
@@ -656,7 +660,7 @@ bravofuenf foxtroteins
 bravofuenf foxtrotfuenf
 bravofuenf golffuenf
 bravofuenf hotelfuenf
-bravosechs
+bravofuenf
 bravosechs alphaacht
 bravosechs alphafuenf
 bravosechs alphasechs
@@ -686,7 +690,7 @@ bravosechs foxtrotzwei
 bravosechs golfeins
 bravosechs golfsechs
 bravosechs hotelsechs
-bravosieben
+bravosechs
 bravosieben alphaacht
 bravosieben alphafuenf
 bravosieben alphasechs
@@ -714,7 +718,7 @@ bravosieben golfsieben
 bravosieben golfzwei
 bravosieben hoteleins
 bravosieben hotelsieben
-bravovier
+bravosieben
 bravovier alphadrei
 bravovier alphafuenf
 bravovier alphasechs
@@ -744,7 +748,7 @@ bravovier foxtrotacht
 bravovier foxtrotvier
 bravovier golfvier
 bravovier hotelvier
-bravozwei
+bravovier
 bravozwei alphadrei
 bravozwei alphaeins
 bravozwei alphavier
@@ -772,7 +776,7 @@ bravozwei golfsieben
 bravozwei golfzwei
 bravozwei hotelacht
 bravozwei hotelzwei
-charlieacht
+bravozwei
 charlieacht alphaacht
 charlieacht alphasechs
 charlieacht alphasieben
@@ -798,7 +802,7 @@ charlieacht golfacht
 charlieacht golfvier
 charlieacht hotelacht
 charlieacht hoteldrei
-charliedrei
+charlieacht
 charliedrei alphadrei
 charliedrei alphaeins
 charliedrei alphafuenf
@@ -832,7 +836,7 @@ charliedrei golfdrei
 charliedrei golfsieben
 charliedrei hotelacht
 charliedrei hoteldrei
-charlieeins
+charliedrei
 charlieeins alphadrei
 charlieeins alphaeins
 charlieeins alphazwei
@@ -858,7 +862,7 @@ charlieeins golfeins
 charlieeins golffuenf
 charlieeins hoteleins
 charlieeins hotelsechs
-charliefuenf
+charlieeins
 charliefuenf alphadrei
 charliefuenf alphafuenf
 charliefuenf alphasechs
@@ -892,7 +896,7 @@ charliefuenf foxtrotzwei
 charliefuenf golfeins
 charliefuenf golffuenf
 charliefuenf hotelfuenf
-charliesechs
+charliefuenf
 charliesechs alphaacht
 charliesechs alphafuenf
 charliesechs alphasechs
@@ -926,7 +930,7 @@ charliesechs golfsechs
 charliesechs golfzwei
 charliesechs hoteleins
 charliesechs hotelsechs
-charliesieben
+charliesechs
 charliesieben alphaacht
 charliesieben alphafuenf
 charliesieben alphasechs
@@ -956,7 +960,7 @@ charliesieben golfdrei
 charliesieben golfsieben
 charliesieben hotelsieben
 charliesieben hotelzwei
-charlievier
+charliesieben
 charlievier alphadrei
 charlievier alphafuenf
 charlievier alphasechs
@@ -990,7 +994,7 @@ charlievier foxtrotvier
 charlievier golfacht
 charlievier golfvier
 charlievier hotelvier
-charliezwei
+charlievier
 charliezwei alphadrei
 charliezwei alphaeins
 charliezwei alphavier
@@ -1020,6 +1024,7 @@ charliezwei golfsechs
 charliezwei golfzwei
 charliezwei hotelsieben
 charliezwei hotelzwei
+charliezwei
 dame alphaacht nach alphadrei
 dame alphaacht nach alphaeins
 dame alphaacht nach alphafuenf
@@ -4780,7 +4785,6 @@ dame schlaegt charliesechs
 dame schlaegt charliesieben
 dame schlaegt charlievier
 dame schlaegt charliezwei
-dame schlaegt dame
 dame schlaegt dame auf alphaacht
 dame schlaegt dame auf alphadrei
 dame schlaegt dame auf alphaeins
@@ -4845,6 +4849,7 @@ dame schlaegt dame auf hotelsechs
 dame schlaegt dame auf hotelsieben
 dame schlaegt dame auf hotelvier
 dame schlaegt dame auf hotelzwei
+dame schlaegt dame
 dame schlaegt deltaacht
 dame schlaegt deltadrei
 dame schlaegt deltaeins
@@ -5678,7 +5683,6 @@ dame zieht von deltazwei nach golfzwei
 dame zieht von deltazwei nach hotelsechs
 dame zieht von deltazwei nach hotelzwei
 damenfluegel rochade
-deltaacht
 deltaacht alphaacht
 deltaacht alphafuenf
 deltaacht bravoacht
@@ -5704,7 +5708,7 @@ deltaacht golfacht
 deltaacht golffuenf
 deltaacht hotelacht
 deltaacht hotelvier
-deltadrei
+deltaacht
 deltadrei alphadrei
 deltadrei alphasechs
 deltadrei bravodrei
@@ -5738,7 +5742,7 @@ deltadrei golfdrei
 deltadrei golfsechs
 deltadrei hoteldrei
 deltadrei hotelsieben
-deltaeins
+deltadrei
 deltaeins alphaeins
 deltaeins alphavier
 deltaeins bravodrei
@@ -5764,7 +5768,7 @@ deltaeins golfeins
 deltaeins golfvier
 deltaeins hoteleins
 deltaeins hotelfuenf
-deltafuenf
+deltaeins
 deltafuenf alphaacht
 deltafuenf alphafuenf
 deltafuenf alphazwei
@@ -5800,7 +5804,7 @@ deltafuenf golffuenf
 deltafuenf golfzwei
 deltafuenf hoteleins
 deltafuenf hotelfuenf
-deltasechs
+deltafuenf
 deltasechs alphadrei
 deltasechs alphasechs
 deltasechs bravoacht
@@ -5834,7 +5838,7 @@ deltasechs golfdrei
 deltasechs golfsechs
 deltasechs hotelsechs
 deltasechs hotelzwei
-deltasieben
+deltasechs
 deltasieben alphasieben
 deltasieben alphavier
 deltasieben bravoacht
@@ -5864,7 +5868,7 @@ deltasieben golfsieben
 deltasieben golfvier
 deltasieben hoteldrei
 deltasieben hotelsieben
-deltavier
+deltasieben
 deltavier alphaeins
 deltavier alphasieben
 deltavier alphavier
@@ -5900,7 +5904,7 @@ deltavier golfsieben
 deltavier golfvier
 deltavier hotelacht
 deltavier hotelvier
-deltazwei
+deltavier
 deltazwei alphafuenf
 deltazwei alphazwei
 deltazwei bravodrei
@@ -5930,6 +5934,7 @@ deltazwei golffuenf
 deltazwei golfzwei
 deltazwei hotelsechs
 deltazwei hotelzwei
+deltazwei
 echoacht
 echodrei
 echoeins
@@ -5946,6 +5951,7 @@ foxtrotsechs
 foxtrotsieben
 foxtrotvier
 foxtrotzwei
+gegen computer spielen
 golfacht
 golfdrei
 golfeins
@@ -5954,6 +5960,9 @@ golfsechs
 golfsieben
 golfvier
 golfzwei
+hilfe
+hinweis zeigen
+hinweis
 hotelacht
 hoteldrei
 hoteleins
@@ -5962,7 +5971,8 @@ hotelsechs
 hotelsieben
 hotelvier
 hotelzwei
-ich gebe auf
+ich akzeptiere unentschieden
+ich biete unentschieden an
 koenig alphaacht nach alphasieben
 koenig alphaacht nach bravoacht
 koenig alphaacht nach bravosieben
@@ -7125,7 +7135,6 @@ koenig schlaegt echosechs
 koenig schlaegt echosieben
 koenig schlaegt echovier
 koenig schlaegt echozwei
-koenig schlaegt koenig
 koenig schlaegt koenig auf alphaacht
 koenig schlaegt koenig auf alphadrei
 koenig schlaegt koenig auf alphaeins
@@ -7166,6 +7175,7 @@ koenig schlaegt koenig auf echosechs
 koenig schlaegt koenig auf echosieben
 koenig schlaegt koenig auf echovier
 koenig schlaegt koenig auf echozwei
+koenig schlaegt koenig
 koenig zieht nach alphaacht
 koenig zieht nach alphadrei
 koenig zieht nach alphaeins
@@ -8977,7 +8987,6 @@ laeufer schlaegt hotelsechs
 laeufer schlaegt hotelsieben
 laeufer schlaegt hotelvier
 laeufer schlaegt hotelzwei
-laeufer schlaegt laeufer
 laeufer schlaegt laeufer auf alphaacht
 laeufer schlaegt laeufer auf alphadrei
 laeufer schlaegt laeufer auf alphaeins
@@ -9042,6 +9051,7 @@ laeufer schlaegt laeufer auf hotelsechs
 laeufer schlaegt laeufer auf hotelsieben
 laeufer schlaegt laeufer auf hotelvier
 laeufer schlaegt laeufer auf hotelzwei
+laeufer schlaegt laeufer
 laeufer zieht nach alphaacht
 laeufer zieht nach alphadrei
 laeufer zieht nach alphaeins
@@ -9387,6 +9397,8 @@ laeufer zieht von deltazwei nach foxtrotvier
 laeufer zieht von deltazwei nach golffuenf
 laeufer zieht von deltazwei nach hotelsechs
 matt
+mikrofon ausmachen
+mikrofon aus
 nehme zurueck
 patt
 rochade am damenfluegel
@@ -9457,7 +9469,6 @@ schlaegt hotelsechs
 schlaegt hotelsieben
 schlaegt hotelvier
 schlaegt hotelzwei
-schwarz gibt auf
 schwarz spielen
 schwarze bauer nach alphaacht
 schwarze bauer nach alphadrei
@@ -10075,9 +10086,46 @@ schwarze turm zieht nach hotelsechs
 schwarze turm zieht nach hotelsieben
 schwarze turm zieht nach hotelvier
 schwarze turm zieht nach hotelzwei
+schwierigkeit acht
+schwierigkeit drei
+schwierigkeit eins
+schwierigkeit fuenf
+schwierigkeit sechs
+schwierigkeit sieben
+schwierigkeit vier
+schwierigkeit zwei
+schwierigkeit {number}
+schwierigkeitsgrad acht
+schwierigkeitsgrad drei
+schwierigkeitsgrad eins
+schwierigkeitsgrad fuenf
+schwierigkeitsgrad sechs
+schwierigkeitsgrad sieben
+schwierigkeitsgrad vier
+schwierigkeitsgrad zwei
+schwierigkeitsgrad {number}
+server trennen
+spiel acht mitmachen
 spiel beenden
+spiel drei mitmachen
+spiel eins mitmachen
+spiel fuenf mitmachen
+spiel in raum acht
+spiel in raum drei
+spiel in raum eins
+spiel in raum fuenf
+spiel in raum sechs
+spiel in raum sieben
+spiel in raum vier
+spiel in raum zwei
+spiel in raum {number}
+spiel sechs mitmachen
+spiel sieben mitmachen
+spiel vier mitmachen
 spiel wiederholen
 spiel zuruecksetzen
+spiel zwei mitmachen
+spiel {number} mitmachen
 springer alphaacht nach bravosechs
 springer alphaacht nach charliesieben
 springer alphaacht schlaegt bravosechs
@@ -11046,7 +11094,6 @@ springer schlaegt foxtrotsechs
 springer schlaegt foxtrotsieben
 springer schlaegt foxtrotvier
 springer schlaegt foxtrotzwei
-springer schlaegt springer
 springer schlaegt springer auf alphaacht
 springer schlaegt springer auf alphadrei
 springer schlaegt springer auf alphaeins
@@ -11095,6 +11142,7 @@ springer schlaegt springer auf foxtrotsechs
 springer schlaegt springer auf foxtrotsieben
 springer schlaegt springer auf foxtrotvier
 springer schlaegt springer auf foxtrotzwei
+springer schlaegt springer
 springer zieht nach alphaacht
 springer zieht nach alphadrei
 springer zieht nach alphaeins
@@ -11311,6 +11359,43 @@ springer zieht von deltazwei nach charlievier
 springer zieht von deltazwei nach echovier
 springer zieht von deltazwei nach foxtrotdrei
 springer zieht von deltazwei nach foxtroteins
+stelle die schwierigkeit auf acht ein
+stelle die schwierigkeit auf drei ein
+stelle die schwierigkeit auf eins ein
+stelle die schwierigkeit auf fuenf ein
+stelle die schwierigkeit auf sechs ein
+stelle die schwierigkeit auf sieben ein
+stelle die schwierigkeit auf vier ein
+stelle die schwierigkeit auf zwei ein
+stelle die schwierigkeit auf {number} ein
+stelle die schwierigkeitsgrad auf acht ein
+stelle die schwierigkeitsgrad auf drei ein
+stelle die schwierigkeitsgrad auf eins ein
+stelle die schwierigkeitsgrad auf fuenf ein
+stelle die schwierigkeitsgrad auf sechs ein
+stelle die schwierigkeitsgrad auf sieben ein
+stelle die schwierigkeitsgrad auf vier ein
+stelle die schwierigkeitsgrad auf zwei ein
+stelle die schwierigkeitsgrad auf {number} ein
+stufe acht
+stufe auf acht stellen
+stufe auf drei stellen
+stufe auf eins stellen
+stufe auf fuenf stellen
+stufe auf sechs stellen
+stufe auf sieben stellen
+stufe auf vier stellen
+stufe auf zwei stellen
+stufe auf {number} stellen
+stufe drei
+stufe eins
+stufe fuenf
+stufe sechs
+stufe sieben
+stufe vier
+stufe zwei
+stufe {number}
+trennen
 turm alphaacht nach alphadrei
 turm alphaacht nach alphaeins
 turm alphaacht nach alphafuenf
@@ -13711,7 +13796,6 @@ turm schlaegt hotelsechs
 turm schlaegt hotelsieben
 turm schlaegt hotelvier
 turm schlaegt hotelzwei
-turm schlaegt turm
 turm schlaegt turm auf alphaacht
 turm schlaegt turm auf alphadrei
 turm schlaegt turm auf alphaeins
@@ -13776,6 +13860,7 @@ turm schlaegt turm auf hotelsechs
 turm schlaegt turm auf hotelsieben
 turm schlaegt turm auf hotelvier
 turm schlaegt turm auf hotelzwei
+turm schlaegt turm
 turm zieht nach alphaacht
 turm zieht nach alphadrei
 turm zieht nach alphaeins
@@ -14288,7 +14373,7 @@ turm zieht von deltazwei nach echozwei
 turm zieht von deltazwei nach foxtrotzwei
 turm zieht von deltazwei nach golfzwei
 turm zieht von deltazwei nach hotelzwei
-weiss gibt auf
+vom server trennen
 weiss spielen
 weisse bauer nach alphaacht
 weisse bauer nach alphadrei
@@ -14906,6 +14991,8 @@ weisse turm zieht nach hotelsechs
 weisse turm zieht nach hotelsieben
 weisse turm zieht nach hotelvier
 weisse turm zieht nach hotelzwei
+zeig hilfe
+zeig hinweis
 zieh alphaacht nach alphadrei
 zieh alphaacht nach alphaeins
 zieh alphaacht nach alphafuenf

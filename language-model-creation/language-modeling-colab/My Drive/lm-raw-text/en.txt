@@ -1,4 +1,3 @@
-alphaeight
 alphaeight alphafive
 alphaeight alphafour
 alphaeight alphaone
@@ -22,7 +21,7 @@ alphaeight golfeight
 alphaeight golftwo
 alphaeight hoteleight
 alphaeight hotelone
-alphafive
+alphaeight
 alphafive alphaeight
 alphafive alphafour
 alphafive alphaone
@@ -48,7 +47,7 @@ alphafive echoone
 alphafive foxtrotfive
 alphafive golffive
 alphafive hotelfive
-alphafour
+alphafive
 alphafour alphaeight
 alphafour alphafive
 alphafour alphaone
@@ -74,7 +73,7 @@ alphafour echofour
 alphafour foxtrotfour
 alphafour golffour
 alphafour hotelfour
-alphaone
+alphafour
 alphaone alphaeight
 alphaone alphafive
 alphaone alphafour
@@ -98,7 +97,7 @@ alphaone golfone
 alphaone golfseven
 alphaone hoteleight
 alphaone hotelone
-alphaseven
+alphaone
 alphaseven alphaeight
 alphaseven alphafive
 alphaseven alphafour
@@ -123,7 +122,7 @@ alphaseven foxtrottwo
 alphaseven golfone
 alphaseven golfseven
 alphaseven hotelseven
-alphasix
+alphaseven
 alphasix alphaeight
 alphasix alphafive
 alphasix alphafour
@@ -149,7 +148,7 @@ alphasix foxtrotone
 alphasix foxtrotsix
 alphasix golfsix
 alphasix hotelsix
-alphathree
+alphasix
 alphathree alphaeight
 alphathree alphafive
 alphathree alphafour
@@ -175,7 +174,7 @@ alphathree foxtroteight
 alphathree foxtrotthree
 alphathree golfthree
 alphathree hotelthree
-alphatwo
+alphathree
 alphatwo alphaeight
 alphatwo alphafive
 alphatwo alphafour
@@ -200,6 +199,7 @@ alphatwo foxtrottwo
 alphatwo golfeight
 alphatwo golftwo
 alphatwo hoteltwo
+alphatwo
 bishop alphaeight captures bravoseven
 bishop alphaeight captures charliesix
 bishop alphaeight captures deltafive
@@ -313,6 +313,13 @@ bishop alphatwo takes echosix
 bishop alphatwo takes foxtrotseven
 bishop alphatwo takes golfeight
 bishop at alphaeight captures bishop
+bishop at alphaeight moves to bravoseven
+bishop at alphaeight moves to charliesix
+bishop at alphaeight moves to deltafive
+bishop at alphaeight moves to echofour
+bishop at alphaeight moves to foxtrotthree
+bishop at alphaeight moves to golftwo
+bishop at alphaeight moves to hotelone
 bishop at alphaeight takes bishop
 bishop at alphaeight to bravoseven
 bishop at alphaeight to charliesix
@@ -322,6 +329,13 @@ bishop at alphaeight to foxtrotthree
 bishop at alphaeight to golftwo
 bishop at alphaeight to hotelone
 bishop at alphafive captures bishop
+bishop at alphafive moves to bravofour
+bishop at alphafive moves to bravosix
+bishop at alphafive moves to charlieseven
+bishop at alphafive moves to charliethree
+bishop at alphafive moves to deltaeight
+bishop at alphafive moves to deltatwo
+bishop at alphafive moves to echoone
 bishop at alphafive takes bishop
 bishop at alphafive to bravofour
 bishop at alphafive to bravosix
@@ -331,6 +345,13 @@ bishop at alphafive to deltaeight
 bishop at alphafive to deltatwo
 bishop at alphafive to echoone
 bishop at alphafour captures bishop
+bishop at alphafour moves to bravofive
+bishop at alphafour moves to bravothree
+bishop at alphafour moves to charliesix
+bishop at alphafour moves to charlietwo
+bishop at alphafour moves to deltaone
+bishop at alphafour moves to deltaseven
+bishop at alphafour moves to echoeight
 bishop at alphafour takes bishop
 bishop at alphafour to bravofive
 bishop at alphafour to bravothree
@@ -340,6 +361,13 @@ bishop at alphafour to deltaone
 bishop at alphafour to deltaseven
 bishop at alphafour to echoeight
 bishop at alphaone captures bishop
+bishop at alphaone moves to bravotwo
+bishop at alphaone moves to charliethree
+bishop at alphaone moves to deltafour
+bishop at alphaone moves to echofive
+bishop at alphaone moves to foxtrotsix
+bishop at alphaone moves to golfseven
+bishop at alphaone moves to hoteleight
 bishop at alphaone takes bishop
 bishop at alphaone to bravotwo
 bishop at alphaone to charliethree
@@ -349,6 +377,13 @@ bishop at alphaone to foxtrotsix
 bishop at alphaone to golfseven
 bishop at alphaone to hoteleight
 bishop at alphaseven captures bishop
+bishop at alphaseven moves to bravoeight
+bishop at alphaseven moves to bravosix
+bishop at alphaseven moves to charliefive
+bishop at alphaseven moves to deltafour
+bishop at alphaseven moves to echothree
+bishop at alphaseven moves to foxtrottwo
+bishop at alphaseven moves to golfone
 bishop at alphaseven takes bishop
 bishop at alphaseven to bravoeight
 bishop at alphaseven to bravosix
@@ -358,6 +393,13 @@ bishop at alphaseven to echothree
 bishop at alphaseven to foxtrottwo
 bishop at alphaseven to golfone
 bishop at alphasix captures bishop
+bishop at alphasix moves to bravofive
+bishop at alphasix moves to bravoseven
+bishop at alphasix moves to charlieeight
+bishop at alphasix moves to charliefour
+bishop at alphasix moves to deltathree
+bishop at alphasix moves to echotwo
+bishop at alphasix moves to foxtrotone
 bishop at alphasix takes bishop
 bishop at alphasix to bravofive
 bishop at alphasix to bravoseven
@@ -367,6 +409,13 @@ bishop at alphasix to deltathree
 bishop at alphasix to echotwo
 bishop at alphasix to foxtrotone
 bishop at alphathree captures bishop
+bishop at alphathree moves to bravofour
+bishop at alphathree moves to bravotwo
+bishop at alphathree moves to charliefive
+bishop at alphathree moves to charlieone
+bishop at alphathree moves to deltasix
+bishop at alphathree moves to echoseven
+bishop at alphathree moves to foxtroteight
 bishop at alphathree takes bishop
 bishop at alphathree to bravofour
 bishop at alphathree to bravotwo
@@ -376,6 +425,13 @@ bishop at alphathree to deltasix
 bishop at alphathree to echoseven
 bishop at alphathree to foxtroteight
 bishop at alphatwo captures bishop
+bishop at alphatwo moves to bravoone
+bishop at alphatwo moves to bravothree
+bishop at alphatwo moves to charliefour
+bishop at alphatwo moves to deltafive
+bishop at alphatwo moves to echosix
+bishop at alphatwo moves to foxtrotseven
+bishop at alphatwo moves to golfeight
 bishop at alphatwo takes bishop
 bishop at alphatwo to bravoone
 bishop at alphatwo to bravothree
@@ -385,6 +441,13 @@ bishop at alphatwo to echosix
 bishop at alphatwo to foxtrotseven
 bishop at alphatwo to golfeight
 bishop at bravoeight captures bishop
+bishop at bravoeight moves to alphaseven
+bishop at bravoeight moves to charlieseven
+bishop at bravoeight moves to deltasix
+bishop at bravoeight moves to echofive
+bishop at bravoeight moves to foxtrotfour
+bishop at bravoeight moves to golfthree
+bishop at bravoeight moves to hoteltwo
 bishop at bravoeight takes bishop
 bishop at bravoeight to alphaseven
 bishop at bravoeight to charlieseven
@@ -394,6 +457,15 @@ bishop at bravoeight to foxtrotfour
 bishop at bravoeight to golfthree
 bishop at bravoeight to hoteltwo
 bishop at bravofive captures bishop
+bishop at bravofive moves to alphafour
+bishop at bravofive moves to alphasix
+bishop at bravofive moves to charliefour
+bishop at bravofive moves to charliesix
+bishop at bravofive moves to deltaseven
+bishop at bravofive moves to deltathree
+bishop at bravofive moves to echoeight
+bishop at bravofive moves to echotwo
+bishop at bravofive moves to foxtrotone
 bishop at bravofive takes bishop
 bishop at bravofive to alphafour
 bishop at bravofive to alphasix
@@ -405,6 +477,15 @@ bishop at bravofive to echoeight
 bishop at bravofive to echotwo
 bishop at bravofive to foxtrotone
 bishop at bravofour captures bishop
+bishop at bravofour moves to alphafive
+bishop at bravofour moves to alphathree
+bishop at bravofour moves to charliefive
+bishop at bravofour moves to charliethree
+bishop at bravofour moves to deltasix
+bishop at bravofour moves to deltatwo
+bishop at bravofour moves to echoone
+bishop at bravofour moves to echoseven
+bishop at bravofour moves to foxtroteight
 bishop at bravofour takes bishop
 bishop at bravofour to alphafive
 bishop at bravofour to alphathree
@@ -416,6 +497,13 @@ bishop at bravofour to echoone
 bishop at bravofour to echoseven
 bishop at bravofour to foxtroteight
 bishop at bravoone captures bishop
+bishop at bravoone moves to alphatwo
+bishop at bravoone moves to charlietwo
+bishop at bravoone moves to deltathree
+bishop at bravoone moves to echofour
+bishop at bravoone moves to foxtrotfive
+bishop at bravoone moves to golfsix
+bishop at bravoone moves to hotelseven
 bishop at bravoone takes bishop
 bishop at bravoone to alphatwo
 bishop at bravoone to charlietwo
@@ -425,6 +513,15 @@ bishop at bravoone to foxtrotfive
 bishop at bravoone to golfsix
 bishop at bravoone to hotelseven
 bishop at bravoseven captures bishop
+bishop at bravoseven moves to alphaeight
+bishop at bravoseven moves to alphasix
+bishop at bravoseven moves to charlieeight
+bishop at bravoseven moves to charliesix
+bishop at bravoseven moves to deltafive
+bishop at bravoseven moves to echofour
+bishop at bravoseven moves to foxtrotthree
+bishop at bravoseven moves to golftwo
+bishop at bravoseven moves to hotelone
 bishop at bravoseven takes bishop
 bishop at bravoseven to alphaeight
 bishop at bravoseven to alphasix
@@ -436,6 +533,15 @@ bishop at bravoseven to foxtrotthree
 bishop at bravoseven to golftwo
 bishop at bravoseven to hotelone
 bishop at bravosix captures bishop
+bishop at bravosix moves to alphafive
+bishop at bravosix moves to alphaseven
+bishop at bravosix moves to charliefive
+bishop at bravosix moves to charlieseven
+bishop at bravosix moves to deltaeight
+bishop at bravosix moves to deltafour
+bishop at bravosix moves to echothree
+bishop at bravosix moves to foxtrottwo
+bishop at bravosix moves to golfone
 bishop at bravosix takes bishop
 bishop at bravosix to alphafive
 bishop at bravosix to alphaseven
@@ -447,6 +553,15 @@ bishop at bravosix to echothree
 bishop at bravosix to foxtrottwo
 bishop at bravosix to golfone
 bishop at bravothree captures bishop
+bishop at bravothree moves to alphafour
+bishop at bravothree moves to alphatwo
+bishop at bravothree moves to charliefour
+bishop at bravothree moves to charlietwo
+bishop at bravothree moves to deltafive
+bishop at bravothree moves to deltaone
+bishop at bravothree moves to echosix
+bishop at bravothree moves to foxtrotseven
+bishop at bravothree moves to golfeight
 bishop at bravothree takes bishop
 bishop at bravothree to alphafour
 bishop at bravothree to alphatwo
@@ -458,6 +573,15 @@ bishop at bravothree to echosix
 bishop at bravothree to foxtrotseven
 bishop at bravothree to golfeight
 bishop at bravotwo captures bishop
+bishop at bravotwo moves to alphaone
+bishop at bravotwo moves to alphathree
+bishop at bravotwo moves to charlieone
+bishop at bravotwo moves to charliethree
+bishop at bravotwo moves to deltafour
+bishop at bravotwo moves to echofive
+bishop at bravotwo moves to foxtrotsix
+bishop at bravotwo moves to golfseven
+bishop at bravotwo moves to hoteleight
 bishop at bravotwo takes bishop
 bishop at bravotwo to alphaone
 bishop at bravotwo to alphathree
@@ -469,6 +593,13 @@ bishop at bravotwo to foxtrotsix
 bishop at bravotwo to golfseven
 bishop at bravotwo to hoteleight
 bishop at charlieeight captures bishop
+bishop at charlieeight moves to alphasix
+bishop at charlieeight moves to bravoseven
+bishop at charlieeight moves to deltaseven
+bishop at charlieeight moves to echosix
+bishop at charlieeight moves to foxtrotfive
+bishop at charlieeight moves to golffour
+bishop at charlieeight moves to hotelthree
 bishop at charlieeight takes bishop
 bishop at charlieeight to alphasix
 bishop at charlieeight to bravoseven
@@ -478,6 +609,17 @@ bishop at charlieeight to foxtrotfive
 bishop at charlieeight to golffour
 bishop at charlieeight to hotelthree
 bishop at charliefive captures bishop
+bishop at charliefive moves to alphaseven
+bishop at charliefive moves to alphathree
+bishop at charliefive moves to bravofour
+bishop at charliefive moves to bravosix
+bishop at charliefive moves to deltafour
+bishop at charliefive moves to deltasix
+bishop at charliefive moves to echoseven
+bishop at charliefive moves to echothree
+bishop at charliefive moves to foxtroteight
+bishop at charliefive moves to foxtrottwo
+bishop at charliefive moves to golfone
 bishop at charliefive takes bishop
 bishop at charliefive to alphaseven
 bishop at charliefive to alphathree
@@ -491,6 +633,17 @@ bishop at charliefive to foxtroteight
 bishop at charliefive to foxtrottwo
 bishop at charliefive to golfone
 bishop at charliefour captures bishop
+bishop at charliefour moves to alphasix
+bishop at charliefour moves to alphatwo
+bishop at charliefour moves to bravofive
+bishop at charliefour moves to bravothree
+bishop at charliefour moves to deltafive
+bishop at charliefour moves to deltathree
+bishop at charliefour moves to echosix
+bishop at charliefour moves to echotwo
+bishop at charliefour moves to foxtrotone
+bishop at charliefour moves to foxtrotseven
+bishop at charliefour moves to golfeight
 bishop at charliefour takes bishop
 bishop at charliefour to alphasix
 bishop at charliefour to alphatwo
@@ -504,6 +657,13 @@ bishop at charliefour to foxtrotone
 bishop at charliefour to foxtrotseven
 bishop at charliefour to golfeight
 bishop at charlieone captures bishop
+bishop at charlieone moves to alphathree
+bishop at charlieone moves to bravotwo
+bishop at charlieone moves to deltatwo
+bishop at charlieone moves to echothree
+bishop at charlieone moves to foxtrotfour
+bishop at charlieone moves to golffive
+bishop at charlieone moves to hotelsix
 bishop at charlieone takes bishop
 bishop at charlieone to alphathree
 bishop at charlieone to bravotwo
@@ -513,6 +673,15 @@ bishop at charlieone to foxtrotfour
 bishop at charlieone to golffive
 bishop at charlieone to hotelsix
 bishop at charlieseven captures bishop
+bishop at charlieseven moves to alphafive
+bishop at charlieseven moves to bravoeight
+bishop at charlieseven moves to bravosix
+bishop at charlieseven moves to deltaeight
+bishop at charlieseven moves to deltasix
+bishop at charlieseven moves to echofive
+bishop at charlieseven moves to foxtrotfour
+bishop at charlieseven moves to golfthree
+bishop at charlieseven moves to hoteltwo
 bishop at charlieseven takes bishop
 bishop at charlieseven to alphafive
 bishop at charlieseven to bravoeight
@@ -524,6 +693,17 @@ bishop at charlieseven to foxtrotfour
 bishop at charlieseven to golfthree
 bishop at charlieseven to hoteltwo
 bishop at charliesix captures bishop
+bishop at charliesix moves to alphaeight
+bishop at charliesix moves to alphafour
+bishop at charliesix moves to bravofive
+bishop at charliesix moves to bravoseven
+bishop at charliesix moves to deltafive
+bishop at charliesix moves to deltaseven
+bishop at charliesix moves to echoeight
+bishop at charliesix moves to echofour
+bishop at charliesix moves to foxtrotthree
+bishop at charliesix moves to golftwo
+bishop at charliesix moves to hotelone
 bishop at charliesix takes bishop
 bishop at charliesix to alphaeight
 bishop at charliesix to alphafour
@@ -537,6 +717,17 @@ bishop at charliesix to foxtrotthree
 bishop at charliesix to golftwo
 bishop at charliesix to hotelone
 bishop at charliethree captures bishop
+bishop at charliethree moves to alphafive
+bishop at charliethree moves to alphaone
+bishop at charliethree moves to bravofour
+bishop at charliethree moves to bravotwo
+bishop at charliethree moves to deltafour
+bishop at charliethree moves to deltatwo
+bishop at charliethree moves to echofive
+bishop at charliethree moves to echoone
+bishop at charliethree moves to foxtrotsix
+bishop at charliethree moves to golfseven
+bishop at charliethree moves to hoteleight
 bishop at charliethree takes bishop
 bishop at charliethree to alphafive
 bishop at charliethree to alphaone
@@ -550,6 +741,15 @@ bishop at charliethree to foxtrotsix
 bishop at charliethree to golfseven
 bishop at charliethree to hoteleight
 bishop at charlietwo captures bishop
+bishop at charlietwo moves to alphafour
+bishop at charlietwo moves to bravoone
+bishop at charlietwo moves to bravothree
+bishop at charlietwo moves to deltaone
+bishop at charlietwo moves to deltathree
+bishop at charlietwo moves to echofour
+bishop at charlietwo moves to foxtrotfive
+bishop at charlietwo moves to golfsix
+bishop at charlietwo moves to hotelseven
 bishop at charlietwo takes bishop
 bishop at charlietwo to alphafour
 bishop at charlietwo to bravoone
@@ -561,6 +761,13 @@ bishop at charlietwo to foxtrotfive
 bishop at charlietwo to golfsix
 bishop at charlietwo to hotelseven
 bishop at deltaeight captures bishop
+bishop at deltaeight moves to alphafive
+bishop at deltaeight moves to bravosix
+bishop at deltaeight moves to charlieseven
+bishop at deltaeight moves to echoseven
+bishop at deltaeight moves to foxtrotsix
+bishop at deltaeight moves to golffive
+bishop at deltaeight moves to hotelfour
 bishop at deltaeight takes bishop
 bishop at deltaeight to alphafive
 bishop at deltaeight to bravosix
@@ -570,6 +777,19 @@ bishop at deltaeight to foxtrotsix
 bishop at deltaeight to golffive
 bishop at deltaeight to hotelfour
 bishop at deltafive captures bishop
+bishop at deltafive moves to alphaeight
+bishop at deltafive moves to alphatwo
+bishop at deltafive moves to bravoseven
+bishop at deltafive moves to bravothree
+bishop at deltafive moves to charliefour
+bishop at deltafive moves to charliesix
+bishop at deltafive moves to echofour
+bishop at deltafive moves to echosix
+bishop at deltafive moves to foxtrotseven
+bishop at deltafive moves to foxtrotthree
+bishop at deltafive moves to golfeight
+bishop at deltafive moves to golftwo
+bishop at deltafive moves to hotelone
 bishop at deltafive takes bishop
 bishop at deltafive to alphaeight
 bishop at deltafive to alphatwo
@@ -585,6 +805,19 @@ bishop at deltafive to golfeight
 bishop at deltafive to golftwo
 bishop at deltafive to hotelone
 bishop at deltafour captures bishop
+bishop at deltafour moves to alphaone
+bishop at deltafour moves to alphaseven
+bishop at deltafour moves to bravosix
+bishop at deltafour moves to bravotwo
+bishop at deltafour moves to charliefive
+bishop at deltafour moves to charliethree
+bishop at deltafour moves to echofive
+bishop at deltafour moves to echothree
+bishop at deltafour moves to foxtrotsix
+bishop at deltafour moves to foxtrottwo
+bishop at deltafour moves to golfone
+bishop at deltafour moves to golfseven
+bishop at deltafour moves to hoteleight
 bishop at deltafour takes bishop
 bishop at deltafour to alphaone
 bishop at deltafour to alphaseven
@@ -600,6 +833,13 @@ bishop at deltafour to golfone
 bishop at deltafour to golfseven
 bishop at deltafour to hoteleight
 bishop at deltaone captures bishop
+bishop at deltaone moves to alphafour
+bishop at deltaone moves to bravothree
+bishop at deltaone moves to charlietwo
+bishop at deltaone moves to echotwo
+bishop at deltaone moves to foxtrotthree
+bishop at deltaone moves to golffour
+bishop at deltaone moves to hotelfive
 bishop at deltaone takes bishop
 bishop at deltaone to alphafour
 bishop at deltaone to bravothree
@@ -609,6 +849,15 @@ bishop at deltaone to foxtrotthree
 bishop at deltaone to golffour
 bishop at deltaone to hotelfive
 bishop at deltaseven captures bishop
+bishop at deltaseven moves to alphafour
+bishop at deltaseven moves to bravofive
+bishop at deltaseven moves to charlieeight
+bishop at deltaseven moves to charliesix
+bishop at deltaseven moves to echoeight
+bishop at deltaseven moves to echosix
+bishop at deltaseven moves to foxtrotfive
+bishop at deltaseven moves to golffour
+bishop at deltaseven moves to hotelthree
 bishop at deltaseven takes bishop
 bishop at deltaseven to alphafour
 bishop at deltaseven to bravofive
@@ -620,6 +869,17 @@ bishop at deltaseven to foxtrotfive
 bishop at deltaseven to golffour
 bishop at deltaseven to hotelthree
 bishop at deltasix captures bishop
+bishop at deltasix moves to alphathree
+bishop at deltasix moves to bravoeight
+bishop at deltasix moves to bravofour
+bishop at deltasix moves to charliefive
+bishop at deltasix moves to charlieseven
+bishop at deltasix moves to echofive
+bishop at deltasix moves to echoseven
+bishop at deltasix moves to foxtroteight
+bishop at deltasix moves to foxtrotfour
+bishop at deltasix moves to golfthree
+bishop at deltasix moves to hoteltwo
 bishop at deltasix takes bishop
 bishop at deltasix to alphathree
 bishop at deltasix to bravoeight
@@ -633,6 +893,17 @@ bishop at deltasix to foxtrotfour
 bishop at deltasix to golfthree
 bishop at deltasix to hoteltwo
 bishop at deltathree captures bishop
+bishop at deltathree moves to alphasix
+bishop at deltathree moves to bravofive
+bishop at deltathree moves to bravoone
+bishop at deltathree moves to charliefour
+bishop at deltathree moves to charlietwo
+bishop at deltathree moves to echofour
+bishop at deltathree moves to echotwo
+bishop at deltathree moves to foxtrotfive
+bishop at deltathree moves to foxtrotone
+bishop at deltathree moves to golfsix
+bishop at deltathree moves to hotelseven
 bishop at deltathree takes bishop
 bishop at deltathree to alphasix
 bishop at deltathree to bravofive
@@ -646,6 +917,15 @@ bishop at deltathree to foxtrotone
 bishop at deltathree to golfsix
 bishop at deltathree to hotelseven
 bishop at deltatwo captures bishop
+bishop at deltatwo moves to alphafive
+bishop at deltatwo moves to bravofour
+bishop at deltatwo moves to charlieone
+bishop at deltatwo moves to charliethree
+bishop at deltatwo moves to echoone
+bishop at deltatwo moves to echothree
+bishop at deltatwo moves to foxtrotfour
+bishop at deltatwo moves to golffive
+bishop at deltatwo moves to hotelsix
 bishop at deltatwo takes bishop
 bishop at deltatwo to alphafive
 bishop at deltatwo to bravofour
@@ -800,7 +1080,6 @@ bishop captures alphaseven
 bishop captures alphasix
 bishop captures alphathree
 bishop captures alphatwo
-bishop captures bishop
 bishop captures bishop at alphaeight
 bishop captures bishop at alphafive
 bishop captures bishop at alphafour
@@ -865,6 +1144,7 @@ bishop captures bishop at hotelseven
 bishop captures bishop at hotelsix
 bishop captures bishop at hotelthree
 bishop captures bishop at hoteltwo
+bishop captures bishop
 bishop captures bravoeight
 bishop captures bravofive
 bishop captures bravofour
@@ -1305,7 +1585,6 @@ bishop takes alphaseven
 bishop takes alphasix
 bishop takes alphathree
 bishop takes alphatwo
-bishop takes bishop
 bishop takes bishop at alphaeight
 bishop takes bishop at alphafive
 bishop takes bishop at alphafour
@@ -1370,6 +1649,7 @@ bishop takes bishop at hotelseven
 bishop takes bishop at hotelsix
 bishop takes bishop at hotelthree
 bishop takes bishop at hoteltwo
+bishop takes bishop
 bishop takes bravoeight
 bishop takes bravofive
 bishop takes bravofour
@@ -1734,7 +2014,6 @@ black queen to hotelseven
 black queen to hotelsix
 black queen to hotelthree
 black queen to hoteltwo
-black resigns
 black rook to alphaeight
 black rook to alphafive
 black rook to alphafour
@@ -1799,7 +2078,6 @@ black rook to hotelseven
 black rook to hotelsix
 black rook to hotelthree
 black rook to hoteltwo
-bravoeight
 bravoeight alphaeight
 bravoeight alphaseven
 bravoeight alphasix
@@ -1824,7 +2102,7 @@ bravoeight golfeight
 bravoeight golfthree
 bravoeight hoteleight
 bravoeight hoteltwo
-bravofive
+bravoeight
 bravofive alphafive
 bravofive alphafour
 bravofive alphaseven
@@ -1854,7 +2132,7 @@ bravofive foxtrotfive
 bravofive foxtrotone
 bravofive golffive
 bravofive hotelfive
-bravofour
+bravofive
 bravofour alphafive
 bravofour alphafour
 bravofour alphasix
@@ -1884,7 +2162,7 @@ bravofour foxtroteight
 bravofour foxtrotfour
 bravofour golffour
 bravofour hotelfour
-bravoone
+bravofour
 bravoone alphaone
 bravoone alphathree
 bravoone alphatwo
@@ -1909,7 +2187,7 @@ bravoone golfone
 bravoone golfsix
 bravoone hotelone
 bravoone hotelseven
-bravoseven
+bravoone
 bravoseven alphaeight
 bravoseven alphafive
 bravoseven alphaseven
@@ -1937,7 +2215,7 @@ bravoseven golfseven
 bravoseven golftwo
 bravoseven hotelone
 bravoseven hotelseven
-bravosix
+bravoseven
 bravosix alphaeight
 bravosix alphafive
 bravosix alphafour
@@ -1967,7 +2245,7 @@ bravosix foxtrottwo
 bravosix golfone
 bravosix golfsix
 bravosix hotelsix
-bravothree
+bravosix
 bravothree alphafive
 bravothree alphafour
 bravothree alphaone
@@ -1997,7 +2275,7 @@ bravothree foxtrotthree
 bravothree golfeight
 bravothree golfthree
 bravothree hotelthree
-bravotwo
+bravothree
 bravotwo alphafour
 bravotwo alphaone
 bravotwo alphathree
@@ -2025,6 +2303,7 @@ bravotwo golfseven
 bravotwo golftwo
 bravotwo hoteleight
 bravotwo hoteltwo
+bravotwo
 capture alphaeight
 capture alphafive
 capture alphafour
@@ -2089,7 +2368,6 @@ capture hotelseven
 capture hotelsix
 capture hotelthree
 capture hoteltwo
-charlieeight
 charlieeight alphaeight
 charlieeight alphaseven
 charlieeight alphasix
@@ -2115,7 +2393,7 @@ charlieeight golfeight
 charlieeight golffour
 charlieeight hoteleight
 charlieeight hotelthree
-charliefive
+charlieeight
 charliefive alphafive
 charliefive alphafour
 charliefive alphaseven
@@ -2149,7 +2427,7 @@ charliefive foxtrottwo
 charliefive golffive
 charliefive golfone
 charliefive hotelfive
-charliefour
+charliefive
 charliefour alphafive
 charliefour alphafour
 charliefour alphasix
@@ -2183,7 +2461,7 @@ charliefour foxtrotseven
 charliefour golfeight
 charliefour golffour
 charliefour hotelfour
-charlieone
+charliefour
 charlieone alphaone
 charlieone alphathree
 charlieone alphatwo
@@ -2209,7 +2487,7 @@ charlieone golffive
 charlieone golfone
 charlieone hotelone
 charlieone hotelsix
-charlieseven
+charlieone
 charlieseven alphaeight
 charlieseven alphafive
 charlieseven alphaseven
@@ -2239,7 +2517,7 @@ charlieseven golfseven
 charlieseven golfthree
 charlieseven hotelseven
 charlieseven hoteltwo
-charliesix
+charlieseven
 charliesix alphaeight
 charliesix alphafive
 charliesix alphafour
@@ -2273,7 +2551,7 @@ charliesix golfsix
 charliesix golftwo
 charliesix hotelone
 charliesix hotelsix
-charliethree
+charliesix
 charliethree alphafive
 charliethree alphafour
 charliethree alphaone
@@ -2307,7 +2585,7 @@ charliethree golfseven
 charliethree golfthree
 charliethree hoteleight
 charliethree hotelthree
-charlietwo
+charliethree
 charlietwo alphafour
 charlietwo alphaone
 charlietwo alphathree
@@ -2337,9 +2615,9 @@ charlietwo golfsix
 charlietwo golftwo
 charlietwo hotelseven
 charlietwo hoteltwo
-check
+charlietwo
 checkmate
-deltaeight
+check
 deltaeight alphaeight
 deltaeight alphafive
 deltaeight bravoeight
@@ -2365,7 +2643,7 @@ deltaeight golfeight
 deltaeight golffive
 deltaeight hoteleight
 deltaeight hotelfour
-deltafive
+deltaeight
 deltafive alphaeight
 deltafive alphafive
 deltafive alphatwo
@@ -2401,7 +2679,7 @@ deltafive golffive
 deltafive golftwo
 deltafive hotelfive
 deltafive hotelone
-deltafour
+deltafive
 deltafour alphafour
 deltafour alphaone
 deltafour alphaseven
@@ -2437,7 +2715,7 @@ deltafour golfone
 deltafour golfseven
 deltafour hoteleight
 deltafour hotelfour
-deltaone
+deltafour
 deltaone alphafour
 deltaone alphaone
 deltaone bravoone
@@ -2463,7 +2741,7 @@ deltaone golffour
 deltaone golfone
 deltaone hotelfive
 deltaone hotelone
-deltaseven
+deltaone
 deltaseven alphafour
 deltaseven alphaseven
 deltaseven bravoeight
@@ -2493,7 +2771,7 @@ deltaseven golffour
 deltaseven golfseven
 deltaseven hotelseven
 deltaseven hotelthree
-deltasix
+deltaseven
 deltasix alphasix
 deltasix alphathree
 deltasix bravoeight
@@ -2527,7 +2805,7 @@ deltasix golfsix
 deltasix golfthree
 deltasix hotelsix
 deltasix hoteltwo
-deltathree
+deltasix
 deltathree alphasix
 deltathree alphathree
 deltathree bravofive
@@ -2561,7 +2839,7 @@ deltathree golfsix
 deltathree golfthree
 deltathree hotelseven
 deltathree hotelthree
-deltatwo
+deltathree
 deltatwo alphafive
 deltatwo alphatwo
 deltatwo bravofour
@@ -2591,6 +2869,28 @@ deltatwo golffive
 deltatwo golftwo
 deltatwo hotelsix
 deltatwo hoteltwo
+deltatwo
+difficulty eight
+difficulty five
+difficulty four
+difficulty level eight
+difficulty level five
+difficulty level four
+difficulty level one
+difficulty level seven
+difficulty level six
+difficulty level three
+difficulty level two
+difficulty level {number}
+difficulty one
+difficulty seven
+difficulty six
+difficulty three
+difficulty two
+difficulty {number}
+disconnect from server
+disconnect server
+disconnect
 echoeight
 echofive
 echofour
@@ -2616,6 +2916,8 @@ golfseven
 golfsix
 golfthree
 golftwo
+help
+hint
 hoteleight
 hotelfive
 hotelfour
@@ -2624,7 +2926,26 @@ hotelseven
 hotelsix
 hotelthree
 hoteltwo
-i resign
+i accept draw
+i offer draw
+join game eight
+join game five
+join game four
+join game one
+join game seven
+join game six
+join game three
+join game two
+join game {number}
+join room eight
+join room five
+join room four
+join room one
+join room seven
+join room six
+join room three
+join room two
+join room {number}
 king alphaeight captures alphaseven
 king alphaeight captures bravoeight
 king alphaeight captures bravoseven
@@ -2698,11 +3019,19 @@ king alphatwo takes bravoone
 king alphatwo takes bravothree
 king alphatwo takes bravotwo
 king at alphaeight captures king
+king at alphaeight moves to alphaseven
+king at alphaeight moves to bravoeight
+king at alphaeight moves to bravoseven
 king at alphaeight takes king
 king at alphaeight to alphaseven
 king at alphaeight to bravoeight
 king at alphaeight to bravoseven
 king at alphafive captures king
+king at alphafive moves to alphafour
+king at alphafive moves to alphasix
+king at alphafive moves to bravofive
+king at alphafive moves to bravofour
+king at alphafive moves to bravosix
 king at alphafive takes king
 king at alphafive to alphafour
 king at alphafive to alphasix
@@ -2710,6 +3039,11 @@ king at alphafive to bravofive
 king at alphafive to bravofour
 king at alphafive to bravosix
 king at alphafour captures king
+king at alphafour moves to alphafive
+king at alphafour moves to alphathree
+king at alphafour moves to bravofive
+king at alphafour moves to bravofour
+king at alphafour moves to bravothree
 king at alphafour takes king
 king at alphafour to alphafive
 king at alphafour to alphathree
@@ -2717,11 +3051,19 @@ king at alphafour to bravofive
 king at alphafour to bravofour
 king at alphafour to bravothree
 king at alphaone captures king
+king at alphaone moves to alphatwo
+king at alphaone moves to bravoone
+king at alphaone moves to bravotwo
 king at alphaone takes king
 king at alphaone to alphatwo
 king at alphaone to bravoone
 king at alphaone to bravotwo
 king at alphaseven captures king
+king at alphaseven moves to alphaeight
+king at alphaseven moves to alphasix
+king at alphaseven moves to bravoeight
+king at alphaseven moves to bravoseven
+king at alphaseven moves to bravosix
 king at alphaseven takes king
 king at alphaseven to alphaeight
 king at alphaseven to alphasix
@@ -2729,6 +3071,11 @@ king at alphaseven to bravoeight
 king at alphaseven to bravoseven
 king at alphaseven to bravosix
 king at alphasix captures king
+king at alphasix moves to alphafive
+king at alphasix moves to alphaseven
+king at alphasix moves to bravofive
+king at alphasix moves to bravoseven
+king at alphasix moves to bravosix
 king at alphasix takes king
 king at alphasix to alphafive
 king at alphasix to alphaseven
@@ -2736,6 +3083,11 @@ king at alphasix to bravofive
 king at alphasix to bravoseven
 king at alphasix to bravosix
 king at alphathree captures king
+king at alphathree moves to alphafour
+king at alphathree moves to alphatwo
+king at alphathree moves to bravofour
+king at alphathree moves to bravothree
+king at alphathree moves to bravotwo
 king at alphathree takes king
 king at alphathree to alphafour
 king at alphathree to alphatwo
@@ -2743,6 +3095,11 @@ king at alphathree to bravofour
 king at alphathree to bravothree
 king at alphathree to bravotwo
 king at alphatwo captures king
+king at alphatwo moves to alphaone
+king at alphatwo moves to alphathree
+king at alphatwo moves to bravoone
+king at alphatwo moves to bravothree
+king at alphatwo moves to bravotwo
 king at alphatwo takes king
 king at alphatwo to alphaone
 king at alphatwo to alphathree
@@ -2750,6 +3107,11 @@ king at alphatwo to bravoone
 king at alphatwo to bravothree
 king at alphatwo to bravotwo
 king at bravoeight captures king
+king at bravoeight moves to alphaeight
+king at bravoeight moves to alphaseven
+king at bravoeight moves to bravoseven
+king at bravoeight moves to charlieeight
+king at bravoeight moves to charlieseven
 king at bravoeight takes king
 king at bravoeight to alphaeight
 king at bravoeight to alphaseven
@@ -2757,6 +3119,14 @@ king at bravoeight to bravoseven
 king at bravoeight to charlieeight
 king at bravoeight to charlieseven
 king at bravofive captures king
+king at bravofive moves to alphafive
+king at bravofive moves to alphafour
+king at bravofive moves to alphasix
+king at bravofive moves to bravofour
+king at bravofive moves to bravosix
+king at bravofive moves to charliefive
+king at bravofive moves to charliefour
+king at bravofive moves to charliesix
 king at bravofive takes king
 king at bravofive to alphafive
 king at bravofive to alphafour
@@ -2767,6 +3137,14 @@ king at bravofive to charliefive
 king at bravofive to charliefour
 king at bravofive to charliesix
 king at bravofour captures king
+king at bravofour moves to alphafive
+king at bravofour moves to alphafour
+king at bravofour moves to alphathree
+king at bravofour moves to bravofive
+king at bravofour moves to bravothree
+king at bravofour moves to charliefive
+king at bravofour moves to charliefour
+king at bravofour moves to charliethree
 king at bravofour takes king
 king at bravofour to alphafive
 king at bravofour to alphafour
@@ -2777,6 +3155,11 @@ king at bravofour to charliefive
 king at bravofour to charliefour
 king at bravofour to charliethree
 king at bravoone captures king
+king at bravoone moves to alphaone
+king at bravoone moves to alphatwo
+king at bravoone moves to bravotwo
+king at bravoone moves to charlieone
+king at bravoone moves to charlietwo
 king at bravoone takes king
 king at bravoone to alphaone
 king at bravoone to alphatwo
@@ -2784,6 +3167,14 @@ king at bravoone to bravotwo
 king at bravoone to charlieone
 king at bravoone to charlietwo
 king at bravoseven captures king
+king at bravoseven moves to alphaeight
+king at bravoseven moves to alphaseven
+king at bravoseven moves to alphasix
+king at bravoseven moves to bravoeight
+king at bravoseven moves to bravosix
+king at bravoseven moves to charlieeight
+king at bravoseven moves to charlieseven
+king at bravoseven moves to charliesix
 king at bravoseven takes king
 king at bravoseven to alphaeight
 king at bravoseven to alphaseven
@@ -2794,6 +3185,14 @@ king at bravoseven to charlieeight
 king at bravoseven to charlieseven
 king at bravoseven to charliesix
 king at bravosix captures king
+king at bravosix moves to alphafive
+king at bravosix moves to alphaseven
+king at bravosix moves to alphasix
+king at bravosix moves to bravofive
+king at bravosix moves to bravoseven
+king at bravosix moves to charliefive
+king at bravosix moves to charlieseven
+king at bravosix moves to charliesix
 king at bravosix takes king
 king at bravosix to alphafive
 king at bravosix to alphaseven
@@ -2804,6 +3203,14 @@ king at bravosix to charliefive
 king at bravosix to charlieseven
 king at bravosix to charliesix
 king at bravothree captures king
+king at bravothree moves to alphafour
+king at bravothree moves to alphathree
+king at bravothree moves to alphatwo
+king at bravothree moves to bravofour
+king at bravothree moves to bravotwo
+king at bravothree moves to charliefour
+king at bravothree moves to charliethree
+king at bravothree moves to charlietwo
 king at bravothree takes king
 king at bravothree to alphafour
 king at bravothree to alphathree
@@ -2814,6 +3221,14 @@ king at bravothree to charliefour
 king at bravothree to charliethree
 king at bravothree to charlietwo
 king at bravotwo captures king
+king at bravotwo moves to alphaone
+king at bravotwo moves to alphathree
+king at bravotwo moves to alphatwo
+king at bravotwo moves to bravoone
+king at bravotwo moves to bravothree
+king at bravotwo moves to charlieone
+king at bravotwo moves to charliethree
+king at bravotwo moves to charlietwo
 king at bravotwo takes king
 king at bravotwo to alphaone
 king at bravotwo to alphathree
@@ -2824,6 +3239,11 @@ king at bravotwo to charlieone
 king at bravotwo to charliethree
 king at bravotwo to charlietwo
 king at charlieeight captures king
+king at charlieeight moves to bravoeight
+king at charlieeight moves to bravoseven
+king at charlieeight moves to charlieseven
+king at charlieeight moves to deltaeight
+king at charlieeight moves to deltaseven
 king at charlieeight takes king
 king at charlieeight to bravoeight
 king at charlieeight to bravoseven
@@ -2831,6 +3251,14 @@ king at charlieeight to charlieseven
 king at charlieeight to deltaeight
 king at charlieeight to deltaseven
 king at charliefive captures king
+king at charliefive moves to bravofive
+king at charliefive moves to bravofour
+king at charliefive moves to bravosix
+king at charliefive moves to charliefour
+king at charliefive moves to charliesix
+king at charliefive moves to deltafive
+king at charliefive moves to deltafour
+king at charliefive moves to deltasix
 king at charliefive takes king
 king at charliefive to bravofive
 king at charliefive to bravofour
@@ -2841,6 +3269,14 @@ king at charliefive to deltafive
 king at charliefive to deltafour
 king at charliefive to deltasix
 king at charliefour captures king
+king at charliefour moves to bravofive
+king at charliefour moves to bravofour
+king at charliefour moves to bravothree
+king at charliefour moves to charliefive
+king at charliefour moves to charliethree
+king at charliefour moves to deltafive
+king at charliefour moves to deltafour
+king at charliefour moves to deltathree
 king at charliefour takes king
 king at charliefour to bravofive
 king at charliefour to bravofour
@@ -2851,6 +3287,11 @@ king at charliefour to deltafive
 king at charliefour to deltafour
 king at charliefour to deltathree
 king at charlieone captures king
+king at charlieone moves to bravoone
+king at charlieone moves to bravotwo
+king at charlieone moves to charlietwo
+king at charlieone moves to deltaone
+king at charlieone moves to deltatwo
 king at charlieone takes king
 king at charlieone to bravoone
 king at charlieone to bravotwo
@@ -2858,6 +3299,14 @@ king at charlieone to charlietwo
 king at charlieone to deltaone
 king at charlieone to deltatwo
 king at charlieseven captures king
+king at charlieseven moves to bravoeight
+king at charlieseven moves to bravoseven
+king at charlieseven moves to bravosix
+king at charlieseven moves to charlieeight
+king at charlieseven moves to charliesix
+king at charlieseven moves to deltaeight
+king at charlieseven moves to deltaseven
+king at charlieseven moves to deltasix
 king at charlieseven takes king
 king at charlieseven to bravoeight
 king at charlieseven to bravoseven
@@ -2868,6 +3317,14 @@ king at charlieseven to deltaeight
 king at charlieseven to deltaseven
 king at charlieseven to deltasix
 king at charliesix captures king
+king at charliesix moves to bravofive
+king at charliesix moves to bravoseven
+king at charliesix moves to bravosix
+king at charliesix moves to charliefive
+king at charliesix moves to charlieseven
+king at charliesix moves to deltafive
+king at charliesix moves to deltaseven
+king at charliesix moves to deltasix
 king at charliesix takes king
 king at charliesix to bravofive
 king at charliesix to bravoseven
@@ -2878,6 +3335,14 @@ king at charliesix to deltafive
 king at charliesix to deltaseven
 king at charliesix to deltasix
 king at charliethree captures king
+king at charliethree moves to bravofour
+king at charliethree moves to bravothree
+king at charliethree moves to bravotwo
+king at charliethree moves to charliefour
+king at charliethree moves to charlietwo
+king at charliethree moves to deltafour
+king at charliethree moves to deltathree
+king at charliethree moves to deltatwo
 king at charliethree takes king
 king at charliethree to bravofour
 king at charliethree to bravothree
@@ -2888,6 +3353,14 @@ king at charliethree to deltafour
 king at charliethree to deltathree
 king at charliethree to deltatwo
 king at charlietwo captures king
+king at charlietwo moves to bravoone
+king at charlietwo moves to bravothree
+king at charlietwo moves to bravotwo
+king at charlietwo moves to charlieone
+king at charlietwo moves to charliethree
+king at charlietwo moves to deltaone
+king at charlietwo moves to deltathree
+king at charlietwo moves to deltatwo
 king at charlietwo takes king
 king at charlietwo to bravoone
 king at charlietwo to bravothree
@@ -2898,6 +3371,11 @@ king at charlietwo to deltaone
 king at charlietwo to deltathree
 king at charlietwo to deltatwo
 king at deltaeight captures king
+king at deltaeight moves to charlieeight
+king at deltaeight moves to charlieseven
+king at deltaeight moves to deltaseven
+king at deltaeight moves to echoeight
+king at deltaeight moves to echoseven
 king at deltaeight takes king
 king at deltaeight to charlieeight
 king at deltaeight to charlieseven
@@ -2905,6 +3383,14 @@ king at deltaeight to deltaseven
 king at deltaeight to echoeight
 king at deltaeight to echoseven
 king at deltafive captures king
+king at deltafive moves to charliefive
+king at deltafive moves to charliefour
+king at deltafive moves to charliesix
+king at deltafive moves to deltafour
+king at deltafive moves to deltasix
+king at deltafive moves to echofive
+king at deltafive moves to echofour
+king at deltafive moves to echosix
 king at deltafive takes king
 king at deltafive to charliefive
 king at deltafive to charliefour
@@ -2915,6 +3401,14 @@ king at deltafive to echofive
 king at deltafive to echofour
 king at deltafive to echosix
 king at deltafour captures king
+king at deltafour moves to charliefive
+king at deltafour moves to charliefour
+king at deltafour moves to charliethree
+king at deltafour moves to deltafive
+king at deltafour moves to deltathree
+king at deltafour moves to echofive
+king at deltafour moves to echofour
+king at deltafour moves to echothree
 king at deltafour takes king
 king at deltafour to charliefive
 king at deltafour to charliefour
@@ -2925,6 +3419,11 @@ king at deltafour to echofive
 king at deltafour to echofour
 king at deltafour to echothree
 king at deltaone captures king
+king at deltaone moves to charlieone
+king at deltaone moves to charlietwo
+king at deltaone moves to deltatwo
+king at deltaone moves to echoone
+king at deltaone moves to echotwo
 king at deltaone takes king
 king at deltaone to charlieone
 king at deltaone to charlietwo
@@ -2932,6 +3431,14 @@ king at deltaone to deltatwo
 king at deltaone to echoone
 king at deltaone to echotwo
 king at deltaseven captures king
+king at deltaseven moves to charlieeight
+king at deltaseven moves to charlieseven
+king at deltaseven moves to charliesix
+king at deltaseven moves to deltaeight
+king at deltaseven moves to deltasix
+king at deltaseven moves to echoeight
+king at deltaseven moves to echoseven
+king at deltaseven moves to echosix
 king at deltaseven takes king
 king at deltaseven to charlieeight
 king at deltaseven to charlieseven
@@ -2942,6 +3449,14 @@ king at deltaseven to echoeight
 king at deltaseven to echoseven
 king at deltaseven to echosix
 king at deltasix captures king
+king at deltasix moves to charliefive
+king at deltasix moves to charlieseven
+king at deltasix moves to charliesix
+king at deltasix moves to deltafive
+king at deltasix moves to deltaseven
+king at deltasix moves to echofive
+king at deltasix moves to echoseven
+king at deltasix moves to echosix
 king at deltasix takes king
 king at deltasix to charliefive
 king at deltasix to charlieseven
@@ -2952,6 +3467,14 @@ king at deltasix to echofive
 king at deltasix to echoseven
 king at deltasix to echosix
 king at deltathree captures king
+king at deltathree moves to charliefour
+king at deltathree moves to charliethree
+king at deltathree moves to charlietwo
+king at deltathree moves to deltafour
+king at deltathree moves to deltatwo
+king at deltathree moves to echofour
+king at deltathree moves to echothree
+king at deltathree moves to echotwo
 king at deltathree takes king
 king at deltathree to charliefour
 king at deltathree to charliethree
@@ -2962,6 +3485,14 @@ king at deltathree to echofour
 king at deltathree to echothree
 king at deltathree to echotwo
 king at deltatwo captures king
+king at deltatwo moves to charlieone
+king at deltatwo moves to charliethree
+king at deltatwo moves to charlietwo
+king at deltatwo moves to deltaone
+king at deltatwo moves to deltathree
+king at deltatwo moves to echoone
+king at deltatwo moves to echothree
+king at deltatwo moves to echotwo
 king at deltatwo takes king
 king at deltatwo to charlieone
 king at deltatwo to charliethree
@@ -3127,7 +3658,6 @@ king captures echoseven
 king captures echosix
 king captures echothree
 king captures echotwo
-king captures king
 king captures king at alphaeight
 king captures king at alphafive
 king captures king at alphafour
@@ -3168,6 +3698,7 @@ king captures king at echoseven
 king captures king at echosix
 king captures king at echothree
 king captures king at echotwo
+king captures king
 king charlieeight captures bravoeight
 king charlieeight captures bravoseven
 king charlieeight captures charlieseven
@@ -3480,7 +4011,6 @@ king takes echoseven
 king takes echosix
 king takes echothree
 king takes echotwo
-king takes king
 king takes king at alphaeight
 king takes king at alphafive
 king takes king at alphafour
@@ -3521,6 +4051,7 @@ king takes king at echoseven
 king takes king at echosix
 king takes king at echothree
 king takes king at echotwo
+king takes king
 king to alphaeight
 king to alphafive
 king to alphafour
@@ -3561,7 +4092,6 @@ king to echoseven
 king to echosix
 king to echothree
 king to echotwo
-kingside castle
 kingside castling
 knight alphaeight captures bravosix
 knight alphaeight captures charlieseven
@@ -3616,53 +4146,88 @@ knight alphatwo takes bravofour
 knight alphatwo takes charlieone
 knight alphatwo takes charliethree
 knight at alphaeight captures knight
+knight at alphaeight moves to bravosix
+knight at alphaeight moves to charlieseven
 knight at alphaeight takes knight
 knight at alphaeight to bravosix
 knight at alphaeight to charlieseven
 knight at alphafive captures knight
+knight at alphafive moves to bravoseven
+knight at alphafive moves to bravothree
+knight at alphafive moves to charliefour
+knight at alphafive moves to charliesix
 knight at alphafive takes knight
 knight at alphafive to bravoseven
 knight at alphafive to bravothree
 knight at alphafive to charliefour
 knight at alphafive to charliesix
 knight at alphafour captures knight
+knight at alphafour moves to bravosix
+knight at alphafour moves to bravotwo
+knight at alphafour moves to charliefive
+knight at alphafour moves to charliethree
 knight at alphafour takes knight
 knight at alphafour to bravosix
 knight at alphafour to bravotwo
 knight at alphafour to charliefive
 knight at alphafour to charliethree
 knight at alphaone captures knight
+knight at alphaone moves to bravothree
+knight at alphaone moves to charlietwo
 knight at alphaone takes knight
 knight at alphaone to bravothree
 knight at alphaone to charlietwo
 knight at alphaseven captures knight
+knight at alphaseven moves to bravofive
+knight at alphaseven moves to charlieeight
+knight at alphaseven moves to charliesix
 knight at alphaseven takes knight
 knight at alphaseven to bravofive
 knight at alphaseven to charlieeight
 knight at alphaseven to charliesix
 knight at alphasix captures knight
+knight at alphasix moves to bravoeight
+knight at alphasix moves to bravofour
+knight at alphasix moves to charliefive
+knight at alphasix moves to charlieseven
 knight at alphasix takes knight
 knight at alphasix to bravoeight
 knight at alphasix to bravofour
 knight at alphasix to charliefive
 knight at alphasix to charlieseven
 knight at alphathree captures knight
+knight at alphathree moves to bravofive
+knight at alphathree moves to bravoone
+knight at alphathree moves to charliefour
+knight at alphathree moves to charlietwo
 knight at alphathree takes knight
 knight at alphathree to bravofive
 knight at alphathree to bravoone
 knight at alphathree to charliefour
 knight at alphathree to charlietwo
 knight at alphatwo captures knight
+knight at alphatwo moves to bravofour
+knight at alphatwo moves to charlieone
+knight at alphatwo moves to charliethree
 knight at alphatwo takes knight
 knight at alphatwo to bravofour
 knight at alphatwo to charlieone
 knight at alphatwo to charliethree
 knight at bravoeight captures knight
+knight at bravoeight moves to alphasix
+knight at bravoeight moves to charliesix
+knight at bravoeight moves to deltaseven
 knight at bravoeight takes knight
 knight at bravoeight to alphasix
 knight at bravoeight to charliesix
 knight at bravoeight to deltaseven
 knight at bravofive captures knight
+knight at bravofive moves to alphaseven
+knight at bravofive moves to alphathree
+knight at bravofive moves to charlieseven
+knight at bravofive moves to charliethree
+knight at bravofive moves to deltafour
+knight at bravofive moves to deltasix
 knight at bravofive takes knight
 knight at bravofive to alphaseven
 knight at bravofive to alphathree
@@ -3671,6 +4236,12 @@ knight at bravofive to charliethree
 knight at bravofive to deltafour
 knight at bravofive to deltasix
 knight at bravofour captures knight
+knight at bravofour moves to alphasix
+knight at bravofour moves to alphatwo
+knight at bravofour moves to charliesix
+knight at bravofour moves to charlietwo
+knight at bravofour moves to deltafive
+knight at bravofour moves to deltathree
 knight at bravofour takes knight
 knight at bravofour to alphasix
 knight at bravofour to alphatwo
@@ -3679,17 +4250,30 @@ knight at bravofour to charlietwo
 knight at bravofour to deltafive
 knight at bravofour to deltathree
 knight at bravoone captures knight
+knight at bravoone moves to alphathree
+knight at bravoone moves to charliethree
+knight at bravoone moves to deltatwo
 knight at bravoone takes knight
 knight at bravoone to alphathree
 knight at bravoone to charliethree
 knight at bravoone to deltatwo
 knight at bravoseven captures knight
+knight at bravoseven moves to alphafive
+knight at bravoseven moves to charliefive
+knight at bravoseven moves to deltaeight
+knight at bravoseven moves to deltasix
 knight at bravoseven takes knight
 knight at bravoseven to alphafive
 knight at bravoseven to charliefive
 knight at bravoseven to deltaeight
 knight at bravoseven to deltasix
 knight at bravosix captures knight
+knight at bravosix moves to alphaeight
+knight at bravosix moves to alphafour
+knight at bravosix moves to charlieeight
+knight at bravosix moves to charliefour
+knight at bravosix moves to deltafive
+knight at bravosix moves to deltaseven
 knight at bravosix takes knight
 knight at bravosix to alphaeight
 knight at bravosix to alphafour
@@ -3698,6 +4282,12 @@ knight at bravosix to charliefour
 knight at bravosix to deltafive
 knight at bravosix to deltaseven
 knight at bravothree captures knight
+knight at bravothree moves to alphafive
+knight at bravothree moves to alphaone
+knight at bravothree moves to charliefive
+knight at bravothree moves to charlieone
+knight at bravothree moves to deltafour
+knight at bravothree moves to deltatwo
 knight at bravothree takes knight
 knight at bravothree to alphafive
 knight at bravothree to alphaone
@@ -3706,18 +4296,34 @@ knight at bravothree to charlieone
 knight at bravothree to deltafour
 knight at bravothree to deltatwo
 knight at bravotwo captures knight
+knight at bravotwo moves to alphafour
+knight at bravotwo moves to charliefour
+knight at bravotwo moves to deltaone
+knight at bravotwo moves to deltathree
 knight at bravotwo takes knight
 knight at bravotwo to alphafour
 knight at bravotwo to charliefour
 knight at bravotwo to deltaone
 knight at bravotwo to deltathree
 knight at charlieeight captures knight
+knight at charlieeight moves to alphaseven
+knight at charlieeight moves to bravosix
+knight at charlieeight moves to deltasix
+knight at charlieeight moves to echoseven
 knight at charlieeight takes knight
 knight at charlieeight to alphaseven
 knight at charlieeight to bravosix
 knight at charlieeight to deltasix
 knight at charlieeight to echoseven
 knight at charliefive captures knight
+knight at charliefive moves to alphafour
+knight at charliefive moves to alphasix
+knight at charliefive moves to bravoseven
+knight at charliefive moves to bravothree
+knight at charliefive moves to deltaseven
+knight at charliefive moves to deltathree
+knight at charliefive moves to echofour
+knight at charliefive moves to echosix
 knight at charliefive takes knight
 knight at charliefive to alphafour
 knight at charliefive to alphasix
@@ -3728,6 +4334,14 @@ knight at charliefive to deltathree
 knight at charliefive to echofour
 knight at charliefive to echosix
 knight at charliefour captures knight
+knight at charliefour moves to alphafive
+knight at charliefour moves to alphathree
+knight at charliefour moves to bravosix
+knight at charliefour moves to bravotwo
+knight at charliefour moves to deltasix
+knight at charliefour moves to deltatwo
+knight at charliefour moves to echofive
+knight at charliefour moves to echothree
 knight at charliefour takes knight
 knight at charliefour to alphafive
 knight at charliefour to alphathree
@@ -3738,12 +4352,22 @@ knight at charliefour to deltatwo
 knight at charliefour to echofive
 knight at charliefour to echothree
 knight at charlieone captures knight
+knight at charlieone moves to alphatwo
+knight at charlieone moves to bravothree
+knight at charlieone moves to deltathree
+knight at charlieone moves to echotwo
 knight at charlieone takes knight
 knight at charlieone to alphatwo
 knight at charlieone to bravothree
 knight at charlieone to deltathree
 knight at charlieone to echotwo
 knight at charlieseven captures knight
+knight at charlieseven moves to alphaeight
+knight at charlieseven moves to alphasix
+knight at charlieseven moves to bravofive
+knight at charlieseven moves to deltafive
+knight at charlieseven moves to echoeight
+knight at charlieseven moves to echosix
 knight at charlieseven takes knight
 knight at charlieseven to alphaeight
 knight at charlieseven to alphasix
@@ -3752,6 +4376,14 @@ knight at charlieseven to deltafive
 knight at charlieseven to echoeight
 knight at charlieseven to echosix
 knight at charliesix captures knight
+knight at charliesix moves to alphafive
+knight at charliesix moves to alphaseven
+knight at charliesix moves to bravoeight
+knight at charliesix moves to bravofour
+knight at charliesix moves to deltaeight
+knight at charliesix moves to deltafour
+knight at charliesix moves to echofive
+knight at charliesix moves to echoseven
 knight at charliesix takes knight
 knight at charliesix to alphafive
 knight at charliesix to alphaseven
@@ -3762,6 +4394,14 @@ knight at charliesix to deltafour
 knight at charliesix to echofive
 knight at charliesix to echoseven
 knight at charliethree captures knight
+knight at charliethree moves to alphafour
+knight at charliethree moves to alphatwo
+knight at charliethree moves to bravofive
+knight at charliethree moves to bravoone
+knight at charliethree moves to deltafive
+knight at charliethree moves to deltaone
+knight at charliethree moves to echofour
+knight at charliethree moves to echotwo
 knight at charliethree takes knight
 knight at charliethree to alphafour
 knight at charliethree to alphatwo
@@ -3772,6 +4412,12 @@ knight at charliethree to deltaone
 knight at charliethree to echofour
 knight at charliethree to echotwo
 knight at charlietwo captures knight
+knight at charlietwo moves to alphaone
+knight at charlietwo moves to alphathree
+knight at charlietwo moves to bravofour
+knight at charlietwo moves to deltafour
+knight at charlietwo moves to echoone
+knight at charlietwo moves to echothree
 knight at charlietwo takes knight
 knight at charlietwo to alphaone
 knight at charlietwo to alphathree
@@ -3780,12 +4426,24 @@ knight at charlietwo to deltafour
 knight at charlietwo to echoone
 knight at charlietwo to echothree
 knight at deltaeight captures knight
+knight at deltaeight moves to bravoseven
+knight at deltaeight moves to charliesix
+knight at deltaeight moves to echosix
+knight at deltaeight moves to foxtrotseven
 knight at deltaeight takes knight
 knight at deltaeight to bravoseven
 knight at deltaeight to charliesix
 knight at deltaeight to echosix
 knight at deltaeight to foxtrotseven
 knight at deltafive captures knight
+knight at deltafive moves to bravofour
+knight at deltafive moves to bravosix
+knight at deltafive moves to charlieseven
+knight at deltafive moves to charliethree
+knight at deltafive moves to echoseven
+knight at deltafive moves to echothree
+knight at deltafive moves to foxtrotfour
+knight at deltafive moves to foxtrotsix
 knight at deltafive takes knight
 knight at deltafive to bravofour
 knight at deltafive to bravosix
@@ -3796,6 +4454,14 @@ knight at deltafive to echothree
 knight at deltafive to foxtrotfour
 knight at deltafive to foxtrotsix
 knight at deltafour captures knight
+knight at deltafour moves to bravofive
+knight at deltafour moves to bravothree
+knight at deltafour moves to charliesix
+knight at deltafour moves to charlietwo
+knight at deltafour moves to echosix
+knight at deltafour moves to echotwo
+knight at deltafour moves to foxtrotfive
+knight at deltafour moves to foxtrotthree
 knight at deltafour takes knight
 knight at deltafour to bravofive
 knight at deltafour to bravothree
@@ -3806,12 +4472,22 @@ knight at deltafour to echotwo
 knight at deltafour to foxtrotfive
 knight at deltafour to foxtrotthree
 knight at deltaone captures knight
+knight at deltaone moves to bravotwo
+knight at deltaone moves to charliethree
+knight at deltaone moves to echothree
+knight at deltaone moves to foxtrottwo
 knight at deltaone takes knight
 knight at deltaone to bravotwo
 knight at deltaone to charliethree
 knight at deltaone to echothree
 knight at deltaone to foxtrottwo
 knight at deltaseven captures knight
+knight at deltaseven moves to bravoeight
+knight at deltaseven moves to bravosix
+knight at deltaseven moves to charliefive
+knight at deltaseven moves to echofive
+knight at deltaseven moves to foxtroteight
+knight at deltaseven moves to foxtrotsix
 knight at deltaseven takes knight
 knight at deltaseven to bravoeight
 knight at deltaseven to bravosix
@@ -3820,6 +4496,14 @@ knight at deltaseven to echofive
 knight at deltaseven to foxtroteight
 knight at deltaseven to foxtrotsix
 knight at deltasix captures knight
+knight at deltasix moves to bravofive
+knight at deltasix moves to bravoseven
+knight at deltasix moves to charlieeight
+knight at deltasix moves to charliefour
+knight at deltasix moves to echoeight
+knight at deltasix moves to echofour
+knight at deltasix moves to foxtrotfive
+knight at deltasix moves to foxtrotseven
 knight at deltasix takes knight
 knight at deltasix to bravofive
 knight at deltasix to bravoseven
@@ -3830,6 +4514,14 @@ knight at deltasix to echofour
 knight at deltasix to foxtrotfive
 knight at deltasix to foxtrotseven
 knight at deltathree captures knight
+knight at deltathree moves to bravofour
+knight at deltathree moves to bravotwo
+knight at deltathree moves to charliefive
+knight at deltathree moves to charlieone
+knight at deltathree moves to echofive
+knight at deltathree moves to echoone
+knight at deltathree moves to foxtrotfour
+knight at deltathree moves to foxtrottwo
 knight at deltathree takes knight
 knight at deltathree to bravofour
 knight at deltathree to bravotwo
@@ -3840,6 +4532,12 @@ knight at deltathree to echoone
 knight at deltathree to foxtrotfour
 knight at deltathree to foxtrottwo
 knight at deltatwo captures knight
+knight at deltatwo moves to bravoone
+knight at deltatwo moves to bravothree
+knight at deltatwo moves to charliefour
+knight at deltatwo moves to echofour
+knight at deltatwo moves to foxtrotone
+knight at deltatwo moves to foxtrotthree
 knight at deltatwo takes knight
 knight at deltatwo to bravoone
 knight at deltatwo to bravothree
@@ -3971,7 +4669,6 @@ knight captures foxtrotseven
 knight captures foxtrotsix
 knight captures foxtrotthree
 knight captures foxtrottwo
-knight captures knight
 knight captures knight at alphaeight
 knight captures knight at alphafive
 knight captures knight at alphafour
@@ -4020,6 +4717,7 @@ knight captures knight at foxtrotseven
 knight captures knight at foxtrotsix
 knight captures knight at foxtrotthree
 knight captures knight at foxtrottwo
+knight captures knight
 knight charlieeight captures alphaseven
 knight charlieeight captures bravosix
 knight charlieeight captures deltasix
@@ -4324,7 +5022,6 @@ knight takes foxtrotseven
 knight takes foxtrotsix
 knight takes foxtrotthree
 knight takes foxtrottwo
-knight takes knight
 knight takes knight at alphaeight
 knight takes knight at alphafive
 knight takes knight at alphafour
@@ -4373,6 +5070,7 @@ knight takes knight at foxtrotseven
 knight takes knight at foxtrotsix
 knight takes knight at foxtrotthree
 knight takes knight at foxtrottwo
+knight takes knight
 knight to alphaeight
 knight to alphafive
 knight to alphafour
@@ -4421,6 +5119,16 @@ knight to foxtrotseven
 knight to foxtrotsix
 knight to foxtrotthree
 knight to foxtrottwo
+level eight
+level five
+level four
+level one
+level seven
+level six
+level three
+level two
+level {number}
+microphone off
 move alphaeight to alphafive
 move alphaeight to alphafour
 move alphaeight to alphaone
@@ -7183,6 +7891,70 @@ move rook from deltatwo to echotwo
 move rook from deltatwo to foxtrottwo
 move rook from deltatwo to golftwo
 move rook from deltatwo to hoteltwo
+move to alphaeight
+move to alphafive
+move to alphafour
+move to alphaone
+move to alphaseven
+move to alphasix
+move to alphathree
+move to alphatwo
+move to bravoeight
+move to bravofive
+move to bravofour
+move to bravoone
+move to bravoseven
+move to bravosix
+move to bravothree
+move to bravotwo
+move to charlieeight
+move to charliefive
+move to charliefour
+move to charlieone
+move to charlieseven
+move to charliesix
+move to charliethree
+move to charlietwo
+move to deltaeight
+move to deltafive
+move to deltafour
+move to deltaone
+move to deltaseven
+move to deltasix
+move to deltathree
+move to deltatwo
+move to echoeight
+move to echofive
+move to echofour
+move to echoone
+move to echoseven
+move to echosix
+move to echothree
+move to echotwo
+move to foxtroteight
+move to foxtrotfive
+move to foxtrotfour
+move to foxtrotone
+move to foxtrotseven
+move to foxtrotsix
+move to foxtrotthree
+move to foxtrottwo
+move to golfeight
+move to golffive
+move to golffour
+move to golfone
+move to golfseven
+move to golfsix
+move to golfthree
+move to golftwo
+move to hoteleight
+move to hotelfive
+move to hotelfour
+move to hotelone
+move to hotelseven
+move to hotelsix
+move to hotelthree
+move to hoteltwo
 pawn alphafive captures alphasix
 pawn alphafive takes alphasix
 pawn alphafour captures alphafive
@@ -7200,90 +7972,122 @@ pawn alphatwo captures alphathree
 pawn alphatwo takes alphafour
 pawn alphatwo takes alphathree
 pawn at alphafive captures pawn
+pawn at alphafive moves to alphasix
 pawn at alphafive takes pawn
 pawn at alphafive to alphasix
 pawn at alphafour captures pawn
+pawn at alphafour moves to alphafive
 pawn at alphafour takes pawn
 pawn at alphafour to alphafive
 pawn at alphaone captures pawn
+pawn at alphaone moves to alphatwo
 pawn at alphaone takes pawn
 pawn at alphaone to alphatwo
 pawn at alphaseven captures pawn
+pawn at alphaseven moves to alphaeight
 pawn at alphaseven takes pawn
 pawn at alphaseven to alphaeight
 pawn at alphasix captures pawn
+pawn at alphasix moves to alphaseven
 pawn at alphasix takes pawn
 pawn at alphasix to alphaseven
 pawn at alphathree captures pawn
+pawn at alphathree moves to alphafour
 pawn at alphathree takes pawn
 pawn at alphathree to alphafour
 pawn at alphatwo captures pawn
+pawn at alphatwo moves to alphafour
+pawn at alphatwo moves to alphathree
 pawn at alphatwo takes pawn
 pawn at alphatwo to alphafour
 pawn at alphatwo to alphathree
 pawn at bravofive captures pawn
+pawn at bravofive moves to bravosix
 pawn at bravofive takes pawn
 pawn at bravofive to bravosix
 pawn at bravofour captures pawn
+pawn at bravofour moves to bravofive
 pawn at bravofour takes pawn
 pawn at bravofour to bravofive
 pawn at bravoone captures pawn
+pawn at bravoone moves to bravotwo
 pawn at bravoone takes pawn
 pawn at bravoone to bravotwo
 pawn at bravoseven captures pawn
+pawn at bravoseven moves to bravoeight
 pawn at bravoseven takes pawn
 pawn at bravoseven to bravoeight
 pawn at bravosix captures pawn
+pawn at bravosix moves to bravoseven
 pawn at bravosix takes pawn
 pawn at bravosix to bravoseven
 pawn at bravothree captures pawn
+pawn at bravothree moves to bravofour
 pawn at bravothree takes pawn
 pawn at bravothree to bravofour
 pawn at bravotwo captures pawn
+pawn at bravotwo moves to bravofour
+pawn at bravotwo moves to bravothree
 pawn at bravotwo takes pawn
 pawn at bravotwo to bravofour
 pawn at bravotwo to bravothree
 pawn at charliefive captures pawn
+pawn at charliefive moves to charliesix
 pawn at charliefive takes pawn
 pawn at charliefive to charliesix
 pawn at charliefour captures pawn
+pawn at charliefour moves to charliefive
 pawn at charliefour takes pawn
 pawn at charliefour to charliefive
 pawn at charlieone captures pawn
+pawn at charlieone moves to charlietwo
 pawn at charlieone takes pawn
 pawn at charlieone to charlietwo
 pawn at charlieseven captures pawn
+pawn at charlieseven moves to charlieeight
 pawn at charlieseven takes pawn
 pawn at charlieseven to charlieeight
 pawn at charliesix captures pawn
+pawn at charliesix moves to charlieseven
 pawn at charliesix takes pawn
 pawn at charliesix to charlieseven
 pawn at charliethree captures pawn
+pawn at charliethree moves to charliefour
 pawn at charliethree takes pawn
 pawn at charliethree to charliefour
 pawn at charlietwo captures pawn
+pawn at charlietwo moves to charliefour
+pawn at charlietwo moves to charliethree
 pawn at charlietwo takes pawn
 pawn at charlietwo to charliefour
 pawn at charlietwo to charliethree
 pawn at deltafive captures pawn
+pawn at deltafive moves to deltasix
 pawn at deltafive takes pawn
 pawn at deltafive to deltasix
 pawn at deltafour captures pawn
+pawn at deltafour moves to deltafive
 pawn at deltafour takes pawn
 pawn at deltafour to deltafive
 pawn at deltaone captures pawn
+pawn at deltaone moves to deltatwo
 pawn at deltaone takes pawn
 pawn at deltaone to deltatwo
 pawn at deltaseven captures pawn
+pawn at deltaseven moves to deltaeight
 pawn at deltaseven takes pawn
 pawn at deltaseven to deltaeight
 pawn at deltasix captures pawn
+pawn at deltasix moves to deltaseven
 pawn at deltasix takes pawn
 pawn at deltasix to deltaseven
 pawn at deltathree captures pawn
+pawn at deltathree moves to deltafour
 pawn at deltathree takes pawn
 pawn at deltathree to deltafour
 pawn at deltatwo captures pawn
+pawn at deltatwo moves to deltafour
+pawn at deltatwo moves to deltathree
 pawn at deltatwo takes pawn
 pawn at deltatwo to deltafour
 pawn at deltatwo to deltathree
@@ -7331,7 +8135,6 @@ pawn captures deltaseven
 pawn captures deltasix
 pawn captures deltathree
 pawn captures deltatwo
-pawn captures pawn
 pawn captures pawn at alphaeight
 pawn captures pawn at alphafive
 pawn captures pawn at alphafour
@@ -7360,6 +8163,7 @@ pawn captures pawn at deltaseven
 pawn captures pawn at deltasix
 pawn captures pawn at deltathree
 pawn captures pawn at deltatwo
+pawn captures pawn
 pawn charliefive captures charliesix
 pawn charliefive takes charliesix
 pawn charliefour captures charliefive
@@ -7448,7 +8252,6 @@ pawn takes deltaseven
 pawn takes deltasix
 pawn takes deltathree
 pawn takes deltatwo
-pawn takes pawn
 pawn takes pawn at alphaeight
 pawn takes pawn at alphafive
 pawn takes pawn at alphafour
@@ -7477,6 +8280,7 @@ pawn takes pawn at deltaseven
 pawn takes pawn at deltasix
 pawn takes pawn at deltathree
 pawn takes pawn at deltatwo
+pawn takes pawn
 pawn to alphaeight
 pawn to alphafive
 pawn to alphafour
@@ -7505,12 +8309,20 @@ pawn to deltaseven
 pawn to deltasix
 pawn to deltathree
 pawn to deltatwo
+play against computer
 play black
+play in room eight
+play in room five
+play in room four
+play in room one
+play in room seven
+play in room six
+play in room three
+play in room two
+play in room {number}
 play white
 promote to bishop
-promote to king
 promote to knight
-promote to pawn
 promote to queen
 promote to rook
 queen alphaeight captures alphafive
@@ -7850,6 +8662,27 @@ queen alphatwo takes golfeight
 queen alphatwo takes golftwo
 queen alphatwo takes hoteltwo
 queen at alphaeight captures queen
+queen at alphaeight moves to alphafive
+queen at alphaeight moves to alphafour
+queen at alphaeight moves to alphaone
+queen at alphaeight moves to alphaseven
+queen at alphaeight moves to alphasix
+queen at alphaeight moves to alphathree
+queen at alphaeight moves to alphatwo
+queen at alphaeight moves to bravoeight
+queen at alphaeight moves to bravoseven
+queen at alphaeight moves to charlieeight
+queen at alphaeight moves to charliesix
+queen at alphaeight moves to deltaeight
+queen at alphaeight moves to deltafive
+queen at alphaeight moves to echoeight
+queen at alphaeight moves to echofour
+queen at alphaeight moves to foxtroteight
+queen at alphaeight moves to foxtrotthree
+queen at alphaeight moves to golfeight
+queen at alphaeight moves to golftwo
+queen at alphaeight moves to hoteleight
+queen at alphaeight moves to hotelone
 queen at alphaeight takes queen
 queen at alphaeight to alphafive
 queen at alphaeight to alphafour
@@ -7873,6 +8706,27 @@ queen at alphaeight to golftwo
 queen at alphaeight to hoteleight
 queen at alphaeight to hotelone
 queen at alphafive captures queen
+queen at alphafive moves to alphaeight
+queen at alphafive moves to alphafour
+queen at alphafive moves to alphaone
+queen at alphafive moves to alphaseven
+queen at alphafive moves to alphasix
+queen at alphafive moves to alphathree
+queen at alphafive moves to alphatwo
+queen at alphafive moves to bravofive
+queen at alphafive moves to bravofour
+queen at alphafive moves to bravosix
+queen at alphafive moves to charliefive
+queen at alphafive moves to charlieseven
+queen at alphafive moves to charliethree
+queen at alphafive moves to deltaeight
+queen at alphafive moves to deltafive
+queen at alphafive moves to deltatwo
+queen at alphafive moves to echofive
+queen at alphafive moves to echoone
+queen at alphafive moves to foxtrotfive
+queen at alphafive moves to golffive
+queen at alphafive moves to hotelfive
 queen at alphafive takes queen
 queen at alphafive to alphaeight
 queen at alphafive to alphafour
@@ -7896,6 +8750,27 @@ queen at alphafive to foxtrotfive
 queen at alphafive to golffive
 queen at alphafive to hotelfive
 queen at alphafour captures queen
+queen at alphafour moves to alphaeight
+queen at alphafour moves to alphafive
+queen at alphafour moves to alphaone
+queen at alphafour moves to alphaseven
+queen at alphafour moves to alphasix
+queen at alphafour moves to alphathree
+queen at alphafour moves to alphatwo
+queen at alphafour moves to bravofive
+queen at alphafour moves to bravofour
+queen at alphafour moves to bravothree
+queen at alphafour moves to charliefour
+queen at alphafour moves to charliesix
+queen at alphafour moves to charlietwo
+queen at alphafour moves to deltafour
+queen at alphafour moves to deltaone
+queen at alphafour moves to deltaseven
+queen at alphafour moves to echoeight
+queen at alphafour moves to echofour
+queen at alphafour moves to foxtrotfour
+queen at alphafour moves to golffour
+queen at alphafour moves to hotelfour
 queen at alphafour takes queen
 queen at alphafour to alphaeight
 queen at alphafour to alphafive
@@ -7919,6 +8794,27 @@ queen at alphafour to foxtrotfour
 queen at alphafour to golffour
 queen at alphafour to hotelfour
 queen at alphaone captures queen
+queen at alphaone moves to alphaeight
+queen at alphaone moves to alphafive
+queen at alphaone moves to alphafour
+queen at alphaone moves to alphaseven
+queen at alphaone moves to alphasix
+queen at alphaone moves to alphathree
+queen at alphaone moves to alphatwo
+queen at alphaone moves to bravoone
+queen at alphaone moves to bravotwo
+queen at alphaone moves to charlieone
+queen at alphaone moves to charliethree
+queen at alphaone moves to deltafour
+queen at alphaone moves to deltaone
+queen at alphaone moves to echofive
+queen at alphaone moves to echoone
+queen at alphaone moves to foxtrotone
+queen at alphaone moves to foxtrotsix
+queen at alphaone moves to golfone
+queen at alphaone moves to golfseven
+queen at alphaone moves to hoteleight
+queen at alphaone moves to hotelone
 queen at alphaone takes queen
 queen at alphaone to alphaeight
 queen at alphaone to alphafive
@@ -7942,6 +8838,27 @@ queen at alphaone to golfseven
 queen at alphaone to hoteleight
 queen at alphaone to hotelone
 queen at alphaseven captures queen
+queen at alphaseven moves to alphaeight
+queen at alphaseven moves to alphafive
+queen at alphaseven moves to alphafour
+queen at alphaseven moves to alphaone
+queen at alphaseven moves to alphasix
+queen at alphaseven moves to alphathree
+queen at alphaseven moves to alphatwo
+queen at alphaseven moves to bravoeight
+queen at alphaseven moves to bravoseven
+queen at alphaseven moves to bravosix
+queen at alphaseven moves to charliefive
+queen at alphaseven moves to charlieseven
+queen at alphaseven moves to deltafour
+queen at alphaseven moves to deltaseven
+queen at alphaseven moves to echoseven
+queen at alphaseven moves to echothree
+queen at alphaseven moves to foxtrotseven
+queen at alphaseven moves to foxtrottwo
+queen at alphaseven moves to golfone
+queen at alphaseven moves to golfseven
+queen at alphaseven moves to hotelseven
 queen at alphaseven takes queen
 queen at alphaseven to alphaeight
 queen at alphaseven to alphafive
@@ -7965,6 +8882,27 @@ queen at alphaseven to golfone
 queen at alphaseven to golfseven
 queen at alphaseven to hotelseven
 queen at alphasix captures queen
+queen at alphasix moves to alphaeight
+queen at alphasix moves to alphafive
+queen at alphasix moves to alphafour
+queen at alphasix moves to alphaone
+queen at alphasix moves to alphaseven
+queen at alphasix moves to alphathree
+queen at alphasix moves to alphatwo
+queen at alphasix moves to bravofive
+queen at alphasix moves to bravoseven
+queen at alphasix moves to bravosix
+queen at alphasix moves to charlieeight
+queen at alphasix moves to charliefour
+queen at alphasix moves to charliesix
+queen at alphasix moves to deltasix
+queen at alphasix moves to deltathree
+queen at alphasix moves to echosix
+queen at alphasix moves to echotwo
+queen at alphasix moves to foxtrotone
+queen at alphasix moves to foxtrotsix
+queen at alphasix moves to golfsix
+queen at alphasix moves to hotelsix
 queen at alphasix takes queen
 queen at alphasix to alphaeight
 queen at alphasix to alphafive
@@ -7988,6 +8926,27 @@ queen at alphasix to foxtrotsix
 queen at alphasix to golfsix
 queen at alphasix to hotelsix
 queen at alphathree captures queen
+queen at alphathree moves to alphaeight
+queen at alphathree moves to alphafive
+queen at alphathree moves to alphafour
+queen at alphathree moves to alphaone
+queen at alphathree moves to alphaseven
+queen at alphathree moves to alphasix
+queen at alphathree moves to alphatwo
+queen at alphathree moves to bravofour
+queen at alphathree moves to bravothree
+queen at alphathree moves to bravotwo
+queen at alphathree moves to charliefive
+queen at alphathree moves to charlieone
+queen at alphathree moves to charliethree
+queen at alphathree moves to deltasix
+queen at alphathree moves to deltathree
+queen at alphathree moves to echoseven
+queen at alphathree moves to echothree
+queen at alphathree moves to foxtroteight
+queen at alphathree moves to foxtrotthree
+queen at alphathree moves to golfthree
+queen at alphathree moves to hotelthree
 queen at alphathree takes queen
 queen at alphathree to alphaeight
 queen at alphathree to alphafive
@@ -8011,6 +8970,27 @@ queen at alphathree to foxtrotthree
 queen at alphathree to golfthree
 queen at alphathree to hotelthree
 queen at alphatwo captures queen
+queen at alphatwo moves to alphaeight
+queen at alphatwo moves to alphafive
+queen at alphatwo moves to alphafour
+queen at alphatwo moves to alphaone
+queen at alphatwo moves to alphaseven
+queen at alphatwo moves to alphasix
+queen at alphatwo moves to alphathree
+queen at alphatwo moves to bravoone
+queen at alphatwo moves to bravothree
+queen at alphatwo moves to bravotwo
+queen at alphatwo moves to charliefour
+queen at alphatwo moves to charlietwo
+queen at alphatwo moves to deltafive
+queen at alphatwo moves to deltatwo
+queen at alphatwo moves to echosix
+queen at alphatwo moves to echotwo
+queen at alphatwo moves to foxtrotseven
+queen at alphatwo moves to foxtrottwo
+queen at alphatwo moves to golfeight
+queen at alphatwo moves to golftwo
+queen at alphatwo moves to hoteltwo
 queen at alphatwo takes queen
 queen at alphatwo to alphaeight
 queen at alphatwo to alphafive
@@ -8034,6 +9014,27 @@ queen at alphatwo to golfeight
 queen at alphatwo to golftwo
 queen at alphatwo to hoteltwo
 queen at bravoeight captures queen
+queen at bravoeight moves to alphaeight
+queen at bravoeight moves to alphaseven
+queen at bravoeight moves to bravofive
+queen at bravoeight moves to bravofour
+queen at bravoeight moves to bravoone
+queen at bravoeight moves to bravoseven
+queen at bravoeight moves to bravosix
+queen at bravoeight moves to bravothree
+queen at bravoeight moves to bravotwo
+queen at bravoeight moves to charlieeight
+queen at bravoeight moves to charlieseven
+queen at bravoeight moves to deltaeight
+queen at bravoeight moves to deltasix
+queen at bravoeight moves to echoeight
+queen at bravoeight moves to echofive
+queen at bravoeight moves to foxtroteight
+queen at bravoeight moves to foxtrotfour
+queen at bravoeight moves to golfeight
+queen at bravoeight moves to golfthree
+queen at bravoeight moves to hoteleight
+queen at bravoeight moves to hoteltwo
 queen at bravoeight takes queen
 queen at bravoeight to alphaeight
 queen at bravoeight to alphaseven
@@ -8057,6 +9058,29 @@ queen at bravoeight to golfthree
 queen at bravoeight to hoteleight
 queen at bravoeight to hoteltwo
 queen at bravofive captures queen
+queen at bravofive moves to alphafive
+queen at bravofive moves to alphafour
+queen at bravofive moves to alphasix
+queen at bravofive moves to bravoeight
+queen at bravofive moves to bravofour
+queen at bravofive moves to bravoone
+queen at bravofive moves to bravoseven
+queen at bravofive moves to bravosix
+queen at bravofive moves to bravothree
+queen at bravofive moves to bravotwo
+queen at bravofive moves to charliefive
+queen at bravofive moves to charliefour
+queen at bravofive moves to charliesix
+queen at bravofive moves to deltafive
+queen at bravofive moves to deltaseven
+queen at bravofive moves to deltathree
+queen at bravofive moves to echoeight
+queen at bravofive moves to echofive
+queen at bravofive moves to echotwo
+queen at bravofive moves to foxtrotfive
+queen at bravofive moves to foxtrotone
+queen at bravofive moves to golffive
+queen at bravofive moves to hotelfive
 queen at bravofive takes queen
 queen at bravofive to alphafive
 queen at bravofive to alphafour
@@ -8082,6 +9106,29 @@ queen at bravofive to foxtrotone
 queen at bravofive to golffive
 queen at bravofive to hotelfive
 queen at bravofour captures queen
+queen at bravofour moves to alphafive
+queen at bravofour moves to alphafour
+queen at bravofour moves to alphathree
+queen at bravofour moves to bravoeight
+queen at bravofour moves to bravofive
+queen at bravofour moves to bravoone
+queen at bravofour moves to bravoseven
+queen at bravofour moves to bravosix
+queen at bravofour moves to bravothree
+queen at bravofour moves to bravotwo
+queen at bravofour moves to charliefive
+queen at bravofour moves to charliefour
+queen at bravofour moves to charliethree
+queen at bravofour moves to deltafour
+queen at bravofour moves to deltasix
+queen at bravofour moves to deltatwo
+queen at bravofour moves to echofour
+queen at bravofour moves to echoone
+queen at bravofour moves to echoseven
+queen at bravofour moves to foxtroteight
+queen at bravofour moves to foxtrotfour
+queen at bravofour moves to golffour
+queen at bravofour moves to hotelfour
 queen at bravofour takes queen
 queen at bravofour to alphafive
 queen at bravofour to alphafour
@@ -8107,6 +9154,27 @@ queen at bravofour to foxtrotfour
 queen at bravofour to golffour
 queen at bravofour to hotelfour
 queen at bravoone captures queen
+queen at bravoone moves to alphaone
+queen at bravoone moves to alphatwo
+queen at bravoone moves to bravoeight
+queen at bravoone moves to bravofive
+queen at bravoone moves to bravofour
+queen at bravoone moves to bravoseven
+queen at bravoone moves to bravosix
+queen at bravoone moves to bravothree
+queen at bravoone moves to bravotwo
+queen at bravoone moves to charlieone
+queen at bravoone moves to charlietwo
+queen at bravoone moves to deltaone
+queen at bravoone moves to deltathree
+queen at bravoone moves to echofour
+queen at bravoone moves to echoone
+queen at bravoone moves to foxtrotfive
+queen at bravoone moves to foxtrotone
+queen at bravoone moves to golfone
+queen at bravoone moves to golfsix
+queen at bravoone moves to hotelone
+queen at bravoone moves to hotelseven
 queen at bravoone takes queen
 queen at bravoone to alphaone
 queen at bravoone to alphatwo
@@ -8130,6 +9198,29 @@ queen at bravoone to golfsix
 queen at bravoone to hotelone
 queen at bravoone to hotelseven
 queen at bravoseven captures queen
+queen at bravoseven moves to alphaeight
+queen at bravoseven moves to alphaseven
+queen at bravoseven moves to alphasix
+queen at bravoseven moves to bravoeight
+queen at bravoseven moves to bravofive
+queen at bravoseven moves to bravofour
+queen at bravoseven moves to bravoone
+queen at bravoseven moves to bravosix
+queen at bravoseven moves to bravothree
+queen at bravoseven moves to bravotwo
+queen at bravoseven moves to charlieeight
+queen at bravoseven moves to charlieseven
+queen at bravoseven moves to charliesix
+queen at bravoseven moves to deltafive
+queen at bravoseven moves to deltaseven
+queen at bravoseven moves to echofour
+queen at bravoseven moves to echoseven
+queen at bravoseven moves to foxtrotseven
+queen at bravoseven moves to foxtrotthree
+queen at bravoseven moves to golfseven
+queen at bravoseven moves to golftwo
+queen at bravoseven moves to hotelone
+queen at bravoseven moves to hotelseven
 queen at bravoseven takes queen
 queen at bravoseven to alphaeight
 queen at bravoseven to alphaseven
@@ -8155,6 +9246,29 @@ queen at bravoseven to golftwo
 queen at bravoseven to hotelone
 queen at bravoseven to hotelseven
 queen at bravosix captures queen
+queen at bravosix moves to alphafive
+queen at bravosix moves to alphaseven
+queen at bravosix moves to alphasix
+queen at bravosix moves to bravoeight
+queen at bravosix moves to bravofive
+queen at bravosix moves to bravofour
+queen at bravosix moves to bravoone
+queen at bravosix moves to bravoseven
+queen at bravosix moves to bravothree
+queen at bravosix moves to bravotwo
+queen at bravosix moves to charliefive
+queen at bravosix moves to charlieseven
+queen at bravosix moves to charliesix
+queen at bravosix moves to deltaeight
+queen at bravosix moves to deltafour
+queen at bravosix moves to deltasix
+queen at bravosix moves to echosix
+queen at bravosix moves to echothree
+queen at bravosix moves to foxtrotsix
+queen at bravosix moves to foxtrottwo
+queen at bravosix moves to golfone
+queen at bravosix moves to golfsix
+queen at bravosix moves to hotelsix
 queen at bravosix takes queen
 queen at bravosix to alphafive
 queen at bravosix to alphaseven
@@ -8180,6 +9294,29 @@ queen at bravosix to golfone
 queen at bravosix to golfsix
 queen at bravosix to hotelsix
 queen at bravothree captures queen
+queen at bravothree moves to alphafour
+queen at bravothree moves to alphathree
+queen at bravothree moves to alphatwo
+queen at bravothree moves to bravoeight
+queen at bravothree moves to bravofive
+queen at bravothree moves to bravofour
+queen at bravothree moves to bravoone
+queen at bravothree moves to bravoseven
+queen at bravothree moves to bravosix
+queen at bravothree moves to bravotwo
+queen at bravothree moves to charliefour
+queen at bravothree moves to charliethree
+queen at bravothree moves to charlietwo
+queen at bravothree moves to deltafive
+queen at bravothree moves to deltaone
+queen at bravothree moves to deltathree
+queen at bravothree moves to echosix
+queen at bravothree moves to echothree
+queen at bravothree moves to foxtrotseven
+queen at bravothree moves to foxtrotthree
+queen at bravothree moves to golfeight
+queen at bravothree moves to golfthree
+queen at bravothree moves to hotelthree
 queen at bravothree takes queen
 queen at bravothree to alphafour
 queen at bravothree to alphathree
@@ -8205,6 +9342,29 @@ queen at bravothree to golfeight
 queen at bravothree to golfthree
 queen at bravothree to hotelthree
 queen at bravotwo captures queen
+queen at bravotwo moves to alphaone
+queen at bravotwo moves to alphathree
+queen at bravotwo moves to alphatwo
+queen at bravotwo moves to bravoeight
+queen at bravotwo moves to bravofive
+queen at bravotwo moves to bravofour
+queen at bravotwo moves to bravoone
+queen at bravotwo moves to bravoseven
+queen at bravotwo moves to bravosix
+queen at bravotwo moves to bravothree
+queen at bravotwo moves to charlieone
+queen at bravotwo moves to charliethree
+queen at bravotwo moves to charlietwo
+queen at bravotwo moves to deltafour
+queen at bravotwo moves to deltatwo
+queen at bravotwo moves to echofive
+queen at bravotwo moves to echotwo
+queen at bravotwo moves to foxtrotsix
+queen at bravotwo moves to foxtrottwo
+queen at bravotwo moves to golfseven
+queen at bravotwo moves to golftwo
+queen at bravotwo moves to hoteleight
+queen at bravotwo moves to hoteltwo
 queen at bravotwo takes queen
 queen at bravotwo to alphaone
 queen at bravotwo to alphathree
@@ -8230,6 +9390,27 @@ queen at bravotwo to golftwo
 queen at bravotwo to hoteleight
 queen at bravotwo to hoteltwo
 queen at charlieeight captures queen
+queen at charlieeight moves to alphaeight
+queen at charlieeight moves to alphasix
+queen at charlieeight moves to bravoeight
+queen at charlieeight moves to bravoseven
+queen at charlieeight moves to charliefive
+queen at charlieeight moves to charliefour
+queen at charlieeight moves to charlieone
+queen at charlieeight moves to charlieseven
+queen at charlieeight moves to charliesix
+queen at charlieeight moves to charliethree
+queen at charlieeight moves to charlietwo
+queen at charlieeight moves to deltaeight
+queen at charlieeight moves to deltaseven
+queen at charlieeight moves to echoeight
+queen at charlieeight moves to echosix
+queen at charlieeight moves to foxtroteight
+queen at charlieeight moves to foxtrotfive
+queen at charlieeight moves to golfeight
+queen at charlieeight moves to golffour
+queen at charlieeight moves to hoteleight
+queen at charlieeight moves to hotelthree
 queen at charlieeight takes queen
 queen at charlieeight to alphaeight
 queen at charlieeight to alphasix
@@ -8253,6 +9434,31 @@ queen at charlieeight to golffour
 queen at charlieeight to hoteleight
 queen at charlieeight to hotelthree
 queen at charliefive captures queen
+queen at charliefive moves to alphafive
+queen at charliefive moves to alphaseven
+queen at charliefive moves to alphathree
+queen at charliefive moves to bravofive
+queen at charliefive moves to bravofour
+queen at charliefive moves to bravosix
+queen at charliefive moves to charlieeight
+queen at charliefive moves to charliefour
+queen at charliefive moves to charlieone
+queen at charliefive moves to charlieseven
+queen at charliefive moves to charliesix
+queen at charliefive moves to charliethree
+queen at charliefive moves to charlietwo
+queen at charliefive moves to deltafive
+queen at charliefive moves to deltafour
+queen at charliefive moves to deltasix
+queen at charliefive moves to echofive
+queen at charliefive moves to echoseven
+queen at charliefive moves to echothree
+queen at charliefive moves to foxtroteight
+queen at charliefive moves to foxtrotfive
+queen at charliefive moves to foxtrottwo
+queen at charliefive moves to golffive
+queen at charliefive moves to golfone
+queen at charliefive moves to hotelfive
 queen at charliefive takes queen
 queen at charliefive to alphafive
 queen at charliefive to alphaseven
@@ -8280,6 +9486,31 @@ queen at charliefive to golffive
 queen at charliefive to golfone
 queen at charliefive to hotelfive
 queen at charliefour captures queen
+queen at charliefour moves to alphafour
+queen at charliefour moves to alphasix
+queen at charliefour moves to alphatwo
+queen at charliefour moves to bravofive
+queen at charliefour moves to bravofour
+queen at charliefour moves to bravothree
+queen at charliefour moves to charlieeight
+queen at charliefour moves to charliefive
+queen at charliefour moves to charlieone
+queen at charliefour moves to charlieseven
+queen at charliefour moves to charliesix
+queen at charliefour moves to charliethree
+queen at charliefour moves to charlietwo
+queen at charliefour moves to deltafive
+queen at charliefour moves to deltafour
+queen at charliefour moves to deltathree
+queen at charliefour moves to echofour
+queen at charliefour moves to echosix
+queen at charliefour moves to echotwo
+queen at charliefour moves to foxtrotfour
+queen at charliefour moves to foxtrotone
+queen at charliefour moves to foxtrotseven
+queen at charliefour moves to golfeight
+queen at charliefour moves to golffour
+queen at charliefour moves to hotelfour
 queen at charliefour takes queen
 queen at charliefour to alphafour
 queen at charliefour to alphasix
@@ -8307,6 +9538,27 @@ queen at charliefour to golfeight
 queen at charliefour to golffour
 queen at charliefour to hotelfour
 queen at charlieone captures queen
+queen at charlieone moves to alphaone
+queen at charlieone moves to alphathree
+queen at charlieone moves to bravoone
+queen at charlieone moves to bravotwo
+queen at charlieone moves to charlieeight
+queen at charlieone moves to charliefive
+queen at charlieone moves to charliefour
+queen at charlieone moves to charlieseven
+queen at charlieone moves to charliesix
+queen at charlieone moves to charliethree
+queen at charlieone moves to charlietwo
+queen at charlieone moves to deltaone
+queen at charlieone moves to deltatwo
+queen at charlieone moves to echoone
+queen at charlieone moves to echothree
+queen at charlieone moves to foxtrotfour
+queen at charlieone moves to foxtrotone
+queen at charlieone moves to golffive
+queen at charlieone moves to golfone
+queen at charlieone moves to hotelone
+queen at charlieone moves to hotelsix
 queen at charlieone takes queen
 queen at charlieone to alphaone
 queen at charlieone to alphathree
@@ -8330,6 +9582,29 @@ queen at charlieone to golfone
 queen at charlieone to hotelone
 queen at charlieone to hotelsix
 queen at charlieseven captures queen
+queen at charlieseven moves to alphafive
+queen at charlieseven moves to alphaseven
+queen at charlieseven moves to bravoeight
+queen at charlieseven moves to bravoseven
+queen at charlieseven moves to bravosix
+queen at charlieseven moves to charlieeight
+queen at charlieseven moves to charliefive
+queen at charlieseven moves to charliefour
+queen at charlieseven moves to charlieone
+queen at charlieseven moves to charliesix
+queen at charlieseven moves to charliethree
+queen at charlieseven moves to charlietwo
+queen at charlieseven moves to deltaeight
+queen at charlieseven moves to deltaseven
+queen at charlieseven moves to deltasix
+queen at charlieseven moves to echofive
+queen at charlieseven moves to echoseven
+queen at charlieseven moves to foxtrotfour
+queen at charlieseven moves to foxtrotseven
+queen at charlieseven moves to golfseven
+queen at charlieseven moves to golfthree
+queen at charlieseven moves to hotelseven
+queen at charlieseven moves to hoteltwo
 queen at charlieseven takes queen
 queen at charlieseven to alphafive
 queen at charlieseven to alphaseven
@@ -8355,6 +9630,31 @@ queen at charlieseven to golfthree
 queen at charlieseven to hotelseven
 queen at charlieseven to hoteltwo
 queen at charliesix captures queen
+queen at charliesix moves to alphaeight
+queen at charliesix moves to alphafour
+queen at charliesix moves to alphasix
+queen at charliesix moves to bravofive
+queen at charliesix moves to bravoseven
+queen at charliesix moves to bravosix
+queen at charliesix moves to charlieeight
+queen at charliesix moves to charliefive
+queen at charliesix moves to charliefour
+queen at charliesix moves to charlieone
+queen at charliesix moves to charlieseven
+queen at charliesix moves to charliethree
+queen at charliesix moves to charlietwo
+queen at charliesix moves to deltafive
+queen at charliesix moves to deltaseven
+queen at charliesix moves to deltasix
+queen at charliesix moves to echoeight
+queen at charliesix moves to echofour
+queen at charliesix moves to echosix
+queen at charliesix moves to foxtrotsix
+queen at charliesix moves to foxtrotthree
+queen at charliesix moves to golfsix
+queen at charliesix moves to golftwo
+queen at charliesix moves to hotelone
+queen at charliesix moves to hotelsix
 queen at charliesix takes queen
 queen at charliesix to alphaeight
 queen at charliesix to alphafour
@@ -8382,6 +9682,31 @@ queen at charliesix to golftwo
 queen at charliesix to hotelone
 queen at charliesix to hotelsix
 queen at charliethree captures queen
+queen at charliethree moves to alphafive
+queen at charliethree moves to alphaone
+queen at charliethree moves to alphathree
+queen at charliethree moves to bravofour
+queen at charliethree moves to bravothree
+queen at charliethree moves to bravotwo
+queen at charliethree moves to charlieeight
+queen at charliethree moves to charliefive
+queen at charliethree moves to charliefour
+queen at charliethree moves to charlieone
+queen at charliethree moves to charlieseven
+queen at charliethree moves to charliesix
+queen at charliethree moves to charlietwo
+queen at charliethree moves to deltafour
+queen at charliethree moves to deltathree
+queen at charliethree moves to deltatwo
+queen at charliethree moves to echofive
+queen at charliethree moves to echoone
+queen at charliethree moves to echothree
+queen at charliethree moves to foxtrotsix
+queen at charliethree moves to foxtrotthree
+queen at charliethree moves to golfseven
+queen at charliethree moves to golfthree
+queen at charliethree moves to hoteleight
+queen at charliethree moves to hotelthree
 queen at charliethree takes queen
 queen at charliethree to alphafive
 queen at charliethree to alphaone
@@ -8409,6 +9734,29 @@ queen at charliethree to golfthree
 queen at charliethree to hoteleight
 queen at charliethree to hotelthree
 queen at charlietwo captures queen
+queen at charlietwo moves to alphafour
+queen at charlietwo moves to alphatwo
+queen at charlietwo moves to bravoone
+queen at charlietwo moves to bravothree
+queen at charlietwo moves to bravotwo
+queen at charlietwo moves to charlieeight
+queen at charlietwo moves to charliefive
+queen at charlietwo moves to charliefour
+queen at charlietwo moves to charlieone
+queen at charlietwo moves to charlieseven
+queen at charlietwo moves to charliesix
+queen at charlietwo moves to charliethree
+queen at charlietwo moves to deltaone
+queen at charlietwo moves to deltathree
+queen at charlietwo moves to deltatwo
+queen at charlietwo moves to echofour
+queen at charlietwo moves to echotwo
+queen at charlietwo moves to foxtrotfive
+queen at charlietwo moves to foxtrottwo
+queen at charlietwo moves to golfsix
+queen at charlietwo moves to golftwo
+queen at charlietwo moves to hotelseven
+queen at charlietwo moves to hoteltwo
 queen at charlietwo takes queen
 queen at charlietwo to alphafour
 queen at charlietwo to alphatwo
@@ -8434,6 +9782,27 @@ queen at charlietwo to golftwo
 queen at charlietwo to hotelseven
 queen at charlietwo to hoteltwo
 queen at deltaeight captures queen
+queen at deltaeight moves to alphaeight
+queen at deltaeight moves to alphafive
+queen at deltaeight moves to bravoeight
+queen at deltaeight moves to bravosix
+queen at deltaeight moves to charlieeight
+queen at deltaeight moves to charlieseven
+queen at deltaeight moves to deltafive
+queen at deltaeight moves to deltafour
+queen at deltaeight moves to deltaone
+queen at deltaeight moves to deltaseven
+queen at deltaeight moves to deltasix
+queen at deltaeight moves to deltathree
+queen at deltaeight moves to deltatwo
+queen at deltaeight moves to echoeight
+queen at deltaeight moves to echoseven
+queen at deltaeight moves to foxtroteight
+queen at deltaeight moves to foxtrotsix
+queen at deltaeight moves to golfeight
+queen at deltaeight moves to golffive
+queen at deltaeight moves to hoteleight
+queen at deltaeight moves to hotelfour
 queen at deltaeight takes queen
 queen at deltaeight to alphaeight
 queen at deltaeight to alphafive
@@ -8457,6 +9826,33 @@ queen at deltaeight to golffive
 queen at deltaeight to hoteleight
 queen at deltaeight to hotelfour
 queen at deltafive captures queen
+queen at deltafive moves to alphaeight
+queen at deltafive moves to alphafive
+queen at deltafive moves to alphatwo
+queen at deltafive moves to bravofive
+queen at deltafive moves to bravoseven
+queen at deltafive moves to bravothree
+queen at deltafive moves to charliefive
+queen at deltafive moves to charliefour
+queen at deltafive moves to charliesix
+queen at deltafive moves to deltaeight
+queen at deltafive moves to deltafour
+queen at deltafive moves to deltaone
+queen at deltafive moves to deltaseven
+queen at deltafive moves to deltasix
+queen at deltafive moves to deltathree
+queen at deltafive moves to deltatwo
+queen at deltafive moves to echofive
+queen at deltafive moves to echofour
+queen at deltafive moves to echosix
+queen at deltafive moves to foxtrotfive
+queen at deltafive moves to foxtrotseven
+queen at deltafive moves to foxtrotthree
+queen at deltafive moves to golfeight
+queen at deltafive moves to golffive
+queen at deltafive moves to golftwo
+queen at deltafive moves to hotelfive
+queen at deltafive moves to hotelone
 queen at deltafive takes queen
 queen at deltafive to alphaeight
 queen at deltafive to alphafive
@@ -8486,6 +9882,33 @@ queen at deltafive to golftwo
 queen at deltafive to hotelfive
 queen at deltafive to hotelone
 queen at deltafour captures queen
+queen at deltafour moves to alphafour
+queen at deltafour moves to alphaone
+queen at deltafour moves to alphaseven
+queen at deltafour moves to bravofour
+queen at deltafour moves to bravosix
+queen at deltafour moves to bravotwo
+queen at deltafour moves to charliefive
+queen at deltafour moves to charliefour
+queen at deltafour moves to charliethree
+queen at deltafour moves to deltaeight
+queen at deltafour moves to deltafive
+queen at deltafour moves to deltaone
+queen at deltafour moves to deltaseven
+queen at deltafour moves to deltasix
+queen at deltafour moves to deltathree
+queen at deltafour moves to deltatwo
+queen at deltafour moves to echofive
+queen at deltafour moves to echofour
+queen at deltafour moves to echothree
+queen at deltafour moves to foxtrotfour
+queen at deltafour moves to foxtrotsix
+queen at deltafour moves to foxtrottwo
+queen at deltafour moves to golffour
+queen at deltafour moves to golfone
+queen at deltafour moves to golfseven
+queen at deltafour moves to hoteleight
+queen at deltafour moves to hotelfour
 queen at deltafour takes queen
 queen at deltafour to alphafour
 queen at deltafour to alphaone
@@ -8515,6 +9938,27 @@ queen at deltafour to golfseven
 queen at deltafour to hoteleight
 queen at deltafour to hotelfour
 queen at deltaone captures queen
+queen at deltaone moves to alphafour
+queen at deltaone moves to alphaone
+queen at deltaone moves to bravoone
+queen at deltaone moves to bravothree
+queen at deltaone moves to charlieone
+queen at deltaone moves to charlietwo
+queen at deltaone moves to deltaeight
+queen at deltaone moves to deltafive
+queen at deltaone moves to deltafour
+queen at deltaone moves to deltaseven
+queen at deltaone moves to deltasix
+queen at deltaone moves to deltathree
+queen at deltaone moves to deltatwo
+queen at deltaone moves to echoone
+queen at deltaone moves to echotwo
+queen at deltaone moves to foxtrotone
+queen at deltaone moves to foxtrotthree
+queen at deltaone moves to golffour
+queen at deltaone moves to golfone
+queen at deltaone moves to hotelfive
+queen at deltaone moves to hotelone
 queen at deltaone takes queen
 queen at deltaone to alphafour
 queen at deltaone to alphaone
@@ -8538,6 +9982,29 @@ queen at deltaone to golfone
 queen at deltaone to hotelfive
 queen at deltaone to hotelone
 queen at deltaseven captures queen
+queen at deltaseven moves to alphafour
+queen at deltaseven moves to alphaseven
+queen at deltaseven moves to bravofive
+queen at deltaseven moves to bravoseven
+queen at deltaseven moves to charlieeight
+queen at deltaseven moves to charlieseven
+queen at deltaseven moves to charliesix
+queen at deltaseven moves to deltaeight
+queen at deltaseven moves to deltafive
+queen at deltaseven moves to deltafour
+queen at deltaseven moves to deltaone
+queen at deltaseven moves to deltasix
+queen at deltaseven moves to deltathree
+queen at deltaseven moves to deltatwo
+queen at deltaseven moves to echoeight
+queen at deltaseven moves to echoseven
+queen at deltaseven moves to echosix
+queen at deltaseven moves to foxtrotfive
+queen at deltaseven moves to foxtrotseven
+queen at deltaseven moves to golffour
+queen at deltaseven moves to golfseven
+queen at deltaseven moves to hotelseven
+queen at deltaseven moves to hotelthree
 queen at deltaseven takes queen
 queen at deltaseven to alphafour
 queen at deltaseven to alphaseven
@@ -8563,6 +10030,31 @@ queen at deltaseven to golfseven
 queen at deltaseven to hotelseven
 queen at deltaseven to hotelthree
 queen at deltasix captures queen
+queen at deltasix moves to alphasix
+queen at deltasix moves to alphathree
+queen at deltasix moves to bravoeight
+queen at deltasix moves to bravofour
+queen at deltasix moves to bravosix
+queen at deltasix moves to charliefive
+queen at deltasix moves to charlieseven
+queen at deltasix moves to charliesix
+queen at deltasix moves to deltaeight
+queen at deltasix moves to deltafive
+queen at deltasix moves to deltafour
+queen at deltasix moves to deltaone
+queen at deltasix moves to deltaseven
+queen at deltasix moves to deltathree
+queen at deltasix moves to deltatwo
+queen at deltasix moves to echofive
+queen at deltasix moves to echoseven
+queen at deltasix moves to echosix
+queen at deltasix moves to foxtroteight
+queen at deltasix moves to foxtrotfour
+queen at deltasix moves to foxtrotsix
+queen at deltasix moves to golfsix
+queen at deltasix moves to golfthree
+queen at deltasix moves to hotelsix
+queen at deltasix moves to hoteltwo
 queen at deltasix takes queen
 queen at deltasix to alphasix
 queen at deltasix to alphathree
@@ -8590,6 +10082,31 @@ queen at deltasix to golfthree
 queen at deltasix to hotelsix
 queen at deltasix to hoteltwo
 queen at deltathree captures queen
+queen at deltathree moves to alphasix
+queen at deltathree moves to alphathree
+queen at deltathree moves to bravofive
+queen at deltathree moves to bravoone
+queen at deltathree moves to bravothree
+queen at deltathree moves to charliefour
+queen at deltathree moves to charliethree
+queen at deltathree moves to charlietwo
+queen at deltathree moves to deltaeight
+queen at deltathree moves to deltafive
+queen at deltathree moves to deltafour
+queen at deltathree moves to deltaone
+queen at deltathree moves to deltaseven
+queen at deltathree moves to deltasix
+queen at deltathree moves to deltatwo
+queen at deltathree moves to echofour
+queen at deltathree moves to echothree
+queen at deltathree moves to echotwo
+queen at deltathree moves to foxtrotfive
+queen at deltathree moves to foxtrotone
+queen at deltathree moves to foxtrotthree
+queen at deltathree moves to golfsix
+queen at deltathree moves to golfthree
+queen at deltathree moves to hotelseven
+queen at deltathree moves to hotelthree
 queen at deltathree takes queen
 queen at deltathree to alphasix
 queen at deltathree to alphathree
@@ -8617,6 +10134,29 @@ queen at deltathree to golfthree
 queen at deltathree to hotelseven
 queen at deltathree to hotelthree
 queen at deltatwo captures queen
+queen at deltatwo moves to alphafive
+queen at deltatwo moves to alphatwo
+queen at deltatwo moves to bravofour
+queen at deltatwo moves to bravotwo
+queen at deltatwo moves to charlieone
+queen at deltatwo moves to charliethree
+queen at deltatwo moves to charlietwo
+queen at deltatwo moves to deltaeight
+queen at deltatwo moves to deltafive
+queen at deltatwo moves to deltafour
+queen at deltatwo moves to deltaone
+queen at deltatwo moves to deltaseven
+queen at deltatwo moves to deltasix
+queen at deltatwo moves to deltathree
+queen at deltatwo moves to echoone
+queen at deltatwo moves to echothree
+queen at deltatwo moves to echotwo
+queen at deltatwo moves to foxtrotfour
+queen at deltatwo moves to foxtrottwo
+queen at deltatwo moves to golffive
+queen at deltatwo moves to golftwo
+queen at deltatwo moves to hotelsix
+queen at deltatwo moves to hoteltwo
 queen at deltatwo takes queen
 queen at deltatwo to alphafive
 queen at deltatwo to alphatwo
@@ -9065,7 +10605,6 @@ queen captures hotelseven
 queen captures hotelsix
 queen captures hotelthree
 queen captures hoteltwo
-queen captures queen
 queen captures queen at alphaeight
 queen captures queen at alphafive
 queen captures queen at alphafour
@@ -9130,6 +10669,7 @@ queen captures queen at hotelseven
 queen captures queen at hotelsix
 queen captures queen at hotelthree
 queen captures queen at hoteltwo
+queen captures queen
 queen charlieeight captures alphaeight
 queen charlieeight captures alphasix
 queen charlieeight captures bravoeight
@@ -10018,7 +11558,6 @@ queen takes hotelseven
 queen takes hotelsix
 queen takes hotelthree
 queen takes hoteltwo
-queen takes queen
 queen takes queen at alphaeight
 queen takes queen at alphafive
 queen takes queen at alphafour
@@ -10083,6 +11622,7 @@ queen takes queen at hotelseven
 queen takes queen at hotelsix
 queen takes queen at hotelthree
 queen takes queen at hoteltwo
+queen takes queen
 queen to alphaeight
 queen to alphafive
 queen to alphafour
@@ -10147,7 +11687,6 @@ queen to hotelseven
 queen to hotelsix
 queen to hotelthree
 queen to hoteltwo
-queenside castle
 queenside castling
 replay game
 reset game
@@ -10376,6 +11915,20 @@ rook alphatwo takes foxtrottwo
 rook alphatwo takes golftwo
 rook alphatwo takes hoteltwo
 rook at alphaeight captures rook
+rook at alphaeight moves to alphafive
+rook at alphaeight moves to alphafour
+rook at alphaeight moves to alphaone
+rook at alphaeight moves to alphaseven
+rook at alphaeight moves to alphasix
+rook at alphaeight moves to alphathree
+rook at alphaeight moves to alphatwo
+rook at alphaeight moves to bravoeight
+rook at alphaeight moves to charlieeight
+rook at alphaeight moves to deltaeight
+rook at alphaeight moves to echoeight
+rook at alphaeight moves to foxtroteight
+rook at alphaeight moves to golfeight
+rook at alphaeight moves to hoteleight
 rook at alphaeight takes rook
 rook at alphaeight to alphafive
 rook at alphaeight to alphafour
@@ -10392,6 +11945,20 @@ rook at alphaeight to foxtroteight
 rook at alphaeight to golfeight
 rook at alphaeight to hoteleight
 rook at alphafive captures rook
+rook at alphafive moves to alphaeight
+rook at alphafive moves to alphafour
+rook at alphafive moves to alphaone
+rook at alphafive moves to alphaseven
+rook at alphafive moves to alphasix
+rook at alphafive moves to alphathree
+rook at alphafive moves to alphatwo
+rook at alphafive moves to bravofive
+rook at alphafive moves to charliefive
+rook at alphafive moves to deltafive
+rook at alphafive moves to echofive
+rook at alphafive moves to foxtrotfive
+rook at alphafive moves to golffive
+rook at alphafive moves to hotelfive
 rook at alphafive takes rook
 rook at alphafive to alphaeight
 rook at alphafive to alphafour
@@ -10408,6 +11975,20 @@ rook at alphafive to foxtrotfive
 rook at alphafive to golffive
 rook at alphafive to hotelfive
 rook at alphafour captures rook
+rook at alphafour moves to alphaeight
+rook at alphafour moves to alphafive
+rook at alphafour moves to alphaone
+rook at alphafour moves to alphaseven
+rook at alphafour moves to alphasix
+rook at alphafour moves to alphathree
+rook at alphafour moves to alphatwo
+rook at alphafour moves to bravofour
+rook at alphafour moves to charliefour
+rook at alphafour moves to deltafour
+rook at alphafour moves to echofour
+rook at alphafour moves to foxtrotfour
+rook at alphafour moves to golffour
+rook at alphafour moves to hotelfour
 rook at alphafour takes rook
 rook at alphafour to alphaeight
 rook at alphafour to alphafive
@@ -10424,6 +12005,20 @@ rook at alphafour to foxtrotfour
 rook at alphafour to golffour
 rook at alphafour to hotelfour
 rook at alphaone captures rook
+rook at alphaone moves to alphaeight
+rook at alphaone moves to alphafive
+rook at alphaone moves to alphafour
+rook at alphaone moves to alphaseven
+rook at alphaone moves to alphasix
+rook at alphaone moves to alphathree
+rook at alphaone moves to alphatwo
+rook at alphaone moves to bravoone
+rook at alphaone moves to charlieone
+rook at alphaone moves to deltaone
+rook at alphaone moves to echoone
+rook at alphaone moves to foxtrotone
+rook at alphaone moves to golfone
+rook at alphaone moves to hotelone
 rook at alphaone takes rook
 rook at alphaone to alphaeight
 rook at alphaone to alphafive
@@ -10440,6 +12035,20 @@ rook at alphaone to foxtrotone
 rook at alphaone to golfone
 rook at alphaone to hotelone
 rook at alphaseven captures rook
+rook at alphaseven moves to alphaeight
+rook at alphaseven moves to alphafive
+rook at alphaseven moves to alphafour
+rook at alphaseven moves to alphaone
+rook at alphaseven moves to alphasix
+rook at alphaseven moves to alphathree
+rook at alphaseven moves to alphatwo
+rook at alphaseven moves to bravoseven
+rook at alphaseven moves to charlieseven
+rook at alphaseven moves to deltaseven
+rook at alphaseven moves to echoseven
+rook at alphaseven moves to foxtrotseven
+rook at alphaseven moves to golfseven
+rook at alphaseven moves to hotelseven
 rook at alphaseven takes rook
 rook at alphaseven to alphaeight
 rook at alphaseven to alphafive
@@ -10456,6 +12065,20 @@ rook at alphaseven to foxtrotseven
 rook at alphaseven to golfseven
 rook at alphaseven to hotelseven
 rook at alphasix captures rook
+rook at alphasix moves to alphaeight
+rook at alphasix moves to alphafive
+rook at alphasix moves to alphafour
+rook at alphasix moves to alphaone
+rook at alphasix moves to alphaseven
+rook at alphasix moves to alphathree
+rook at alphasix moves to alphatwo
+rook at alphasix moves to bravosix
+rook at alphasix moves to charliesix
+rook at alphasix moves to deltasix
+rook at alphasix moves to echosix
+rook at alphasix moves to foxtrotsix
+rook at alphasix moves to golfsix
+rook at alphasix moves to hotelsix
 rook at alphasix takes rook
 rook at alphasix to alphaeight
 rook at alphasix to alphafive
@@ -10472,6 +12095,20 @@ rook at alphasix to foxtrotsix
 rook at alphasix to golfsix
 rook at alphasix to hotelsix
 rook at alphathree captures rook
+rook at alphathree moves to alphaeight
+rook at alphathree moves to alphafive
+rook at alphathree moves to alphafour
+rook at alphathree moves to alphaone
+rook at alphathree moves to alphaseven
+rook at alphathree moves to alphasix
+rook at alphathree moves to alphatwo
+rook at alphathree moves to bravothree
+rook at alphathree moves to charliethree
+rook at alphathree moves to deltathree
+rook at alphathree moves to echothree
+rook at alphathree moves to foxtrotthree
+rook at alphathree moves to golfthree
+rook at alphathree moves to hotelthree
 rook at alphathree takes rook
 rook at alphathree to alphaeight
 rook at alphathree to alphafive
@@ -10488,6 +12125,20 @@ rook at alphathree to foxtrotthree
 rook at alphathree to golfthree
 rook at alphathree to hotelthree
 rook at alphatwo captures rook
+rook at alphatwo moves to alphaeight
+rook at alphatwo moves to alphafive
+rook at alphatwo moves to alphafour
+rook at alphatwo moves to alphaone
+rook at alphatwo moves to alphaseven
+rook at alphatwo moves to alphasix
+rook at alphatwo moves to alphathree
+rook at alphatwo moves to bravotwo
+rook at alphatwo moves to charlietwo
+rook at alphatwo moves to deltatwo
+rook at alphatwo moves to echotwo
+rook at alphatwo moves to foxtrottwo
+rook at alphatwo moves to golftwo
+rook at alphatwo moves to hoteltwo
 rook at alphatwo takes rook
 rook at alphatwo to alphaeight
 rook at alphatwo to alphafive
@@ -10504,6 +12155,20 @@ rook at alphatwo to foxtrottwo
 rook at alphatwo to golftwo
 rook at alphatwo to hoteltwo
 rook at bravoeight captures rook
+rook at bravoeight moves to alphaeight
+rook at bravoeight moves to bravofive
+rook at bravoeight moves to bravofour
+rook at bravoeight moves to bravoone
+rook at bravoeight moves to bravoseven
+rook at bravoeight moves to bravosix
+rook at bravoeight moves to bravothree
+rook at bravoeight moves to bravotwo
+rook at bravoeight moves to charlieeight
+rook at bravoeight moves to deltaeight
+rook at bravoeight moves to echoeight
+rook at bravoeight moves to foxtroteight
+rook at bravoeight moves to golfeight
+rook at bravoeight moves to hoteleight
 rook at bravoeight takes rook
 rook at bravoeight to alphaeight
 rook at bravoeight to bravofive
@@ -10520,6 +12185,20 @@ rook at bravoeight to foxtroteight
 rook at bravoeight to golfeight
 rook at bravoeight to hoteleight
 rook at bravofive captures rook
+rook at bravofive moves to alphafive
+rook at bravofive moves to bravoeight
+rook at bravofive moves to bravofour
+rook at bravofive moves to bravoone
+rook at bravofive moves to bravoseven
+rook at bravofive moves to bravosix
+rook at bravofive moves to bravothree
+rook at bravofive moves to bravotwo
+rook at bravofive moves to charliefive
+rook at bravofive moves to deltafive
+rook at bravofive moves to echofive
+rook at bravofive moves to foxtrotfive
+rook at bravofive moves to golffive
+rook at bravofive moves to hotelfive
 rook at bravofive takes rook
 rook at bravofive to alphafive
 rook at bravofive to bravoeight
@@ -10536,6 +12215,20 @@ rook at bravofive to foxtrotfive
 rook at bravofive to golffive
 rook at bravofive to hotelfive
 rook at bravofour captures rook
+rook at bravofour moves to alphafour
+rook at bravofour moves to bravoeight
+rook at bravofour moves to bravofive
+rook at bravofour moves to bravoone
+rook at bravofour moves to bravoseven
+rook at bravofour moves to bravosix
+rook at bravofour moves to bravothree
+rook at bravofour moves to bravotwo
+rook at bravofour moves to charliefour
+rook at bravofour moves to deltafour
+rook at bravofour moves to echofour
+rook at bravofour moves to foxtrotfour
+rook at bravofour moves to golffour
+rook at bravofour moves to hotelfour
 rook at bravofour takes rook
 rook at bravofour to alphafour
 rook at bravofour to bravoeight
@@ -10552,6 +12245,20 @@ rook at bravofour to foxtrotfour
 rook at bravofour to golffour
 rook at bravofour to hotelfour
 rook at bravoone captures rook
+rook at bravoone moves to alphaone
+rook at bravoone moves to bravoeight
+rook at bravoone moves to bravofive
+rook at bravoone moves to bravofour
+rook at bravoone moves to bravoseven
+rook at bravoone moves to bravosix
+rook at bravoone moves to bravothree
+rook at bravoone moves to bravotwo
+rook at bravoone moves to charlieone
+rook at bravoone moves to deltaone
+rook at bravoone moves to echoone
+rook at bravoone moves to foxtrotone
+rook at bravoone moves to golfone
+rook at bravoone moves to hotelone
 rook at bravoone takes rook
 rook at bravoone to alphaone
 rook at bravoone to bravoeight
@@ -10568,6 +12275,20 @@ rook at bravoone to foxtrotone
 rook at bravoone to golfone
 rook at bravoone to hotelone
 rook at bravoseven captures rook
+rook at bravoseven moves to alphaseven
+rook at bravoseven moves to bravoeight
+rook at bravoseven moves to bravofive
+rook at bravoseven moves to bravofour
+rook at bravoseven moves to bravoone
+rook at bravoseven moves to bravosix
+rook at bravoseven moves to bravothree
+rook at bravoseven moves to bravotwo
+rook at bravoseven moves to charlieseven
+rook at bravoseven moves to deltaseven
+rook at bravoseven moves to echoseven
+rook at bravoseven moves to foxtrotseven
+rook at bravoseven moves to golfseven
+rook at bravoseven moves to hotelseven
 rook at bravoseven takes rook
 rook at bravoseven to alphaseven
 rook at bravoseven to bravoeight
@@ -10584,6 +12305,20 @@ rook at bravoseven to foxtrotseven
 rook at bravoseven to golfseven
 rook at bravoseven to hotelseven
 rook at bravosix captures rook
+rook at bravosix moves to alphasix
+rook at bravosix moves to bravoeight
+rook at bravosix moves to bravofive
+rook at bravosix moves to bravofour
+rook at bravosix moves to bravoone
+rook at bravosix moves to bravoseven
+rook at bravosix moves to bravothree
+rook at bravosix moves to bravotwo
+rook at bravosix moves to charliesix
+rook at bravosix moves to deltasix
+rook at bravosix moves to echosix
+rook at bravosix moves to foxtrotsix
+rook at bravosix moves to golfsix
+rook at bravosix moves to hotelsix
 rook at bravosix takes rook
 rook at bravosix to alphasix
 rook at bravosix to bravoeight
@@ -10600,6 +12335,20 @@ rook at bravosix to foxtrotsix
 rook at bravosix to golfsix
 rook at bravosix to hotelsix
 rook at bravothree captures rook
+rook at bravothree moves to alphathree
+rook at bravothree moves to bravoeight
+rook at bravothree moves to bravofive
+rook at bravothree moves to bravofour
+rook at bravothree moves to bravoone
+rook at bravothree moves to bravoseven
+rook at bravothree moves to bravosix
+rook at bravothree moves to bravotwo
+rook at bravothree moves to charliethree
+rook at bravothree moves to deltathree
+rook at bravothree moves to echothree
+rook at bravothree moves to foxtrotthree
+rook at bravothree moves to golfthree
+rook at bravothree moves to hotelthree
 rook at bravothree takes rook
 rook at bravothree to alphathree
 rook at bravothree to bravoeight
@@ -10616,6 +12365,20 @@ rook at bravothree to foxtrotthree
 rook at bravothree to golfthree
 rook at bravothree to hotelthree
 rook at bravotwo captures rook
+rook at bravotwo moves to alphatwo
+rook at bravotwo moves to bravoeight
+rook at bravotwo moves to bravofive
+rook at bravotwo moves to bravofour
+rook at bravotwo moves to bravoone
+rook at bravotwo moves to bravoseven
+rook at bravotwo moves to bravosix
+rook at bravotwo moves to bravothree
+rook at bravotwo moves to charlietwo
+rook at bravotwo moves to deltatwo
+rook at bravotwo moves to echotwo
+rook at bravotwo moves to foxtrottwo
+rook at bravotwo moves to golftwo
+rook at bravotwo moves to hoteltwo
 rook at bravotwo takes rook
 rook at bravotwo to alphatwo
 rook at bravotwo to bravoeight
@@ -10632,6 +12395,20 @@ rook at bravotwo to foxtrottwo
 rook at bravotwo to golftwo
 rook at bravotwo to hoteltwo
 rook at charlieeight captures rook
+rook at charlieeight moves to alphaeight
+rook at charlieeight moves to bravoeight
+rook at charlieeight moves to charliefive
+rook at charlieeight moves to charliefour
+rook at charlieeight moves to charlieone
+rook at charlieeight moves to charlieseven
+rook at charlieeight moves to charliesix
+rook at charlieeight moves to charliethree
+rook at charlieeight moves to charlietwo
+rook at charlieeight moves to deltaeight
+rook at charlieeight moves to echoeight
+rook at charlieeight moves to foxtroteight
+rook at charlieeight moves to golfeight
+rook at charlieeight moves to hoteleight
 rook at charlieeight takes rook
 rook at charlieeight to alphaeight
 rook at charlieeight to bravoeight
@@ -10648,6 +12425,20 @@ rook at charlieeight to foxtroteight
 rook at charlieeight to golfeight
 rook at charlieeight to hoteleight
 rook at charliefive captures rook
+rook at charliefive moves to alphafive
+rook at charliefive moves to bravofive
+rook at charliefive moves to charlieeight
+rook at charliefive moves to charliefour
+rook at charliefive moves to charlieone
+rook at charliefive moves to charlieseven
+rook at charliefive moves to charliesix
+rook at charliefive moves to charliethree
+rook at charliefive moves to charlietwo
+rook at charliefive moves to deltafive
+rook at charliefive moves to echofive
+rook at charliefive moves to foxtrotfive
+rook at charliefive moves to golffive
+rook at charliefive moves to hotelfive
 rook at charliefive takes rook
 rook at charliefive to alphafive
 rook at charliefive to bravofive
@@ -10664,6 +12455,20 @@ rook at charliefive to foxtrotfive
 rook at charliefive to golffive
 rook at charliefive to hotelfive
 rook at charliefour captures rook
+rook at charliefour moves to alphafour
+rook at charliefour moves to bravofour
+rook at charliefour moves to charlieeight
+rook at charliefour moves to charliefive
+rook at charliefour moves to charlieone
+rook at charliefour moves to charlieseven
+rook at charliefour moves to charliesix
+rook at charliefour moves to charliethree
+rook at charliefour moves to charlietwo
+rook at charliefour moves to deltafour
+rook at charliefour moves to echofour
+rook at charliefour moves to foxtrotfour
+rook at charliefour moves to golffour
+rook at charliefour moves to hotelfour
 rook at charliefour takes rook
 rook at charliefour to alphafour
 rook at charliefour to bravofour
@@ -10680,6 +12485,20 @@ rook at charliefour to foxtrotfour
 rook at charliefour to golffour
 rook at charliefour to hotelfour
 rook at charlieone captures rook
+rook at charlieone moves to alphaone
+rook at charlieone moves to bravoone
+rook at charlieone moves to charlieeight
+rook at charlieone moves to charliefive
+rook at charlieone moves to charliefour
+rook at charlieone moves to charlieseven
+rook at charlieone moves to charliesix
+rook at charlieone moves to charliethree
+rook at charlieone moves to charlietwo
+rook at charlieone moves to deltaone
+rook at charlieone moves to echoone
+rook at charlieone moves to foxtrotone
+rook at charlieone moves to golfone
+rook at charlieone moves to hotelone
 rook at charlieone takes rook
 rook at charlieone to alphaone
 rook at charlieone to bravoone
@@ -10696,6 +12515,20 @@ rook at charlieone to foxtrotone
 rook at charlieone to golfone
 rook at charlieone to hotelone
 rook at charlieseven captures rook
+rook at charlieseven moves to alphaseven
+rook at charlieseven moves to bravoseven
+rook at charlieseven moves to charlieeight
+rook at charlieseven moves to charliefive
+rook at charlieseven moves to charliefour
+rook at charlieseven moves to charlieone
+rook at charlieseven moves to charliesix
+rook at charlieseven moves to charliethree
+rook at charlieseven moves to charlietwo
+rook at charlieseven moves to deltaseven
+rook at charlieseven moves to echoseven
+rook at charlieseven moves to foxtrotseven
+rook at charlieseven moves to golfseven
+rook at charlieseven moves to hotelseven
 rook at charlieseven takes rook
 rook at charlieseven to alphaseven
 rook at charlieseven to bravoseven
@@ -10712,6 +12545,20 @@ rook at charlieseven to foxtrotseven
 rook at charlieseven to golfseven
 rook at charlieseven to hotelseven
 rook at charliesix captures rook
+rook at charliesix moves to alphasix
+rook at charliesix moves to bravosix
+rook at charliesix moves to charlieeight
+rook at charliesix moves to charliefive
+rook at charliesix moves to charliefour
+rook at charliesix moves to charlieone
+rook at charliesix moves to charlieseven
+rook at charliesix moves to charliethree
+rook at charliesix moves to charlietwo
+rook at charliesix moves to deltasix
+rook at charliesix moves to echosix
+rook at charliesix moves to foxtrotsix
+rook at charliesix moves to golfsix
+rook at charliesix moves to hotelsix
 rook at charliesix takes rook
 rook at charliesix to alphasix
 rook at charliesix to bravosix
@@ -10728,6 +12575,20 @@ rook at charliesix to foxtrotsix
 rook at charliesix to golfsix
 rook at charliesix to hotelsix
 rook at charliethree captures rook
+rook at charliethree moves to alphathree
+rook at charliethree moves to bravothree
+rook at charliethree moves to charlieeight
+rook at charliethree moves to charliefive
+rook at charliethree moves to charliefour
+rook at charliethree moves to charlieone
+rook at charliethree moves to charlieseven
+rook at charliethree moves to charliesix
+rook at charliethree moves to charlietwo
+rook at charliethree moves to deltathree
+rook at charliethree moves to echothree
+rook at charliethree moves to foxtrotthree
+rook at charliethree moves to golfthree
+rook at charliethree moves to hotelthree
 rook at charliethree takes rook
 rook at charliethree to alphathree
 rook at charliethree to bravothree
@@ -10744,6 +12605,20 @@ rook at charliethree to foxtrotthree
 rook at charliethree to golfthree
 rook at charliethree to hotelthree
 rook at charlietwo captures rook
+rook at charlietwo moves to alphatwo
+rook at charlietwo moves to bravotwo
+rook at charlietwo moves to charlieeight
+rook at charlietwo moves to charliefive
+rook at charlietwo moves to charliefour
+rook at charlietwo moves to charlieone
+rook at charlietwo moves to charlieseven
+rook at charlietwo moves to charliesix
+rook at charlietwo moves to charliethree
+rook at charlietwo moves to deltatwo
+rook at charlietwo moves to echotwo
+rook at charlietwo moves to foxtrottwo
+rook at charlietwo moves to golftwo
+rook at charlietwo moves to hoteltwo
 rook at charlietwo takes rook
 rook at charlietwo to alphatwo
 rook at charlietwo to bravotwo
@@ -10760,6 +12635,20 @@ rook at charlietwo to foxtrottwo
 rook at charlietwo to golftwo
 rook at charlietwo to hoteltwo
 rook at deltaeight captures rook
+rook at deltaeight moves to alphaeight
+rook at deltaeight moves to bravoeight
+rook at deltaeight moves to charlieeight
+rook at deltaeight moves to deltafive
+rook at deltaeight moves to deltafour
+rook at deltaeight moves to deltaone
+rook at deltaeight moves to deltaseven
+rook at deltaeight moves to deltasix
+rook at deltaeight moves to deltathree
+rook at deltaeight moves to deltatwo
+rook at deltaeight moves to echoeight
+rook at deltaeight moves to foxtroteight
+rook at deltaeight moves to golfeight
+rook at deltaeight moves to hoteleight
 rook at deltaeight takes rook
 rook at deltaeight to alphaeight
 rook at deltaeight to bravoeight
@@ -10776,6 +12665,20 @@ rook at deltaeight to foxtroteight
 rook at deltaeight to golfeight
 rook at deltaeight to hoteleight
 rook at deltafive captures rook
+rook at deltafive moves to alphafive
+rook at deltafive moves to bravofive
+rook at deltafive moves to charliefive
+rook at deltafive moves to deltaeight
+rook at deltafive moves to deltafour
+rook at deltafive moves to deltaone
+rook at deltafive moves to deltaseven
+rook at deltafive moves to deltasix
+rook at deltafive moves to deltathree
+rook at deltafive moves to deltatwo
+rook at deltafive moves to echofive
+rook at deltafive moves to foxtrotfive
+rook at deltafive moves to golffive
+rook at deltafive moves to hotelfive
 rook at deltafive takes rook
 rook at deltafive to alphafive
 rook at deltafive to bravofive
@@ -10792,6 +12695,20 @@ rook at deltafive to foxtrotfive
 rook at deltafive to golffive
 rook at deltafive to hotelfive
 rook at deltafour captures rook
+rook at deltafour moves to alphafour
+rook at deltafour moves to bravofour
+rook at deltafour moves to charliefour
+rook at deltafour moves to deltaeight
+rook at deltafour moves to deltafive
+rook at deltafour moves to deltaone
+rook at deltafour moves to deltaseven
+rook at deltafour moves to deltasix
+rook at deltafour moves to deltathree
+rook at deltafour moves to deltatwo
+rook at deltafour moves to echofour
+rook at deltafour moves to foxtrotfour
+rook at deltafour moves to golffour
+rook at deltafour moves to hotelfour
 rook at deltafour takes rook
 rook at deltafour to alphafour
 rook at deltafour to bravofour
@@ -10808,6 +12725,20 @@ rook at deltafour to foxtrotfour
 rook at deltafour to golffour
 rook at deltafour to hotelfour
 rook at deltaone captures rook
+rook at deltaone moves to alphaone
+rook at deltaone moves to bravoone
+rook at deltaone moves to charlieone
+rook at deltaone moves to deltaeight
+rook at deltaone moves to deltafive
+rook at deltaone moves to deltafour
+rook at deltaone moves to deltaseven
+rook at deltaone moves to deltasix
+rook at deltaone moves to deltathree
+rook at deltaone moves to deltatwo
+rook at deltaone moves to echoone
+rook at deltaone moves to foxtrotone
+rook at deltaone moves to golfone
+rook at deltaone moves to hotelone
 rook at deltaone takes rook
 rook at deltaone to alphaone
 rook at deltaone to bravoone
@@ -10824,6 +12755,20 @@ rook at deltaone to foxtrotone
 rook at deltaone to golfone
 rook at deltaone to hotelone
 rook at deltaseven captures rook
+rook at deltaseven moves to alphaseven
+rook at deltaseven moves to bravoseven
+rook at deltaseven moves to charlieseven
+rook at deltaseven moves to deltaeight
+rook at deltaseven moves to deltafive
+rook at deltaseven moves to deltafour
+rook at deltaseven moves to deltaone
+rook at deltaseven moves to deltasix
+rook at deltaseven moves to deltathree
+rook at deltaseven moves to deltatwo
+rook at deltaseven moves to echoseven
+rook at deltaseven moves to foxtrotseven
+rook at deltaseven moves to golfseven
+rook at deltaseven moves to hotelseven
 rook at deltaseven takes rook
 rook at deltaseven to alphaseven
 rook at deltaseven to bravoseven
@@ -10840,6 +12785,20 @@ rook at deltaseven to foxtrotseven
 rook at deltaseven to golfseven
 rook at deltaseven to hotelseven
 rook at deltasix captures rook
+rook at deltasix moves to alphasix
+rook at deltasix moves to bravosix
+rook at deltasix moves to charliesix
+rook at deltasix moves to deltaeight
+rook at deltasix moves to deltafive
+rook at deltasix moves to deltafour
+rook at deltasix moves to deltaone
+rook at deltasix moves to deltaseven
+rook at deltasix moves to deltathree
+rook at deltasix moves to deltatwo
+rook at deltasix moves to echosix
+rook at deltasix moves to foxtrotsix
+rook at deltasix moves to golfsix
+rook at deltasix moves to hotelsix
 rook at deltasix takes rook
 rook at deltasix to alphasix
 rook at deltasix to bravosix
@@ -10856,6 +12815,20 @@ rook at deltasix to foxtrotsix
 rook at deltasix to golfsix
 rook at deltasix to hotelsix
 rook at deltathree captures rook
+rook at deltathree moves to alphathree
+rook at deltathree moves to bravothree
+rook at deltathree moves to charliethree
+rook at deltathree moves to deltaeight
+rook at deltathree moves to deltafive
+rook at deltathree moves to deltafour
+rook at deltathree moves to deltaone
+rook at deltathree moves to deltaseven
+rook at deltathree moves to deltasix
+rook at deltathree moves to deltatwo
+rook at deltathree moves to echothree
+rook at deltathree moves to foxtrotthree
+rook at deltathree moves to golfthree
+rook at deltathree moves to hotelthree
 rook at deltathree takes rook
 rook at deltathree to alphathree
 rook at deltathree to bravothree
@@ -10872,6 +12845,20 @@ rook at deltathree to foxtrotthree
 rook at deltathree to golfthree
 rook at deltathree to hotelthree
 rook at deltatwo captures rook
+rook at deltatwo moves to alphatwo
+rook at deltatwo moves to bravotwo
+rook at deltatwo moves to charlietwo
+rook at deltatwo moves to deltaeight
+rook at deltatwo moves to deltafive
+rook at deltatwo moves to deltafour
+rook at deltatwo moves to deltaone
+rook at deltatwo moves to deltaseven
+rook at deltatwo moves to deltasix
+rook at deltatwo moves to deltathree
+rook at deltatwo moves to echotwo
+rook at deltatwo moves to foxtrottwo
+rook at deltatwo moves to golftwo
+rook at deltatwo moves to hoteltwo
 rook at deltatwo takes rook
 rook at deltatwo to alphatwo
 rook at deltatwo to bravotwo
@@ -11175,7 +13162,6 @@ rook captures hotelseven
 rook captures hotelsix
 rook captures hotelthree
 rook captures hoteltwo
-rook captures rook
 rook captures rook at alphaeight
 rook captures rook at alphafive
 rook captures rook at alphafour
@@ -11240,6 +13226,7 @@ rook captures rook at hotelseven
 rook captures rook at hotelsix
 rook captures rook at hotelthree
 rook captures rook at hoteltwo
+rook captures rook
 rook charlieeight captures alphaeight
 rook charlieeight captures bravoeight
 rook charlieeight captures charliefive
@@ -11816,7 +13803,6 @@ rook takes hotelseven
 rook takes hotelsix
 rook takes hotelthree
 rook takes hoteltwo
-rook takes rook
 rook takes rook at alphaeight
 rook takes rook at alphafive
 rook takes rook at alphafour
@@ -11881,6 +13867,7 @@ rook takes rook at hotelseven
 rook takes rook at hotelsix
 rook takes rook at hotelthree
 rook takes rook at hoteltwo
+rook takes rook
 rook to alphaeight
 rook to alphafive
 rook to alphafour
@@ -11945,6 +13932,35 @@ rook to hotelseven
 rook to hotelsix
 rook to hotelthree
 rook to hoteltwo
+set difficulty level to eight
+set difficulty level to five
+set difficulty level to four
+set difficulty level to one
+set difficulty level to seven
+set difficulty level to six
+set difficulty level to three
+set difficulty level to two
+set difficulty level to {number}
+set difficulty to eight
+set difficulty to five
+set difficulty to four
+set difficulty to one
+set difficulty to seven
+set difficulty to six
+set difficulty to three
+set difficulty to two
+set difficulty to {number}
+set level to eight
+set level to five
+set level to four
+set level to one
+set level to seven
+set level to six
+set level to three
+set level to two
+set level to {number}
+show help
+show hint
 stalemate
 take alphaeight
 take alphafive
@@ -12011,8 +14027,8 @@ take hotelseven
 take hotelsix
 take hotelthree
 take hoteltwo
-undo
 undo move
+undo
 white bishop to alphaeight
 white bishop to alphafive
 white bishop to alphafour
@@ -12257,7 +14273,6 @@ white queen to hotelseven
 white queen to hotelsix
 white queen to hotelthree
 white queen to hoteltwo
-white resigns
 white rook to alphaeight
 white rook to alphafive
 white rook to alphafour

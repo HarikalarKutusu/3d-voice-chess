@@ -27,11 +27,11 @@ import { SocketVoice } from "./components/socketVoice";
 
 // Store
 import { useStore } from "./stores/vcstore";
-import {
-  PieceEnum,
-  VOICE_DEFAULT_LANGUAGE,
-  VOICE_LANGUAGES,
-} from "./helpers/voiceHelper";
+// import {
+//   PieceEnum,
+//   VOICE_DEFAULT_LANGUAGE,
+//   VOICE_LANGUAGES,
+// } from "./helpers/voiceHelper";
 
 extend({ DragControls });
 
