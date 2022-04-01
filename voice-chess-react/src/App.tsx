@@ -1,7 +1,7 @@
 //import "./App.scss";
 
 // React
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect } from "react";
 
 // THREE
 import { Object3D } from "three";
@@ -13,8 +13,8 @@ import {
   Stars,
   softShadows,
   OrbitControls,
-  GizmoHelper,
-  GizmoViewport,
+  // GizmoHelper,
+  // GizmoViewport,
   Loader,
   useGLTF,
 } from "@react-three/drei";
@@ -26,7 +26,8 @@ import { Chess3D } from "./components/chess3D";
 import { SocketVoice } from "./components/socketVoice";
 
 // Store
-import { useStore } from "./stores/vcstore";
+// import { useStore } from "./stores/vcstore";
+
 // import {
 //   PieceEnum,
 //   VOICE_DEFAULT_LANGUAGE,
@@ -47,8 +48,8 @@ const App = () => {
 
   debugApp && console.log("APP - Regen");
   //debugApp && console.log("APP - Pieces",pieces3D?.length);
-  const CLIENT_HOST = process.env.HOST || "https://localhost";
-  const CLIENT_PORT = process.env.PORT || 3000;
+  // const CLIENT_HOST = process.env.HOST || "https://localhost";
+  // const CLIENT_PORT = process.env.PORT || 3000;
   const SERVER_HOST = process.env.REACT_APP_SERVER_HOST || "https://localhost";
   const SERVER_PORT = process.env.REACT_APP_SERVER_PORT || 4000;
   

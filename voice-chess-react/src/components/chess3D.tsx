@@ -34,16 +34,11 @@
 // console.log(chess.turn()); // who's turn? => w | b
 
 // REACT
-import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import React, { useCallback, useEffect } from "react";
 
 // three
-import { Group, Mesh, Vector3 } from "three";
-import {
-  MeshPhysicalMaterialProps,
-  MeshProps,
-  ThreeEvent,
-  useThree,
-} from "@react-three/fiber";
+import { Mesh } from "three";
+import { ThreeEvent, useThree } from "@react-three/fiber";
 
 // VOICE-CHESS
 import {
@@ -56,17 +51,9 @@ import {
   convertPosition2Notation,
 } from "./../helpers/chessHelper";
 
-import {
-  PieceColorType,
-  BoardType,
-} from "./../helpers/voiceHelper";
+import { BoardType } from "./../helpers/voiceHelper";
 
-
-import {
-  ChessBoard,
-  //ChessBoardLabels,
-  tileMaterialPossible,
-} from "./chessBoard";
+import { ChessBoard, tileMaterialPossible } from "./chessBoard";
 
 import { Bishop, King, Knight, Pawn, Queen, Rook } from "./pieces";
 
@@ -75,23 +62,16 @@ import { useStore } from "../stores/vcstore";
 import shallow from "zustand/shallow";
 
 // Chess
-import {
-  ChessInstance,
-  Piece,
-  PieceType,
-  Square,
-  Move,
-  ShortMove,
-  Comment,
-} from "chess.js";
-import * as ChessJS from "chess.js";
-const Chess = typeof ChessJS === "function" ? ChessJS : ChessJS.Chess;
+import { ChessInstance } from "chess.js";
+//import * as ChessJS from "chess.js";
+//const Chess = typeof ChessJS === "function" ? ChessJS : ChessJS.Chess;
+
+//const Chess = require("chess.js");
+//const chess = new Chess();
 
 // DEBUG
 const debugChess3D = false;
 
-//const Chess = require("chess.js");
-//const chess = new Chess();
 
 //
 // Handlers
@@ -154,39 +134,37 @@ const handlePointerUp = () => {
 };
 
 // reset to original tile color
+/*
 const handlePointerMove = () => {
   console.log("MOVING");
 };
+*/
 
 //
 // Piece Creation
 //
+/*
 type Piece3DProps = MeshProps &
   MeshPhysicalMaterialProps & {
     col: number;
     row: number;
   };
+*/
 
-/*   const Piece3D = React.forwardRef<JSX.Element>(
-    (
-      props: { row: number; col: number; regen?: boolean },
-      ref: React.ForwardedRef<JSX.Element>
-    ) => {
- */
 const Piece3D = (props: {
   row: number;
   col: number;
   //ref: React.ForwardedRef<JSX.Element>;
 }) => {
   // state
-  const [hovered, setHover] = useState(false);
+  //const [hovered, setHover] = useState(false);
   // store
   //const { chess } = useStore();
   const { chess } = useStore((state) => ({ chess: state.chess }), shallow);
   // props
   const { col, row } = props;
   // get THREE objects
-  const { scene, camera, gl, mouse } = useThree();
+  const { scene } = useThree();
   //ref
   //const ref=useRef();
   //
@@ -214,6 +192,7 @@ const Piece3D = (props: {
           onPointerUp={(e) => {
             handlePointerUp();
           }}
+          /*
           onPointerMove={(e) => {
             handlePointerMove();
           }}
@@ -223,6 +202,7 @@ const Piece3D = (props: {
           onPointerOut={(e) => {
             setHover(false);
           }}
+          */
         />
       );
       break;
@@ -318,17 +298,16 @@ const Chess3D = () => {
   // const [chess, setChess] = useState<ChessInstance>(new Chess());
   // store
   //const {chess, setChess} = useStore(new Chess() as ChessInstance);
-  const {chess} = useStore();
+  const { chess } = useStore();
   //const { chess } = useStore((state) => ({ chess: state.chess }), shallow);
   //const { setChess } = useStore();
   //const { pieces3D, setPieces3D } = useStore();
 
   debugChess3D && console.log("Chess3D - MAIN");
 
-  const handleMove = () => {};
+  //const handleMove = () => {};
+  //const boardRef = useRef();
 
-  const boardRef = useRef();
-  
   //
   // Create all pieces from chess.js board
   //
@@ -363,11 +342,9 @@ const Chess3D = () => {
     return <>{pieces}</>;
   }, [chess]);
 
-  
   useEffect(() => {
     debugChess3D && console.log("Chess3D - useEffect");
   }, []);
-  
 
   return (
     <>

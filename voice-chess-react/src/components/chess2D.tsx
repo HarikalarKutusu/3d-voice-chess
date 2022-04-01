@@ -10,8 +10,14 @@ Standard: https://www.unicode.org/charts/PDF/U2600.pdf
 Fancy: https://www.unicode.org/charts/PDF/U1FA00.pdf
 */
 
-import React, { useState } from "react";
+// import { useState } from "react";
 
 
 // DEBUG
-const debugChess2D = false;
+//const debugChess2D = false;
+
+const Chess2D = (props: any) => {
+  return <></>
+}
+
+export { Chess2D }

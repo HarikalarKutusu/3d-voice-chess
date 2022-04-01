@@ -1,11 +1,8 @@
 import React, {
   useCallback,
-  useEffect,
-  useMemo,
-  useRef,
   useState,
 } from "react";
-import { MeshPhysicalMaterial, BoxBufferGeometry, Mesh, Euler } from "three";
+import { MeshPhysicalMaterial, BoxBufferGeometry, Euler } from "three";
 import { Text } from "@react-three/drei";
 import {
   BOARD_ROWS,
@@ -239,19 +236,4 @@ const ChessBoard = (props: any) => {
   );
 };
 
-/*
-// Row / Column numbering
-const ChessBoardLabels = (props: any) => {
-  debugChessBoard && console.log("ChessBoardLabels");
-  //
-  return (
-    <group>
-      {RowLabels()}
-      {ColLabels()}
-    </group>
-  );
-};
-*/
-
 export { ChessBoard };
-//export { ChessBoard, ChessBoardLabels };

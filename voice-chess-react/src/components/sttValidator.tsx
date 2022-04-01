@@ -27,8 +27,8 @@ import "./socketVoice.css";
 
 // Chess
 import { PieceType, Square } from "chess.js";
-import * as ChessJS from "chess.js";
-const Chess = typeof ChessJS === "function" ? ChessJS : ChessJS.Chess;
+//import * as ChessJS from "chess.js";
+//const Chess = typeof ChessJS === "function" ? ChessJS : ChessJS.Chess;
 
 // DEBUG
 const debugSTTValidator = true;
@@ -522,7 +522,7 @@ const STTValidator = (props: ISTTValidatorProps) => {
       let tPiece: PieceType | null = null;
       let tPiece1: PieceType | null = null;
       let tPiece2: PieceType | null = null;
-      let tCoord: Square | null = null;
+      //let tCoord: Square | null = null;
       let tCoord1: Square | null = null;
       let tCoord2: Square | null = null;
 

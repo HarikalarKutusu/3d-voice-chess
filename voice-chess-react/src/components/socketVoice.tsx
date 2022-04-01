@@ -34,7 +34,7 @@ import {
   SERVER_URL_DEFAULT,
 } from "../helpers/voiceHelper";
 import {
-  VoiceLanguageType,
+  // VoiceLanguageType,
   VOICE_LANGUAGES,
 } from "../helpers/localeHelper";
 
@@ -68,7 +68,8 @@ const SocketVoice = (props: ISocketVoiceProps) => {
   const { lastError, setLastError } = useStore();
 
   // state - Language
-  const [langRecord, setLangRecord] = useState<VoiceLanguageType>();
+  // const [langRecord, setLangRecord] = useState<VoiceLanguageType>();
+
   // state - SocketAudio Module
   const [connectedStatus, setConnectedStatus] = useState(false);
   const [serverLangCode, setServerLangCode] = useState<string>("??");
