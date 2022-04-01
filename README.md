@@ -2,6 +2,8 @@
 
 A multi-lingual voice driven 3D chess game for learning and teaching Voice AI using Coqui STT using limited vocabulary language models.
 
+Please note: This repo is not production ready. It is somewhere between alpha and beta versions as of April 1st 2022.
+
 Current capabilities:
 
 - Single user server for Speech To Text STT inference (nodejs) (i.e. it works on a single core free node)
