@@ -1,6 +1,6 @@
 import create from "zustand";
-
-import { PieceColorType } from "./../helpers/voiceHelper";
+//import { PieceColorType } from "./../helpers/voiceHelper";
+import { LanguageCodesType, DEFAULT_LANGUAGE } from "./../helpers/localeHelper";
 
 import { ChessInstance } from "chess.js";
 import * as ChessJS from "chess.js";
@@ -10,8 +10,8 @@ const Chess = typeof ChessJS === "function" ? ChessJS : ChessJS.Chess;
 
 export type StoreType = {
   // language
-  langCode: string;
-  setLangCode: (langCode: string) => void;
+  langCode: LanguageCodesType;
+  setLangCode: (langCode: LanguageCodesType) => void;
   // STT
   lastRecognition: string; // STT recognized sentence to be validated
   setLastRecognition: (lastRecognition: string) => void;
@@ -20,8 +20,8 @@ export type StoreType = {
   // Chess
   chess: ChessInstance;
   setChess: (chess: ChessInstance) => void;
-  turnColor: PieceColorType;
-  setTurnColor: (playerColor: PieceColorType) => void;
+  // turnColor: PieceColorType;
+  // setTurnColor: (playerColor: PieceColorType) => void;
   // Chess Timing
   // playerTimes: string;
   // setPlayerTimes: (color: PlayerColor, time: string) => void;
@@ -29,7 +29,7 @@ export type StoreType = {
 
 const useStore = create<StoreType>((set) => ({
   // language
-  langCode: "en",
+  langCode: DEFAULT_LANGUAGE,
   setLangCode: (langCode) => set((state) => ({ ...state, langCode: langCode })),
 
   // STT
@@ -43,9 +43,9 @@ const useStore = create<StoreType>((set) => ({
   // Chess
   chess: new Chess(),
   setChess: (chess) => set((state) => ({ ...state, chess: chess })),
-  turnColor: "w",
-  setTurnColor: (playerColor) =>
-    set((state) => ({ ...state, turnColor: playerColor })),
+  // turnColor: "w",
+  // setTurnColor: (playerColor) =>
+  //   set((state) => ({ ...state, turnColor: playerColor })),
 
   // Chess Timing
 

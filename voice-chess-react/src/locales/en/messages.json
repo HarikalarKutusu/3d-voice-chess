@@ -1,0 +1,31 @@
+{
+  "ui.languageselector.title": "Select your voice & interface language",
+  "ui.serverconnection.title.connect": "Connect to {serverAddr}",
+  "ui.serverconnection.title.connected": "Connected to {serverAddr}",
+  "ui.clientaudio.title.recording": "Recording. Click to stop recording.",
+  "ui.clientaudio.title.notrecording": "Not recording. Click to start recording.",
+  "ui.clientlanguage": "Client language",
+  "ui.serverlanguage": "Server STT language",
+  "ui.currentplayer.title": "Current player",
+  "ui.laststt.title": "Last recognized sentence",
+  "ui.recognizedmove.title": "Recognized chess move",
+  "ui.feedbackpanel.title": "Errors and warnings",
+  "ui.incheck.title": "In check",
+  "ui.incheckmate.title": "In check-mate",
+  "ui.indraw.title": "In draw/stalemate/3-fold repetition/insufficient material",
+  "ui.help.title": "Help",
+
+  "err.recordingfailure": "Recording failed: {msg}",
+  "err.serverfull": "Server is full, try again later",
+  "err.differentlanguages": "Different client & server languages!",
+  "err.connecterror": "Connect error: {msg}",
+
+  "err.move": "Error in move!",
+  "err.move.wrongcoords": "Wrong piece coordinates!",
+  "err.move.cannotmovetotarget": "Piece cannot move to target!",
+  "err.move.piecenotfound": "Piece not found!",
+  "err.move.multiplepossibilities": "Multiple possible moves!",
+  "err.move.nopiececouple": "No piece couple found!",
+
+  "": ""
+}
