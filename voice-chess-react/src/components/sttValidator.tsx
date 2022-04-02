@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
-import intl from 'react-intl-universal';
+import intl from "react-intl-universal";
 // similarity checker
 import { findBestMatch } from "string-similarity";
 
@@ -32,7 +32,7 @@ import { PieceType, Square } from "chess.js";
 //const Chess = typeof ChessJS === "function" ? ChessJS : ChessJS.Chess;
 
 // DEBUG
-const debugSTTValidator = true;
+// const debugSTTValidator = true;
 
 export type ISTTValidatorProps = {
   // langRecord: VoiceLanguageType | undefined; // should be provided
@@ -73,7 +73,6 @@ const STTValidator = (props: ISTTValidatorProps) => {
   // CurrentPlayer Component
   //
   const CurrentPlayer = (props: any) => {
-    
     return (
       <PawnIcon
         title={intl.get("ui.currentplayer.title")}
@@ -88,7 +87,6 @@ const STTValidator = (props: ISTTValidatorProps) => {
   // MovePanel Component
   //
   const MovePanel = (props: any) => {
-    
     return (
       <span
         title={intl.get("ui.recognizedmove.title")}
@@ -104,7 +102,6 @@ const STTValidator = (props: ISTTValidatorProps) => {
   // FeedbackPanel Component
   //
   const FeedbackPanel = (props: any) => {
-    
     return (
       <span
         title={intl.get("ui.feedbackpanel.title")}
@@ -121,7 +118,6 @@ const STTValidator = (props: ISTTValidatorProps) => {
   // Check Component
   //
   const SpecialStatusDisplay = () => {
-    
     return (
       <>
         <KingIcon
@@ -162,7 +158,6 @@ const STTValidator = (props: ISTTValidatorProps) => {
   //
   const sttPostProcess = useCallback(
     (rawText: string) => {
-
       //
       // Utility Functions
       //
@@ -180,7 +175,7 @@ const STTValidator = (props: ISTTValidatorProps) => {
       };
 
       const moveError = (err: string) => {
-        debugSTTValidator && console.log("MOVE-ERROR:", err);
+        // debugSTTValidator && console.log("MOVE-ERROR:", err);
         setLastError(err);
       };
 
@@ -188,7 +183,7 @@ const STTValidator = (props: ISTTValidatorProps) => {
         // try the actual move, returns move or null
         const move = chess.move({ from: from, to: to });
         if (move) {
-          debugSTTValidator && console.log("MOVE-OK:", from, to);
+          // debugSTTValidator && console.log("MOVE-OK:", from, to);
           setLastError(move.san);
         } else {
           moveError(intl.get("err.move"));
@@ -218,8 +213,8 @@ const STTValidator = (props: ISTTValidatorProps) => {
       // Use string-similality (Dice's Coof) to find best format used in voice
       const findBestSentence = (s: string, ss: string[]) => {
         const bestMatch = findBestMatch(s, ss);
-        //console.log("Best=", bestMatch.ratings);
-        //console.log("Best sentence=", ss[bestMatch.bestMatchIndex]);
+        // console.log("Best=", bestMatch.ratings);
+        // console.log("Best sentence=", ss[bestMatch.bestMatchIndex]);
         return bestMatch;
       };
 
@@ -266,8 +261,8 @@ const STTValidator = (props: ISTTValidatorProps) => {
         const res: Square[] = [];
         if (tPiece && pColor === tPiece.color) {
           // piece at the target and same color?
-          debugSTTValidator &&
-            console.log("ERR-SAME-COLOR-PIECE=", square, tPiece);
+          // debugSTTValidator &&
+          // debugSTTValidator && console.log("ERR-SAME-COLOR-PIECE=", square, tPiece);
           return [];
         } else {
           // there is a piece from other side
@@ -292,7 +287,7 @@ const STTValidator = (props: ISTTValidatorProps) => {
               } // if
             } // for c
           } // for r
-          debugSTTValidator && console.log("ATTACKERS=", res);
+          // debugSTTValidator && console.log("ATTACKERS=", res);
           return res; // return resultant list
         } // else
       }; // findAttackerList
@@ -302,20 +297,10 @@ const STTValidator = (props: ISTTValidatorProps) => {
       //----------------------------------
       const langRecord = findLanguageRecord(langCode) as VoiceLanguageType;
       if (!langRecord) return null;
-      debugSTTValidator &&
-        console.log(
-          "-------------------\nSTART RECOGNIZE MOVE\n-------------------",
-        );
+      // debugSTTValidator && console.log("-------------------\nSTART RECOGNIZE MOVE\n-------------------");
       clearPanels();
       const turnColor = chess.turn();
-      console.log(
-        "Language=",
-        langRecord?.code,
-        "Player=",
-        turnColor,
-        "Parse=",
-        rawText,
-      );
+      // debugSTTValidator && console.log("Language=", langRecord?.code, "Player=", turnColor, "Parse=", rawText);
       //
       // Find Voice-Chess Language Record & Get language data
       //
@@ -334,7 +319,7 @@ const STTValidator = (props: ISTTValidatorProps) => {
 
       // split the sentence
       const rawWords = rawText.split(" ");
-      //debugSTTValidator && console.log("RAW=", rawWords);
+      // debugSTTValidator && console.log("RAW=", rawWords);
 
       // find piece: For each word, try to find piecename.
       const foundPieceNames: string[] = []; // result array, ordered by appearence
@@ -342,14 +327,13 @@ const STTValidator = (props: ISTTValidatorProps) => {
       rawWords.forEach((w) => {
         locPieceNames.forEach((p, index) => {
           if (w.substring(0, p.length) === p) {
-            // debugSTTValidator && console.log("found=", w, p);
+            // // debugSTTValidator && console.log("found=", w, p);
             foundPieceNames.push(p);
             foundPieceCodes.push(locPieceCodes[index]);
           }
         });
       });
-      debugSTTValidator &&
-        console.log("FOUND PIECES=", foundPieceNames, foundPieceCodes);
+      // debugSTTValidator && console.log("FOUND PIECES=", foundPieceNames, foundPieceCodes);
 
       // find from & to coordinates
       const foundCoords: string[] = []; // result array, ordered by appearence
@@ -375,8 +359,7 @@ const STTValidator = (props: ISTTValidatorProps) => {
           }
         });
       });
-      debugSTTValidator &&
-        console.log("FOUND COORDS=", foundCoords, foundCoordCodes);
+      // debugSTTValidator && console.log("FOUND COORDS=", foundCoords, foundCoordCodes);
 
       // Insert these findings into sentences
       const tS = locSentences.slice(); // create temporary sentences
@@ -409,7 +392,7 @@ const STTValidator = (props: ISTTValidatorProps) => {
         foundCoords.forEach((c) => {
           tS[i] = tS[i].replace("{col}{row}", c);
         });
-        //debugSTTValidator && console.log("replaced=", tSentences[i]);
+        //// debugSTTValidator && console.log("replaced=", tSentences[i]);
       }
 
       //
@@ -417,9 +400,9 @@ const STTValidator = (props: ISTTValidatorProps) => {
       //
       const best = findBestSentence(rawText, tS);
       const intent = locIntents[best.bestMatchIndex];
-      debugSTTValidator && console.log("BEST=", best.bestMatch.target);
-      debugSTTValidator && console.log("RATINGS=", best);
-      debugSTTValidator && console.log("INTENT=", "[" + intent + "]");
+      // debugSTTValidator && console.log("BEST=", best.bestMatch.target);
+      // debugSTTValidator && console.log("RATINGS=", best);
+      // debugSTTValidator && console.log("INTENT=", "[" + intent + "]");
 
       // INTENT REFERENCE
       /*
@@ -464,7 +447,7 @@ const STTValidator = (props: ISTTValidatorProps) => {
       switch (intent) {
         // ignored
         case "ignored":
-          console.log("IGNORED INTENT:", intent);
+          // debugSTTValidator && console.log("IGNORED INTENT:", intent);
           break;
 
         // in game special moves
@@ -506,7 +489,7 @@ const STTValidator = (props: ISTTValidatorProps) => {
           break;
         // IF NOT HERE, SO IT SHOULD BE A MOVE, SO GO ON
         default:
-          console.log("MOVE INTENT?", intent);
+          // debugSTTValidator && console.log("MOVE INTENT?", intent);
           isFinished = false;
       }
 
@@ -522,7 +505,7 @@ const STTValidator = (props: ISTTValidatorProps) => {
       let pieceCoords: Square[] = [];
       if (intent.charAt(0) !== "0" && foundPieceCodes.length > 0)
         pieceCoords = findPiecePosition(foundPieceCodes[0]);
-      debugSTTValidator && console.log("pieceCoords=", pieceCoords);
+      // debugSTTValidator && console.log("pieceCoords=", pieceCoords);
 
       // MAIN MOVE INTENTS
       let tPiece: PieceType | null = null;
@@ -543,15 +526,15 @@ const STTValidator = (props: ISTTValidatorProps) => {
         tCoord2 = foundCoordCodes[1];
         showSuggestedMove(tPiece, tCoord1, tCoord2);
         if (!pieceCoords.includes(tCoord1)) {
-          debugSTTValidator && console.log("ERROR=", tPiece, tCoord1, tCoord2);
+          // debugSTTValidator && console.log("ERROR=", tPiece, tCoord1, tCoord2);
           moveError(intl.get("err.move.wrongcoords"));
         } else {
           const moves = chess
             .moves({ verbose: true, square: tCoord1 })
             .filter((m) => m.to === tCoord2);
           if (moves.length === 0) {
-            debugSTTValidator &&
-              console.log("ERROR=", tPiece, tCoord1, tCoord2);
+            // debugSTTValidator &&
+            // debugSTTValidator && console.log("ERROR=", tPiece, tCoord1, tCoord2);
             moveError(intl.get("err.move.cannotmovetotarget"));
           } else {
             // now we TRY
@@ -567,22 +550,20 @@ const STTValidator = (props: ISTTValidatorProps) => {
         tCoord1 = foundCoordCodes[0];
         tCoord2 = foundCoordCodes[1];
         tPiece = getPieceAt(tCoord1);
-        debugSTTValidator &&
-          console.log("FOUND PIECE AT", tCoord1, "is", tPiece);
+        // debugSTTValidator && console.log("FOUND PIECE AT", tCoord1, "is", tPiece);
         tPiece
           ? showSuggestedMove(tPiece, tCoord1, tCoord2)
           : showSuggestedMove("?", tCoord1, tCoord2);
         if (!tPiece) {
-          debugSTTValidator && console.log("ERROR=", tPiece, tCoord1, tCoord2);
+          // debugSTTValidator && console.log("ERROR=", tPiece, tCoord1, tCoord2);
           moveError(intl.get("err.move.piecenotfound"));
         } else if (
           !chess
             .moves({ verbose: true, square: tCoord1 })
             .filter((m) => m.to === tCoord2)
         ) {
-          debugSTTValidator && console.log("ERROR=", tPiece, tCoord1, tCoord2);
-          debugSTTValidator &&
-            console.log("MOVES OF PIECE=", chess.moves({ square: tCoord1 }));
+          // debugSTTValidator && console.log("ERROR=", tPiece, tCoord1, tCoord2);
+          // debugSTTValidator && console.log("MOVES OF PIECE=", chess.moves({ square: tCoord1 }));
           moveError(intl.get("err.move.cannotmovetotarget"));
         } else {
           // now we TRY
@@ -601,10 +582,10 @@ const STTValidator = (props: ISTTValidatorProps) => {
         );
         // if none found, error
         if (tAttackers.length === 0) {
-          debugSTTValidator && console.log("ERROR=", tCoord2);
+          // debugSTTValidator && console.log("ERROR=", tCoord2);
           moveError(intl.get("err.move.cannotmovetotarget"));
         } else if (tAttackers.length > 1) {
-          debugSTTValidator && console.log("ERROR=", tCoord2, tAttackers);
+          // debugSTTValidator && console.log("ERROR=", tCoord2, tAttackers);
           moveError(intl.get("err.move.multiplepossibilities"));
         } else {
           // a single attacker case
@@ -624,10 +605,10 @@ const STTValidator = (props: ISTTValidatorProps) => {
         const tAttackers = findAttackerList(tCoord2);
         // if none found, error
         if (tAttackers.length === 0) {
-          debugSTTValidator && console.log("ERROR=", tCoord2, tAttackers);
+          // debugSTTValidator && console.log("ERROR=", tCoord2, tAttackers);
           moveError(intl.get("err.move.cannotmovetotarget"));
         } else if (tAttackers.length > 1) {
-          debugSTTValidator && console.log("ERROR=", tCoord2, tAttackers);
+          // debugSTTValidator && console.log("ERROR=", tCoord2, tAttackers);
           moveError(intl.get("err.move.multiplepossibilities"));
         } else {
           // a single attacker case
@@ -671,10 +652,10 @@ const STTValidator = (props: ISTTValidatorProps) => {
         });
         // if none found, error
         if (tAttackers.length === 0) {
-          debugSTTValidator && console.log("ERROR=", tPiece1, tPiece2);
+          // debugSTTValidator && console.log("ERROR=", tPiece1, tPiece2);
           moveError(intl.get("err.move.nopiececouple"));
         } else if (tAttackers.length > 1) {
-          debugSTTValidator && console.log("ERROR=", tPiece1, tPiece2);
+          // debugSTTValidator && console.log("ERROR=", tPiece1, tPiece2);
           moveError(intl.get("err.move.multiplepossibilities"));
         } else {
           // single solution
@@ -699,14 +680,13 @@ const STTValidator = (props: ISTTValidatorProps) => {
         const tToPiece = getPieceAt(tCoord2);
         if (!tToPiece || tPiece2 !== tToPiece[0]) {
           // no piece at target or not correct piece
-          debugSTTValidator &&
-            console.log("ERROR=", tCoord2, tPiece2, tToPiece);
+          // debugSTTValidator && console.log("ERROR=", tCoord2, tPiece2, tToPiece);
           moveError(intl.get("err.move.wrongcoords"));
         } else if (tAttackers.length === 0) {
-          debugSTTValidator && console.log("ERROR=", tCoord2);
+          // debugSTTValidator && console.log("ERROR=", tCoord2);
           moveError(intl.get("err.move.cannotmovetotarget"));
         } else if (tAttackers.length > 1) {
-          debugSTTValidator && console.log("ERROR=", tCoord2, tAttackers);
+          // debugSTTValidator && console.log("ERROR=", tCoord2, tAttackers);
           moveError(intl.get("err.move.multiplepossibilities"));
         } else {
           // a single attacker case
@@ -729,13 +709,13 @@ const STTValidator = (props: ISTTValidatorProps) => {
         const tColor = pColor === "w" ? "b" : "w";
         const tFromPiece = getPieceAt(tCoord1); // Get players piece at that position
         const tToPieces = findPiecePosition(tPiece2, tColor); // Get opponent pieces of that brand
-        console.log("FROM PIECE", tFromPiece);
-        console.log("TO PIECES", tToPieces);
+        // debugSTTValidator && console.log("FROM PIECE", tFromPiece);
+        // debugSTTValidator && console.log("TO PIECES", tToPieces);
         //let tAttackers: Square[] = [];
         let tAttacked: Square[] = [];
         // loop from coords
         const fMoves = chess.moves({ verbose: true, square: tCoord1 }); // get possible moves
-        console.log("MOVES", fMoves);
+        // debugSTTValidator && console.log("MOVES", fMoves);
         // loop to coords
         tToPieces.forEach((t) => {
           // loop possible moves from from coord
@@ -747,22 +727,22 @@ const STTValidator = (props: ISTTValidatorProps) => {
         });
         // if none found, error
         if (tPiece1 !== tFromPiece) {
-          debugSTTValidator && console.log("ERROR=", tPiece1, tFromPiece);
+          // debugSTTValidator && console.log("ERROR=", tPiece1, tFromPiece);
           moveError(intl.get("err.move.wrongcoords"));
         } else if (tAttacked.length === 0) {
-          debugSTTValidator &&
-            console.log("ERROR=", tPiece1, tPiece2, tAttacked);
+          // debugSTTValidator &&
+          // debugSTTValidator && console.log("ERROR=", tPiece1, tPiece2, tAttacked);
           moveError(intl.get("err.move.cannotmovetotarget"));
         } else if (
           tAttacked.length === 1 &&
           getPieceAt(tAttacked[0]) !== tPiece2
         ) {
-          debugSTTValidator &&
-            console.log("ERROR=", tPiece1, tPiece2, tAttacked);
+          // debugSTTValidator &&
+          // debugSTTValidator && console.log("ERROR=", tPiece1, tPiece2, tAttacked);
           moveError(intl.get("err.move.wrongcoords"));
         } else if (tAttacked.length > 1) {
-          debugSTTValidator &&
-            console.log("ERROR=", tPiece1, tPiece2, tAttacked);
+          // debugSTTValidator &&
+          // debugSTTValidator && console.log("ERROR=", tPiece1, tPiece2, tAttacked);
           moveError(intl.get("err.move.multiplepossibilities"));
         } else {
           // single solution
@@ -792,15 +772,11 @@ const STTValidator = (props: ISTTValidatorProps) => {
   }, []);
 
   // References
-  
 
   return (
     <>
       <CurrentPlayer color={chess.turn()} />
-      <span
-        title={intl.get("ui.laststt.title")}
-        className="svPanelText"
-      >
+      <span title={intl.get("ui.laststt.title")} className="svPanelText">
         {sttTxt}
       </span>
       {/* <span

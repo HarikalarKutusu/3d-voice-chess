@@ -70,7 +70,7 @@ import { ChessInstance } from "chess.js";
 //const chess = new Chess();
 
 // DEBUG
-const debugChess3D = false;
+// const debugChess3D = false;
 
 
 //
@@ -102,10 +102,10 @@ const handlePointerDown = (
   // console.log(x, y, z);
   // get cell notation
   const notation = convertPosition2Notation(x, y);
-  debugChess3D && console.log(notation);
+  // debugChess3D && console.log(notation);
   // find possible moves for piece
   const moves = chess.moves({ square: notation }) as string[];
-  debugChess3D && console.log(moves);
+  // debugChess3D && console.log(moves);
   // highlight those cells
   if (moves.length > 0) {
     moves.forEach((move: string) => {
@@ -138,17 +138,6 @@ const handlePointerUp = () => {
 const handlePointerMove = () => {
   console.log("MOVING");
 };
-*/
-
-//
-// Piece Creation
-//
-/*
-type Piece3DProps = MeshProps &
-  MeshPhysicalMaterialProps & {
-    col: number;
-    row: number;
-  };
 */
 
 const Piece3D = (props: {
@@ -303,7 +292,7 @@ const Chess3D = () => {
   //const { setChess } = useStore();
   //const { pieces3D, setPieces3D } = useStore();
 
-  debugChess3D && console.log("Chess3D - MAIN");
+  // debugChess3D && console.log("Chess3D - MAIN");
 
   //const handleMove = () => {};
   //const boardRef = useRef();
@@ -312,10 +301,10 @@ const Chess3D = () => {
   // Create all pieces from chess.js board
   //
   const Pieces3D = useCallback(() => {
-    debugChess3D && console.log("Chess3D - Pieces3D");
+    // debugChess3D && console.log("Chess3D - Pieces3D");
     let pieces: JSX.Element[] | undefined = [];
     if (chess !== undefined) {
-      debugChess3D && console.log("Chess3D - Pieces3D - ACTUAL CREATION");
+      // debugChess3D && console.log("Chess3D - Pieces3D - ACTUAL CREATION");
       const board = chess.board() as BoardType;
       for (let row = BOARD_ROWS - 1; row >= 0; row--) {
         for (let col = 0; col < BOARD_COLS; col++) {
@@ -326,7 +315,7 @@ const Chess3D = () => {
             const id =
               color + "-" + type + "-" + convertCoord2Notation(7 - row, col);
             //const ref = React.createRef<JSX.Element>();
-            debugChess3D && console.log("Pieces3D - id=", id);
+            // debugChess3D && console.log("Pieces3D - id=", id);
             const piece = (
               <Piece3D key={id} col={col} row={row} />
             ) as JSX.Element;
@@ -335,15 +324,15 @@ const Chess3D = () => {
           }
         }
       }
-      debugChess3D && console.log("Pieces3D - built:", pieces);
+      // debugChess3D && console.log("Pieces3D - built:", pieces);
     } else {
-      debugChess3D && console.log("Pieces3D - no chess yet", pieces);
+      // debugChess3D && console.log("Pieces3D - no chess yet", pieces);
     }
     return <>{pieces}</>;
   }, [chess]);
 
   useEffect(() => {
-    debugChess3D && console.log("Chess3D - useEffect");
+    // debugChess3D && console.log("Chess3D - useEffect");
   }, []);
 
   return (

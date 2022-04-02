@@ -84,7 +84,7 @@ export const intlInit = (reqLocale?: LanguageCodesType) => {
     resLang = reqLocale;
   }
   //
-  console.log("INIT-INLT=", resLang);
+  // console.log("INIT-INLT=", resLang);
   // returns a promise
   return intl.init({
     currentLocale: resLang,

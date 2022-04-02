@@ -340,7 +340,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     //
     const serverConnect = () => {
       // debugSocketVoice &&
-      console.log("SIO-serverConnect", serverURL + ":" + serverPort);
+      // debugSocketVoice && console.log("SIO-serverConnect", serverURL + ":" + serverPort);
       if (socket) {
         // create the socket & connect
         socket.connect();
@@ -354,7 +354,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
         // set status when connected
         socket.on("connect", () => {
           // debugSocketVoice &&
-          console.log("SIO: Connect event, send lang:", langCode);
+          // debugSocketVoice && console.log("SIO: Connect event, send lang:", langCode);
           setConnectedStatus(true);
           socket.emit("lang-code", langCode);
         });
@@ -389,7 +389,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
         // Connect error
         socket.on("connect_error", (err) => {
           // debugSocketVoice &&
-          console.log("SIO: " + Date.now() + ` connect_error: ${err}`);
+          // debugSocketVoice && console.log("SIO: " + Date.now() + ` connect_error: ${err}`);
           setLastError(intl.get("err.connecterror", { msg: err.message }));
         });
       }
@@ -463,7 +463,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
   //--------------------------------------------------------------
 
   const handleHelpClick = () => {
-    console.log("HELP-Click");
+    // debugSocketVoice && console.log("HELP-Click");
   };
 
   //--------------------------------------------------------------

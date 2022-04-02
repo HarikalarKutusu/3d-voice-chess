@@ -29,7 +29,7 @@ import { useStore } from "./stores/vcstore";
 extend({ DragControls });
 
 // DEBUG
-const debugApp = true;
+// const debugApp = false;
 
 //====================================================================
 //------------------------ APP ---------------------------------------
@@ -40,7 +40,7 @@ const App = () => {
   // Store
   const { setLangCode } = useStore();
 
-  debugApp && console.log("APP - Regen");
+  // debugApp && console.log("APP - Regen");
 
   // const CLIENT_HOST = process.env.HOST || "https://localhost";
   // const CLIENT_PORT = process.env.PORT || 3000;
@@ -48,13 +48,13 @@ const App = () => {
   const SERVER_PORT = process.env.REACT_APP_SERVER_PORT || 4000;
 
   useEffect(() => {
-    debugApp && console.log("APP - useEffect");
+    // debugApp && console.log("APP - useEffect");
 
     if (!initDone) {
       // i18n
       intlInit().then(() => {
         const { currentLocale } = intl.getInitOptions();
-        debugApp && console.log("APP - LangInit=", currentLocale);
+        // debugApp && console.log("APP - LangInit=", currentLocale);
         setLangCode(currentLocale as LanguageCodesType);
       });
 

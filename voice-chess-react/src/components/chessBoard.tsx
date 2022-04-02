@@ -22,7 +22,7 @@ import {
 } from "../helpers/chessHelper";
 
 // DEBUG
-const debugChessBoard = false;
+// const debugChessBoard = false;
 
 // Re-use materials and geometries
 export const tileMaterialWhite = new MeshPhysicalMaterial({
@@ -47,13 +47,13 @@ const tileGeometry = new BoxBufferGeometry(TILESIZE, TILESIZE, TILEDEPTH);
 // ChessBoard: Tiles & Labels
 //
 const ChessBoard = (props: any) => {
-  debugChessBoard && console.log("ChessBoard");
+  // debugChessBoard && console.log("ChessBoard");
 
   // create all tiles - TO-DO : Instancing
   const Tiles = useCallback(() => {
     // create a single tile at default position - decides color & gives name
     const Tile = (props: any) => {
-      //debugChessBoard && console.log("--SingleTile");
+      //// debugChessBoard && console.log("--SingleTile");
       //
       const { row, col } = props;
       // state
@@ -65,7 +65,7 @@ const ChessBoard = (props: any) => {
         : (tileMat = tileMaterialWhite);
       // tile name
       const tileName = convertCoord2Notation(row, col); // boardColNames[col].toLowerCase() + boardRowNames[row];
-      debugChessBoard && console.log(tileName);
+      // debugChessBoard && console.log(tileName);
       // position
       const pos = calcTilePosition(row, col);
       // ref
@@ -84,12 +84,12 @@ const ChessBoard = (props: any) => {
           castShadow
           onClick={(e) => {
             e.stopPropagation();
-            debugChessBoard && console.log(tileName);
+            // debugChessBoard && console.log(tileName);
             //tileRef.current!.material! = tileMaterialHover;
           }}
           onPointerOver={(e) => {
             e.stopPropagation();
-            debugChessBoard && console.log(tileName);
+            // debugChessBoard && console.log(tileName);
             setHover(true);
           }}
           onPointerOut={(e) => setHover(false)}
@@ -97,7 +97,7 @@ const ChessBoard = (props: any) => {
       );
     }; // Tile
 
-    debugChessBoard && console.log("-Tiles");
+    // debugChessBoard && console.log("-Tiles");
     //
     let tiles: JSX.Element[] = [];
     // loop rows
@@ -117,7 +117,7 @@ const ChessBoard = (props: any) => {
   //
   // Labels
   const RowLabels = useCallback(() => {
-    debugChessBoard && console.log("-RowLabels");
+    // debugChessBoard && console.log("-RowLabels");
     //
     let labels: JSX.Element[] = [];
     // loop rows
@@ -161,7 +161,7 @@ const ChessBoard = (props: any) => {
   }, []); // RowLabels
 
   const ColLabels = useCallback(() => {
-    debugChessBoard && console.log("-ColLabels");
+    // debugChessBoard && console.log("-ColLabels");
     //
     let labels: JSX.Element[] = [];
     // loop columns

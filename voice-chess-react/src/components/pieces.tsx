@@ -19,7 +19,7 @@ import {
 } from "./../helpers/chessHelper";
 
 // DEBUG
-const debugPieces = false;
+// const debugPieces = false;
 
 // extend({ DragControls });
 
@@ -130,7 +130,7 @@ const pieceMaterialHovered = new MeshPhysicalMaterial({
 });
 
 const Bishop = (props: PieceProps) => {
-  debugPieces && console.log("CREATE-Bishop")
+  // debugPieces && console.log("CREATE-Bishop")
   // state
   const [hovered, setHover] = useState(false);
   // ref
@@ -162,7 +162,7 @@ const Bishop = (props: PieceProps) => {
 };
 
 const King = (props: PieceProps) => {
-  debugPieces && console.log("CREATE-King")
+  // debugPieces && console.log("CREATE-King")
   // state
   const [hovered, setHover] = useState(false);
   // ref
@@ -198,7 +198,7 @@ const King = (props: PieceProps) => {
 };
 
 const Knight = (props: PieceProps) => {
-  debugPieces && console.log("CREATE-Knight")
+  // debugPieces && console.log("CREATE-Knight")
   // state
   const [hovered, setHover] = useState(false);
   // ref
@@ -234,7 +234,7 @@ const Knight = (props: PieceProps) => {
 };
 
 const Pawn = (props: PieceProps) => {
-  debugPieces && console.log("CREATE-Pawn")
+  // debugPieces && console.log("CREATE-Pawn")
   // state
   const [hovered, setHover] = useState(false);
   // ref
@@ -266,7 +266,7 @@ const Pawn = (props: PieceProps) => {
 };
 
 const Queen = (props: PieceProps) => {
-  debugPieces && console.log("CREATE-Queen")
+  // debugPieces && console.log("CREATE-Queen")
   // state
   const [hovered, setHover] = useState(false);
   // ref
@@ -298,7 +298,7 @@ const Queen = (props: PieceProps) => {
 };
 
 const Rook = (props: PieceProps) => {
-  debugPieces && console.log("CREATE-Rook")
+  // debugPieces && console.log("CREATE-Rook")
   // state
   const [hovered, setHover] = useState(false);
   // ref

@@ -7,14 +7,14 @@
 onmessage = function (e) {
   switch (e.data.command) {
     case "init":
-      console.log("WORKER: init");
+      // console.log("WORKER: init");
       init(e.data.inputSampleRate);
       break;
     case "process":
       process(e.data.inputFrame);
       break;
     case "reset":
-      console.log("WORKER: reset");
+      // console.log("WORKER: reset");
       reset();
       break;
     default:
