@@ -7,7 +7,7 @@ Please note: This repo is not production ready. It is somewhere between alpha an
 Current capabilities:
 
 - Single user server for Speech To Text STT inference (nodejs) (i.e. it works on a single core free node)
-- 3D Frontend (voice only interface with some buttons & output areas)
+- 3D Frontend (voice only multi-lingual interface with some buttons & output areas)
 - Currently Supported Languages: de (German), en (English), tr (Turkish)
 - You play against yourself :)
 
@@ -20,7 +20,6 @@ Current capabilities:
 - [voice-chess-react](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/voice-chess-react): Frontend - React & three.js implementation
 - [voice-chess-server](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/voice-chess-server): Server - Simple single connection nodejs implementation
 
-
 ## How to Install
 
 TODO
@@ -29,6 +28,7 @@ TODO
 
 - Creation of new acoustic and language models in your language
 - Better chess related wording for existing languages if needed
+- Translate resource files (messages.json)
 - Testing; ideas, feedback in issues; commits & PR's
 
 ### How can I add my language?
@@ -37,9 +37,9 @@ TODO
 2. Examine existing sentences/programming in [chess sentence generators](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/language-model-creation/chess-sentence-generators).
 3. Copy an appropriate [sentence generator](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/language-model-creation/chess-sentence-generators), rename it to your language code and translate/adapt.
 4. Find a compatible [Coqui](https://coqui.ai/) [STT](https://stt.readthedocs.io/en/latest/index.html) [acoustic model](https://coqui.ai/models) (.tflite file) or [train](https://github.com/HarikalarKutusu/3d-voice-chess/tree/main/acoustic-model-creation) one from [Mozilla Common Voice datasets](https://commonvoice.mozilla.org/en/datasets).
-5. Test your results on your forked server/client locally and improve your models if needed.
-6. Make a [Pull Request (PR)](https://github.com/HarikalarKutusu/3d-voice-chess/pulls) to add your acoustic model (.tflite), language model (.scorer) and changes in the client & server code (TODO - these will be converted to resource files).
-7. You'll also need to make some UI translations (TODO - coming soon)
+5. Translate resource files (messages.json)
+6. Test your results on your forked server/client locally and improve your models if needed.
+7. Make a [Pull Request (PR)](https://github.com/HarikalarKutusu/3d-voice-chess/pulls) to add your acoustic model (.tflite), language model (.scorer) to voice-chess-server/voice dir, add generated json language file and translated messages.json files to voice-chess-react/locale.
 
 If you cannot do some of these, please [open an issue](https://github.com/HarikalarKutusu/3d-voice-chess/issues) so we can help.
 
