@@ -24,8 +24,7 @@ yarn-error.log*
 
 # not now
 **/.doc
-**/.cert/root*
-**/.cert/localhost*
+**/.cert/*
 
 # exclude work files of offline processes
 **/.out/*.json
