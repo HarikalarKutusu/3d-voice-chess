@@ -272,7 +272,7 @@ let sstEngine;
 
 // Create HTTP or HTTPS Server
 let webServer;
-if (config.HTTPS) {
+if (config.HTTPS === true) {
   const options = {
     // key: fs.readFileSync('./.cert/server.key'),
     // cert: fs.readFileSync('./.cert/server.crt'),
