@@ -23,15 +23,14 @@ yarn-debug.log*
 yarn-error.log*
 
 # not now
-.doc
-.cert
-.cert/root*
-.cert/localhost*
+**/.doc
+**/.cert/root*
+**/.cert/localhost*
 
 # exclude work files of offline processes
-.out/*.json
-.out/*.txt
-.tmp/*.tmp
+**/.out/*.json
+**/.out/*.txt
+**/.tmp/*.tmp
 
 ###########################################
 ############ create-react-app #############

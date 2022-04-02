@@ -28,7 +28,6 @@ yarn-error.log*
 
 # not now
 **/.doc
-**/.cert
 **/.cert/root*
 **/.cert/localhost*
 
