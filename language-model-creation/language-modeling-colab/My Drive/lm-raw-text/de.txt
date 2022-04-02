@@ -1,11 +1,3 @@
-Bauernumwandlung zum dame
-Bauernumwandlung zum laeufer
-Bauernumwandlung zum springer
-Bauernumwandlung zum turm
-Bauernumwandlung zur dame
-Bauernumwandlung zur laeufer
-Bauernumwandlung zur springer
-Bauernumwandlung zur turm
 alphaacht alphadrei
 alphaacht alphaeins
 alphaacht alphafuenf
@@ -541,6 +533,14 @@ bauer zieht von deltasieben nach deltaacht
 bauer zieht von deltavier nach deltafuenf
 bauer zieht von deltazwei nach deltadrei
 bauer zieht von deltazwei nach deltavier
+bauernumwandlung zum dame
+bauernumwandlung zum laeufer
+bauernumwandlung zum springer
+bauernumwandlung zum turm
+bauernumwandlung zur dame
+bauernumwandlung zur laeufer
+bauernumwandlung zur springer
+bauernumwandlung zur turm
 betrete raum acht
 betrete raum drei
 betrete raum eins
@@ -549,8 +549,7 @@ betrete raum sechs
 betrete raum sieben
 betrete raum vier
 betrete raum zwei
-betrete raum {number}
-bewegung rueckgaengig machen
+bewegungrueckgaengigmachen
 bravoacht alphaacht
 bravoacht alphasechs
 bravoacht alphasieben
@@ -5682,7 +5681,7 @@ dame zieht von deltazwei nach golffuenf
 dame zieht von deltazwei nach golfzwei
 dame zieht von deltazwei nach hotelsechs
 dame zieht von deltazwei nach hotelzwei
-damenfluegel rochade
+damenfluegelrochade
 deltaacht alphaacht
 deltaacht alphafuenf
 deltaacht bravoacht
@@ -5951,7 +5950,7 @@ foxtrotsechs
 foxtrotsieben
 foxtrotvier
 foxtrotzwei
-gegen computer spielen
+gegencomputerspielen
 golfacht
 golfdrei
 golfeins
@@ -5961,7 +5960,7 @@ golfsieben
 golfvier
 golfzwei
 hilfe
-hinweis zeigen
+hinweiszeigen
 hinweis
 hotelacht
 hoteldrei
@@ -5971,8 +5970,8 @@ hotelsechs
 hotelsieben
 hotelvier
 hotelzwei
-ich akzeptiere unentschieden
-ich biete unentschieden an
+ichakzeptiereunentschieden
+ichbieteunentschiedenan
 koenig alphaacht nach alphasieben
 koenig alphaacht nach bravoacht
 koenig alphaacht nach bravosieben
@@ -7426,7 +7425,7 @@ koenig zieht von deltazwei nach deltaeins
 koenig zieht von deltazwei nach echodrei
 koenig zieht von deltazwei nach echoeins
 koenig zieht von deltazwei nach echozwei
-koenigsfluegel rochade
+koenigsfluegelrochade
 laeufer alphaacht nach bravosieben
 laeufer alphaacht nach charliesechs
 laeufer alphaacht nach deltafuenf
@@ -9397,12 +9396,12 @@ laeufer zieht von deltazwei nach foxtrotvier
 laeufer zieht von deltazwei nach golffuenf
 laeufer zieht von deltazwei nach hotelsechs
 matt
-mikrofon ausmachen
-mikrofon aus
-nehme zurueck
+mikrofonausmachen
+mikrofonaus
+nehmezurueck
 patt
-rochade am damenfluegel
-rochade am koenigsfluegel
+rochadeamdamenfluegel
+rochadeamkoenigsfluegel
 rueckgehen
 schach
 schlaegt alphaacht
@@ -9469,7 +9468,6 @@ schlaegt hotelsechs
 schlaegt hotelsieben
 schlaegt hotelvier
 schlaegt hotelzwei
-schwarz spielen
 schwarze bauer nach alphaacht
 schwarze bauer nach alphadrei
 schwarze bauer nach alphafuenf
@@ -10086,6 +10084,7 @@ schwarze turm zieht nach hotelsechs
 schwarze turm zieht nach hotelsieben
 schwarze turm zieht nach hotelvier
 schwarze turm zieht nach hotelzwei
+schwarzspielen
 schwierigkeit acht
 schwierigkeit drei
 schwierigkeit eins
@@ -10094,7 +10093,6 @@ schwierigkeit sechs
 schwierigkeit sieben
 schwierigkeit vier
 schwierigkeit zwei
-schwierigkeit {number}
 schwierigkeitsgrad acht
 schwierigkeitsgrad drei
 schwierigkeitsgrad eins
@@ -10103,10 +10101,8 @@ schwierigkeitsgrad sechs
 schwierigkeitsgrad sieben
 schwierigkeitsgrad vier
 schwierigkeitsgrad zwei
-schwierigkeitsgrad {number}
-server trennen
+servertrennen
 spiel acht mitmachen
-spiel beenden
 spiel drei mitmachen
 spiel eins mitmachen
 spiel fuenf mitmachen
@@ -10118,14 +10114,13 @@ spiel in raum sechs
 spiel in raum sieben
 spiel in raum vier
 spiel in raum zwei
-spiel in raum {number}
 spiel sechs mitmachen
 spiel sieben mitmachen
 spiel vier mitmachen
-spiel wiederholen
-spiel zuruecksetzen
 spiel zwei mitmachen
-spiel {number} mitmachen
+spielbeenden
+spielwiederholen
+spielzuruecksetzen
 springer alphaacht nach bravosechs
 springer alphaacht nach charliesieben
 springer alphaacht schlaegt bravosechs
@@ -11367,7 +11362,6 @@ stelle die schwierigkeit auf sechs ein
 stelle die schwierigkeit auf sieben ein
 stelle die schwierigkeit auf vier ein
 stelle die schwierigkeit auf zwei ein
-stelle die schwierigkeit auf {number} ein
 stelle die schwierigkeitsgrad auf acht ein
 stelle die schwierigkeitsgrad auf drei ein
 stelle die schwierigkeitsgrad auf eins ein
@@ -11376,7 +11370,6 @@ stelle die schwierigkeitsgrad auf sechs ein
 stelle die schwierigkeitsgrad auf sieben ein
 stelle die schwierigkeitsgrad auf vier ein
 stelle die schwierigkeitsgrad auf zwei ein
-stelle die schwierigkeitsgrad auf {number} ein
 stufe acht
 stufe auf acht stellen
 stufe auf drei stellen
@@ -11386,7 +11379,6 @@ stufe auf sechs stellen
 stufe auf sieben stellen
 stufe auf vier stellen
 stufe auf zwei stellen
-stufe auf {number} stellen
 stufe drei
 stufe eins
 stufe fuenf
@@ -11394,7 +11386,6 @@ stufe sechs
 stufe sieben
 stufe vier
 stufe zwei
-stufe {number}
 trennen
 turm alphaacht nach alphadrei
 turm alphaacht nach alphaeins
@@ -14373,8 +14364,7 @@ turm zieht von deltazwei nach echozwei
 turm zieht von deltazwei nach foxtrotzwei
 turm zieht von deltazwei nach golfzwei
 turm zieht von deltazwei nach hotelzwei
-vom server trennen
-weiss spielen
+vomservertrennen
 weisse bauer nach alphaacht
 weisse bauer nach alphadrei
 weisse bauer nach alphafuenf
@@ -14991,8 +14981,9 @@ weisse turm zieht nach hotelsechs
 weisse turm zieht nach hotelsieben
 weisse turm zieht nach hotelvier
 weisse turm zieht nach hotelzwei
-zeig hilfe
-zeig hinweis
+weissspielen
+zeighilfe
+zeighinweis
 zieh alphaacht nach alphadrei
 zieh alphaacht nach alphaeins
 zieh alphaacht nach alphafuenf

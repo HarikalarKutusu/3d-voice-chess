@@ -59,7 +59,7 @@ iMove = [
 ]
 
 # Promotions
-iPromotion = ["Bauernumwandlung zur {piece}", "Bauernumwandlung zum {piece}"]
+iPromotion = ["bauernumwandlung zur {piece}", "bauernumwandlung zum {piece}"]
 
 # KINGSIDE/QUEENSIDE CASTLING INTENTS
 iCastlingKingside = ["rochade am koenigsfluegel", "koenigsfluegel rochade"]
@@ -112,7 +112,8 @@ iCommandJoinRoom = [
 # PARAMETERS - FOR EXPERIMENTING
 ########################################
 
-doStripSpaces = False
+doStripSpacesInParametric = False   # Default false to prevent large LM
+doStripSpacesInSimple = True        # Default true to prevent LM pollution
 
 #############################################################################################
 # GENERATOR CODE, DO NOT TOUCH UNLESS YOUR LANGUAGE REQUIRES SPECIAL HANDLING (e.g. suffixes)
@@ -144,9 +145,9 @@ iCommandDifficulty = addIntent(iCommandDifficulty, "command.difficulty")
 iCommandJoinRoom = addIntent(iCommandJoinRoom, "command.joinroom")
 for number in rows:
     for s in iCommandDifficulty:
-        tf.write(mayStripSpaces(s.format(number=number), doStripSpaces)+"\n")
+        tf.write(mayStripSpaces(s.format(number=number), doStripSpacesInParametric)+"\n")
     for s in iCommandJoinRoom:
-        tf.write(mayStripSpaces(s.format(number=number), doStripSpaces)+"\n")
+        tf.write(mayStripSpaces(s.format(number=number), doStripSpacesInParametric)+"\n")
 
 # Promotions - append intents
 iPromotion = addIntent(iPromotion, "promotion")
@@ -154,7 +155,7 @@ for p in promotionOptions:
     for s in iPromotion:
         piece = pieces[pcodes.index(p)]  # get localized piecename
         res = s.format(piece=piece)  # replace parameter
-        tf.write(mayStripSpaces(res, doStripSpaces)+"\n")  # write to file
+        tf.write(mayStripSpaces(res, doStripSpacesInParametric)+"\n")  # write to file
 
 
 # Algorithm:
@@ -202,7 +203,7 @@ for s in iMovesIntent:
             toRow=toRow
         )
         # write to file
-        tf.write(mayStripSpaces(res, doStripSpaces)+"\n")
+        tf.write(mayStripSpaces(res, doStripSpacesInParametric)+"\n")
 
 # all other simple intents / sentences (no parameters)
 
@@ -224,15 +225,14 @@ iCommandMicOff = addIntent(iCommandMicOff, "command.micoff")
 iCommandDisconnect = addIntent(iCommandDisconnect, "command.disconnect")
 iCommandPlayComputer = addIntent(iCommandPlayComputer, "command.computer")
 
-tAllSentences = iCommandDifficulty + \
-    iCommandJoinRoom + iCastlingKingside + \
-    iCastlingQueenside + iDrawOffer + iDrawAccept + iIgnored + \
+tSimpleSentences = iCastlingKingside + iCastlingQueenside + \
+    iDrawOffer + iDrawAccept + iIgnored + \
     iCommandUndo + iCommandPlayBlack + iCommandPlayWhite + \
     iCommandReset + iCommandFinish + iCommandReplay + iCommandHelp + \
     iCommandHint + iCommandMicOff + iCommandDisconnect + iCommandPlayComputer
 
-for s in tAllSentences:
-    tf.write(mayStripSpaces(s, doStripSpaces)+"\n")
+for s in tSimpleSentences:
+    tf.write(mayStripSpaces(s, doStripSpacesInSimple)+"\n")
 
 tf.close()
 
@@ -258,7 +258,8 @@ fTxt.close()
 # JSON format for client data
 # ----------------------------------------
 # combine sentences
-tAllSentences = iMovesIntent + tAllSentences
+tAllSentences = tSimpleSentences + \
+    iCommandDifficulty + iCommandJoinRoom + iMovesIntent
 
 # split sentences & intents
 allSentences = []

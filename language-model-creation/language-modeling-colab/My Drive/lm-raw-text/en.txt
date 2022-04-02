@@ -2881,15 +2881,13 @@ difficulty level seven
 difficulty level six
 difficulty level three
 difficulty level two
-difficulty level {number}
 difficulty one
 difficulty seven
 difficulty six
 difficulty three
 difficulty two
-difficulty {number}
-disconnect from server
-disconnect server
+disconnectfromserver
+disconnectserver
 disconnect
 echoeight
 echofive
@@ -2899,7 +2897,7 @@ echoseven
 echosix
 echothree
 echotwo
-finish game
+finishgame
 foxtroteight
 foxtrotfive
 foxtrotfour
@@ -2926,8 +2924,8 @@ hotelseven
 hotelsix
 hotelthree
 hoteltwo
-i accept draw
-i offer draw
+iacceptdraw
+iofferdraw
 join game eight
 join game five
 join game four
@@ -2936,7 +2934,6 @@ join game seven
 join game six
 join game three
 join game two
-join game {number}
 join room eight
 join room five
 join room four
@@ -2945,7 +2942,6 @@ join room seven
 join room six
 join room three
 join room two
-join room {number}
 king alphaeight captures alphaseven
 king alphaeight captures bravoeight
 king alphaeight captures bravoseven
@@ -4092,7 +4088,7 @@ king to echoseven
 king to echosix
 king to echothree
 king to echotwo
-kingside castling
+kingsidecastling
 knight alphaeight captures bravosix
 knight alphaeight captures charlieseven
 knight alphaeight takes bravosix
@@ -5127,8 +5123,7 @@ level seven
 level six
 level three
 level two
-level {number}
-microphone off
+microphoneoff
 move alphaeight to alphafive
 move alphaeight to alphafour
 move alphaeight to alphaone
@@ -8309,8 +8304,6 @@ pawn to deltaseven
 pawn to deltasix
 pawn to deltathree
 pawn to deltatwo
-play against computer
-play black
 play in room eight
 play in room five
 play in room four
@@ -8319,8 +8312,9 @@ play in room seven
 play in room six
 play in room three
 play in room two
-play in room {number}
-play white
+playagainstcomputer
+playblack
+playwhite
 promote to bishop
 promote to knight
 promote to queen
@@ -11687,9 +11681,9 @@ queen to hotelseven
 queen to hotelsix
 queen to hotelthree
 queen to hoteltwo
-queenside castling
-replay game
-reset game
+queensidecastling
+replaygame
+resetgame
 rook alphaeight captures alphafive
 rook alphaeight captures alphafour
 rook alphaeight captures alphaone
@@ -13940,7 +13934,6 @@ set difficulty level to seven
 set difficulty level to six
 set difficulty level to three
 set difficulty level to two
-set difficulty level to {number}
 set difficulty to eight
 set difficulty to five
 set difficulty to four
@@ -13949,7 +13942,6 @@ set difficulty to seven
 set difficulty to six
 set difficulty to three
 set difficulty to two
-set difficulty to {number}
 set level to eight
 set level to five
 set level to four
@@ -13958,9 +13950,8 @@ set level to seven
 set level to six
 set level to three
 set level to two
-set level to {number}
-show help
-show hint
+showhelp
+showhint
 stalemate
 take alphaeight
 take alphafive
@@ -13970,7 +13961,6 @@ take alphaseven
 take alphasix
 take alphathree
 take alphatwo
-take back
 take bravoeight
 take bravofive
 take bravofour
@@ -14027,7 +14017,8 @@ take hotelseven
 take hotelsix
 take hotelthree
 take hoteltwo
-undo move
+takeback
+undomove
 undo
 white bishop to alphaeight
 white bishop to alphafive

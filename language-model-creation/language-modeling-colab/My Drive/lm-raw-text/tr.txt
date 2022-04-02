@@ -2368,11 +2368,11 @@ atı foxtrotikiye götür
 atı foxtrotsekize götür
 atı foxtrotyediye götür
 atı foxtrotüçe götür
-bağlantıyı kes
-beraberlik önerisini kabul ediyorum
-beraberlik öneriyorum
+bağlantıyıkes
 beraberlik
-beraberliği onaylıyorum
+beraberlikönerisinikabulediyorum
+beraberliköneriyorum
+beraberliğionaylıyorum
 beyaz at alphaaltıya gider
 beyaz at alphaaltıya
 beyaz at alphabeşe gider
@@ -2725,7 +2725,6 @@ beyaz kale hotelyediye gider
 beyaz kale hotelyediye
 beyaz kale hotelüçe gider
 beyaz kale hotelüçe
-beyaz oyna
 beyaz piyon alphaaltıya gider
 beyaz piyon alphaaltıya
 beyaz piyon alphabeşe gider
@@ -2990,7 +2989,8 @@ beyaz şah echoyediye gider
 beyaz şah echoyediye
 beyaz şah echoüçe gider
 beyaz şah echoüçe
-bilgisayara karşı oyna
+beyazoyna
+bilgisayarakarşıoyna
 bravoaltı alphaaltı
 bravoaltı alphabeş
 bravoaltı alphadört
@@ -10019,7 +10019,7 @@ foxtrotyediyi al
 foxtrotyedi
 foxtrotüç
 foxtrotüçü al
-geri al
+gerial
 golfaltıyı al
 golfaltı
 golfbeşi al
@@ -10053,7 +10053,7 @@ hotelyedi
 hotelüç
 hotelüçü al
 iptal
-ipucu ver
+ipucuver
 ipucu
 kale alphaaltıdaki kaleyi alır
 kale alphaaltıdan alphabeşe gider
@@ -11723,8 +11723,8 @@ kaleyi hotelikiye götür
 kaleyi hotelsekize götür
 kaleyi hotelyediye götür
 kaleyi hotelüçe götür
-mikrofon kapalı
-mikrofonu kapat
+mikrofonkapalı
+mikrofonukapat
 oda altı katıl
 oda altı oyna
 oda beş katıl
@@ -11739,14 +11739,12 @@ oda sekiz katıl
 oda sekiz oyna
 oda yedi katıl
 oda yedi oyna
-oda {number} katıl
-oda {number} oyna
 oda üç katıl
 oda üç oyna
-oyunu bitir
-oyunu sıfırla
-pat öneriyorum
+oyunubitir
+oyunusıfırla
 pat
+patöneriyorum
 piyon alphaaltıdaki piyonu alır
 piyon alphaaltıdan alphayediye gider
 piyon alphaaltıdan alphayediye
@@ -12336,7 +12334,6 @@ siyah kale hotelyediye gider
 siyah kale hotelyediye
 siyah kale hotelüçe gider
 siyah kale hotelüçe
-siyah oyna
 siyah piyon alphaaltıya gider
 siyah piyon alphaaltıya
 siyah piyon alphabeşe gider
@@ -12601,7 +12598,8 @@ siyah şah echoyediye gider
 siyah şah echoyediye
 siyah şah echoüçe gider
 siyah şah echoüçe
-sunucu bağlantısını kes
+siyahoyna
+sunucubağlantısınıkes
 vezir alphaaltıdaki veziri alır
 vezir alphaaltıdan alphabeşe gider
 vezir alphaaltıdan alphabeşe
@@ -15042,7 +15040,6 @@ vezir hotelüçdeki veziri alır
 vezir hotelüçe gider
 vezir hotelüçe
 vezir hotelüçü alır
-vezir kanadı rok
 vezir veziri alır
 vezir yap
 vezire terfi ettir
@@ -15111,9 +15108,10 @@ veziri hotelikiye götür
 veziri hotelsekize götür
 veziri hotelyediye götür
 veziri hotelüçe götür
+vezirkanadırok
 yardım
-yardımı göster
-yeniden oynat
+yardımıgöster
+yenidenoynat
 zorluk altı
 zorluk beş
 zorluk bir
@@ -15127,7 +15125,6 @@ zorluk seviyesi dört
 zorluk seviyesi iki
 zorluk seviyesi sekiz
 zorluk seviyesi yedi
-zorluk seviyesi {number}
 zorluk seviyesi üç
 zorluk seviyesini altı olarak ayarla
 zorluk seviyesini altı yap
@@ -15143,12 +15140,9 @@ zorluk seviyesini sekiz olarak ayarla
 zorluk seviyesini sekiz yap
 zorluk seviyesini yedi olarak ayarla
 zorluk seviyesini yedi yap
-zorluk seviyesini {number} olarak ayarla
-zorluk seviyesini {number} yap
 zorluk seviyesini üç olarak ayarla
 zorluk seviyesini üç yap
 zorluk yedi
-zorluk {number}
 zorluk üç
 şah alphaaltıdaki şahı alır
 şah alphaaltıdan alphabeşe gider
@@ -15940,9 +15934,9 @@ zorluk üç
 şah echoüçe gider
 şah echoüçe
 şah echoüçü alır
-şah kanadı rok
-şah mat
 şah şahı alır
+şahkanadırok
+şahmat
 şah
 şahı alphaaltıya götür
 şahı alphabeşe götür
