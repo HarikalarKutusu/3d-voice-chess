@@ -1,0 +1,31 @@
+{
+  "ui.languageselector.title": "Wählen Sie Ihre Sprache für Sprache und Benutzeroberfläche aus",
+  "ui.serverconnection.title.connect": "Verbindung zu {serverAddr} herstellen",
+  "ui.serverconnection.title.connected": "Mit {ServerAddr} verbunden",
+  "ui.clientaudio.title.recording": "Aufnahme. Klicken Sie auf , um die Aufnahme zu stoppen.",
+  "ui.clientaudio.title.notrecording": "Keine Aufnahme. Klicken Sie auf, um die Aufnahme zu starten.",
+  "ui.clientlanguage": "Client-Sprache",
+  "ui.serverlanguage": "Server-SZT-Sprache",
+  "ui.currentplayer.title": "Aktueller Spieler",
+  "ui.laststt.title": "Letzter erkannter Satz",
+  "ui.recognizedmove.title": "Anerkannter Schachzug",
+  "ui.feedbackpanel.title": "Fehler und Warnungen",
+  "ui.incheck.title": "Im Schach",
+  "ui.incheckmate.title": "Im Schachmatt",
+  "ui.indraw.title": "Unentschieden/Patt/3-fache Wiederholung/zu wenig Material",
+  "ui.help.title": "Hilfe",
+
+  "err.recordingfailure": "Die Aufnahme ist fehlgeschlagen: {msg}",
+  "err.serverfull": "Server ist voll, versuchen Sie es später erneut",
+  "err.differentlanguages": "Verschiedene Client- und Serversprachen!",
+  "err.connecterror": "Verbindungsfehler: {msg}",
+
+  "err.move": "Fehler im Schachzug!",
+  "err.move.wrongcoords": "Falsche Schachfigurkoordinaten!",
+  "err.move.cannotmovetotarget": "Schachfigur kann sich nicht zum Ziel bewegen!",
+  "err.move.piecenotfound": "Schachfigur nicht gefunden!",
+  "err.move.multiplepossibilities": "Mehrere mögliche Bewegungen!",
+  "err.move.nopiececouple": "Kein Schachfigurpaar gefunden!",
+
+  "": ""
+}

@@ -1,7 +1,8 @@
 //import "./App.scss";
 
 // React
-import { Suspense, useEffect } from "react";
+import { Suspense, useEffect, useState } from "react";
+import intl from "react-intl-universal";
 
 // THREE
 import { Object3D } from "three";
@@ -18,21 +19,12 @@ import {
   Loader,
   useGLTF,
 } from "@react-three/drei";
-// leva
-//import { useControls, Leva, folder } from "leva";
 
 // Voice Chess
 import { Chess3D } from "./components/chess3D";
 import { SocketVoice } from "./components/socketVoice";
-
-// Store
-// import { useStore } from "./stores/vcstore";
-
-// import {
-//   PieceEnum,
-//   VOICE_DEFAULT_LANGUAGE,
-//   VOICE_LANGUAGES,
-// } from "./helpers/voiceHelper";
+import { intlInit, LanguageCodesType } from "./helpers/localeHelper";
+import { useStore } from "./stores/vcstore";
 
 extend({ DragControls });
 
@@ -43,52 +35,59 @@ const debugApp = true;
 //------------------------ APP ---------------------------------------
 //====================================================================
 const App = () => {
+  //
+  const [initDone, setInitDone] = useState(false);
   // Store
-  // const { pieces3D } = useStore();
+  const { setLangCode } = useStore();
 
   debugApp && console.log("APP - Regen");
-  //debugApp && console.log("APP - Pieces",pieces3D?.length);
+
   // const CLIENT_HOST = process.env.HOST || "https://localhost";
   // const CLIENT_PORT = process.env.PORT || 3000;
   const SERVER_HOST = process.env.REACT_APP_SERVER_HOST || "https://localhost";
   const SERVER_PORT = process.env.REACT_APP_SERVER_PORT || 4000;
-  
+
   useEffect(() => {
     debugApp && console.log("APP - useEffect");
-    /*
-    if (pieces3D !== undefined) {
-      debugApp && console.log(pieces3D?.length);
-      //debugApp && console.log(pieces3D);
+
+    if (!initDone) {
+      // i18n
+      intlInit().then(() => {
+        const { currentLocale } = intl.getInitOptions();
+        debugApp && console.log("APP - LangInit=", currentLocale);
+        setLangCode(currentLocale as LanguageCodesType);
+      });
+
+      // Coordinates
+      Object3D.DefaultUp.set(0, 0, 1);
+      // Soft shadows
+      softShadows({
+        frustum: 3.75, // Frustum width (default: 3.75) must be a float
+        size: 0.005, // World size (default: 0.005) must be a float
+        near: 9.5, // Near plane (default: 9.5) must be a float
+        samples: 17, // Samples (default: 17) must be a int
+        rings: 11, // Rings (default: 11) must be a int
+      });
+
+      // Pre-Load piece models
+      useGLTF.preload("assets/models/Bishop.gtlf");
+      useGLTF.preload("assets/models/King.gltf");
+      useGLTF.preload("assets/models/Knight.gtlf");
+      useGLTF.preload("assets/models/Pawn.gtlf");
+      useGLTF.preload("assets/models/Queen.gtlf");
+      useGLTF.preload("assets/models/Rook.gtlf");
+
+      // set initDone
+      setInitDone(true);
     }
-    */
-
-    // Coordinates
-    Object3D.DefaultUp.set(0, 0, 1);
-    // Soft shadows
-    softShadows({
-      frustum: 3.75, // Frustum width (default: 3.75) must be a float
-      size: 0.005, // World size (default: 0.005) must be a float
-      near: 9.5, // Near plane (default: 9.5) must be a float
-      samples: 17, // Samples (default: 17) must be a int
-      rings: 11, // Rings (default: 11) must be a int
-    });
-
-    // Pre-Load piece models
-    useGLTF.preload("assets/models/Bishop.gtlf");
-    useGLTF.preload("assets/models/King.gltf");
-    useGLTF.preload("assets/models/Knight.gtlf");
-    useGLTF.preload("assets/models/Pawn.gtlf");
-    useGLTF.preload("assets/models/Queen.gtlf");
-    useGLTF.preload("assets/models/Rook.gtlf");
-  });
+  }, [initDone, setInitDone, setLangCode]);
 
   //
-  return (
+  return !initDone ? (
+    <></>
+  ) : (
     <>
-      <SocketVoice
-        serverURL={SERVER_HOST}
-        serverPort={SERVER_PORT}
-      />
+      <SocketVoice serverURL={SERVER_HOST} serverPort={SERVER_PORT} />
       <Canvas camera={{ position: [2, -5, 9], fov: 60 }} dpr={[1, 2]} shadows>
         {/* World & Environment */}
         <Stars />

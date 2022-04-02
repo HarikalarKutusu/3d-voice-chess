@@ -18,6 +18,7 @@ Provided JSX:
 
 // Imports
 import { useState, useEffect, useRef } from "react";
+import intl from "react-intl-universal";
 import { io, Socket } from "socket.io-client";
 // Store
 import { useStore } from "../stores/vcstore";
@@ -34,7 +35,8 @@ import {
   SERVER_URL_DEFAULT,
 } from "../helpers/voiceHelper";
 import {
-  // VoiceLanguageType,
+  intlInit,
+  LanguageCodesType,
   VOICE_LANGUAGES,
 } from "../helpers/localeHelper";
 
@@ -42,7 +44,7 @@ import { STTValidator } from "./sttValidator";
 import "./socketVoice.css";
 
 // DEBUG
-const debugSocketVoice = false;
+//const debugSocketVoice = false;
 
 // Worker
 const DOWNSAMPLING_WORKER = "./downsampling_worker.js";
@@ -93,93 +95,19 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     }),
   );
 
-  //--------------------------------------------------------------
-  // Language Selector Component
-  //--------------------------------------------------------------
-
-  // For each sentence
-  // - make everthing lowercase
-  // - precalculate intent algorithms ("pft")
-  // Possible values
-  // 001 - echofour
-  // 011 - move echotwo to echofour
-  // 101 - pawn to echofour
-  // 111 - move pawn from echotwo to echofour
-  // 200 - bishop takes pawn
-  // 201 - bishop takes pawn at echofive
-  // 210 - bishop at echofive takes pawn
-  // 211 - pawn at echofour takes pawn at deltafive
-  /*
-  const prepLanguage = (langRec: VoiceLanguageType) => {
-    const rec = langRec;
-    const langCode = rec.code;
-    debugSocketVoice && console.log("LANG Prepare:", langCode);
-    // make them lowercase
-    rec.pieces.forEach((p, i) => {
-      rec.pieces[i].nativeName = p.nativeName.toLocaleLowerCase(langCode);
-    });
-    rec.colNames.forEach((s, i) => {
-      rec.colNames[i] = s.toLocaleLowerCase(langCode);
-    });
-    rec.rowNames.forEach((s, i) => {
-      rec.rowNames[i] = s.toLocaleLowerCase(langCode);
-    });
-    // sentences -> intents
-    rec.sentences.forEach((s, index) => {
-      // make sure they are lowercase
-      rec.sentences[index] = s.toLocaleLowerCase(langCode);
-      // pieces / from / to
-      const numPieces = (s.match(/{piece}/gi) || []).length;
-      const numFrom = (s.match(/{fromcol}/gi) || []).length;
-      const numTo = (s.match(/{tocol}/gi) || []).length;
-      // decide algo / intent
-      const algo = "" + numPieces + numFrom + numTo;
-      // put to intent array (sentence index & intent index do match)
-      rec.intent.push(algo);
-    });
-    return rec;
-  };
-  */
-
-  /*
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const newLangCode = e.target.value;
-    debugSocketVoice && console.log("LANG Changed to:", newLangCode);
+    const newLangCode = e.target.value as LanguageCodesType;
+    // debugSocketVoice && console.log("LANG Changed to:", newLangCode);
     setLangCode(newLangCode);
-    // calculate intents / algorithms
-    const langRec = findLanguageRecord(newLangCode);
-    if (langRec) {
-      setLangRecord(prepLanguage(langRec));
-    }
-  };
-  */
-
-  /*
-  const initLanguage = () => {
-    // calculate intents / algorithms
-    const langRec = findLanguageRecord(langCode);
-    if (langRec) {
-      setLangRecord(prepLanguage(langRec));
-    }
-  };
-  */
-
-  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const newLangCode = e.target.value;
-    debugSocketVoice && console.log("LANG Changed to:", newLangCode);
-    setLangCode(newLangCode);
-    // calculate intents / algorithms
-    // const langRec = findLanguageRecord(newLangCode);
-    // if (langRec) {
-    //   setLangRecord(prepLanguage(langRec));
-    // }
+    intlInit(newLangCode);
   };
 
   const LanguageSelector = (props: any) => {
     const enabledLanguages = VOICE_LANGUAGES.filter((l) => l.enabled === 1);
+
     return (
       <select
-        title="Select your voice language"
+        title={intl.get("ui.languageselector.title")}
         id="langSelector"
         className="language-selector"
         value={langCode}
@@ -235,12 +163,12 @@ const SocketVoice = (props: ISocketVoiceProps) => {
       aContext: AudioContext,
       aSource: MediaStreamAudioSourceNode,
     ) => {
-      debugSocketVoice && console.log("WA: Creating Audio Processor");
+      // debugSocketVoice && console.log("WA: Creating Audio Processor");
       if (aContext === undefined) console.log("audioContext NOT AVAILABLE");
       let lProcessor = aContext.createScriptProcessor(4096, 1, 1);
       if (!lProcessor) console.log("processor NOT AVAILABLE");
       if (lProcessor && socket) {
-        debugSocketVoice && console.log("WA: Created Processor");
+        // debugSocketVoice && console.log("WA: Created Processor");
         const sampleRate = mStreamSource.context.sampleRate;
         const downsampler = new Worker(DOWNSAMPLING_WORKER);
         downsampler.postMessage({
@@ -264,22 +192,18 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     // Function: startMicrophone
     //
     const startMicrophone = () => {
-      debugSocketVoice && console.log("WA: Starting Microphone");
+      // debugSocketVoice && console.log("WA: Starting Microphone");
       aContext = new AudioContext();
-      // debugSocketVoice && console.log("aContext=", aContext);
       setAudioContext(aContext);
 
       // SUCCESS function: User Media Obtained
       const success = (stream: MediaStream) => {
-        debugSocketVoice && console.log("WA: Starting Recording");
+        // debugSocketVoice && console.log("WA: Starting Recording");
         // mStream = stream;
-        // debugSocketVoice && console.log("mStream=", stream);
         setMediaStream(stream);
         mStreamSource = aContext.createMediaStreamSource(stream);
-        // debugSocketVoice && console.log("mStreamSource=", mStreamSource);
         setMediaStreamSource(mStreamSource);
         proc = createAudioProcessor(aContext, mStreamSource);
-        // debugSocketVoice && console.log("proc=", proc);
         setProcessor(proc);
         mStreamSource.connect(proc);
       };
@@ -287,12 +211,12 @@ const SocketVoice = (props: ISocketVoiceProps) => {
       // FAIL function: User Media could not be obtained
       const fail = (e: MediaStreamError) => {
         console.error("WA: Recording failure-", e);
-        setLastError("WA: Recording failure-" + e.message);
+        setLastError(intl.get("err.recordingfailure", { msg: e.message }));
       };
 
       // TRY TO ACCESS USER MEDIA
       if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-        debugSocketVoice && console.log("WA: TRYING SECURE");
+        // debugSocketVoice && console.log("WA: TRYING SECURE");
         navigator.mediaDevices
           .getUserMedia({
             video: false,
@@ -302,7 +226,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
           .catch(fail);
       } else if (navigator.getUserMedia) {
         // This will not work with modern browsers
-        debugSocketVoice && console.log("WA: TRYING: navigator.getUserMedia");
+        // debugSocketVoice && console.log("WA: TRYING: navigator.getUserMedia");
         navigator.getUserMedia(
           {
             video: false,
@@ -312,7 +236,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
           fail,
         );
       } else {
-        debugSocketVoice && console.log("WA: NO MIC AVAILABLE");
+        // debugSocketVoice && console.log("WA: NO MIC AVAILABLE");
       }
       //return null;
     };
@@ -321,7 +245,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     // Function: startRecording
     //
     const startRecording = () => {
-      debugSocketVoice && console.log("WA: Prep for recording");
+      // debugSocketVoice && console.log("WA: Prep for recording");
       setRecordingStatus(true);
       startMicrophone();
     };
@@ -330,7 +254,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     // Function: stopMicrophone
     //
     const stopMicrophone = () => {
-      debugSocketVoice && console.log("WA: stopMicrophone");
+      // debugSocketVoice && console.log("WA: stopMicrophone");
       if (mediaStream) {
         mediaStream.getTracks()[0].stop();
       }
@@ -349,7 +273,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     // Function: stopRecording
     //
     const stopRecording = () => {
-      debugSocketVoice && console.log("WA: stopRecording");
+      // debugSocketVoice && console.log("WA: stopRecording");
       if (recordingStatus) {
         if (socket?.connected) {
           socket.emit("stream-reset");
@@ -361,14 +285,14 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     };
 
     useEffect(() => {
-      debugSocketVoice && console.log("ClientAudio - USEEFFECT");
+      // debugSocketVoice && console.log("ClientAudio - USEEFFECT");
     }, []);
 
     // cleanup
     useEffect(() => {
       return () => {
         //stopRecording();
-        debugSocketVoice && console.log("ClientAudio - Unmount Cleanup");
+        // debugSocketVoice && console.log("ClientAudio - Unmount Cleanup");
         setAudioContext(undefined);
         setMediaStream(undefined);
         setMediaStreamSource(undefined);
@@ -381,7 +305,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     // Click Handler
     //
     const handleMicrophoneClick = () => {
-      debugSocketVoice && console.log("MIC-Click");
+      // debugSocketVoice && console.log("MIC-Click");
       if (isMounted && connectedStatus && !recordingStatus) {
         startRecording();
       } else if (isMounted && connectedStatus && recordingStatus) {
@@ -393,8 +317,8 @@ const SocketVoice = (props: ISocketVoiceProps) => {
       <MicrophoneIcon
         title={
           recordingStatus
-            ? "Recording. Click to stop recording."
-            : "Not recording. Click to start recording."
+            ? intl.get("ui.clientaudio.title.recording")
+            : intl.get("ui.clientaudio.title.notrecording")
         }
         className={connectedStatus ? "svIconButton" : "svIconButtonDisabled"}
         /* size={iconSize} */
@@ -415,38 +339,38 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     // Function: serverConnect
     //
     const serverConnect = () => {
-      debugSocketVoice &&
-        console.log("SIO-serverConnect", serverURL + ":" + serverPort);
+      // debugSocketVoice &&
+      console.log("SIO-serverConnect", serverURL + ":" + serverPort);
       if (socket) {
         // create the socket & connect
         socket.connect();
 
         // set status when connected
         socket.on("refuse", () => {
-          debugSocketVoice && console.log("SIO: Server full!");
-          setLastError("Server is full, try again later");
+          // debugSocketVoice && console.log("SIO: Server full!");
+          setLastError(intl.get("err.serverfull"));
         });
 
         // set status when connected
         socket.on("connect", () => {
-          debugSocketVoice &&
-            console.log("SIO: Connect event, send lang:", langCode);
+          // debugSocketVoice &&
+          console.log("SIO: Connect event, send lang:", langCode);
           setConnectedStatus(true);
           socket.emit("lang-code", langCode);
         });
 
         // receive server STT language
         socket.on("sttlang", (result) => {
-          debugSocketVoice && console.log("SIO: Server STT Lang:", result);
+          // debugSocketVoice && console.log("SIO: Server STT Lang:", result);
           setServerLangCode(result);
           if (langCode !== result) {
-            setLastError("Error: Client-Server languages are not the same!");
+            setLastError(intl.get("err.differentlanguages"));
           }
         });
 
         // received disconnected from server
         socket.on("disconnect", () => {
-          debugSocketVoice && console.log("SIO: Socket disconnected");
+          // debugSocketVoice && console.log("SIO: Socket disconnected");
           setConnectedStatus(false);
           setRecordingStatus(false);
           //setSVAction("stoprecording");
@@ -454,7 +378,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
 
         // received voice recognition
         socket.on("recognize", (results: ISTTResult) => {
-          debugSocketVoice && console.log("SIO-STT: Recognized:", results);
+          // debugSocketVoice && console.log("SIO-STT: Recognized:", results);
           //setRecognitionCount(recognitionCount+1)
           //results.id = recognitionCount;
           // post process
@@ -464,9 +388,9 @@ const SocketVoice = (props: ISocketVoiceProps) => {
 
         // Connect error
         socket.on("connect_error", (err) => {
-          debugSocketVoice &&
-            console.log("SIO: " + Date.now() + ` connect_error: ${err}`);
-          setLastError(`connect_error: ${err.message}`);
+          // debugSocketVoice &&
+          console.log("SIO: " + Date.now() + ` connect_error: ${err}`);
+          setLastError(intl.get("err.connecterror", { msg: err.message }));
         });
       }
     };
@@ -475,7 +399,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     // Function: serverDisconnect
     //
     const serverDisconnect = () => {
-      debugSocketVoice && console.log("SIO: disconnect");
+      // debugSocketVoice && console.log("SIO: disconnect");
       socket?.disconnect();
       setConnectedStatus(false);
       setRecordingStatus(false);
@@ -485,7 +409,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     // Click Handler
     //
     const handleNetworkClick = () => {
-      debugSocketVoice && console.log("NW-Click");
+      // debugSocketVoice && console.log("NW-Click");
       if (!connectedStatus) {
         serverConnect();
       } else {
@@ -494,14 +418,14 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     };
 
     useEffect(() => {
-      debugSocketVoice && console.log("ServerConnection - USEEFFECT");
+      // debugSocketVoice && console.log("ServerConnection - USEEFFECT");
     }, []);
 
     // cleanup
     useEffect(() => {
       return () => {
         //stopRecording();
-        debugSocketVoice && console.log("ServerConnection - Unmount Cleanup");
+        // debugSocketVoice && console.log("ServerConnection - Unmount Cleanup");
         isMounted.current = false;
       };
     }, []);
@@ -512,8 +436,12 @@ const SocketVoice = (props: ISocketVoiceProps) => {
       <NetWorkIcon
         title={
           connectedStatus
-            ? "Connected to " + serverAddr
-            : "Connect to " + serverAddr
+            ? intl.get("ui.serverconnection.title.connected", {
+                serverAddr: serverAddr,
+              })
+            : intl.get("ui.serverconnection.title.connect", {
+                serverAddr: serverAddr,
+              })
         }
         className="svIconButton"
         /* size={iconSize} */
@@ -553,7 +481,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
       <ServerConnection />
       <ClientAudio />
       <span
-        title="Client language"
+        title={intl.get("ui.clientlanguage")}
         className={connectedStatus ? "svText" : "svTextDisabled"}
       >
         {langCode}
@@ -582,7 +510,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
         color={connectedStatus ? iconActiveColor : iconPassiveColor}
       /> */}
       <span
-        title="Server STT language"
+        title={intl.get("ui.serverlanguage")}
         className={connectedStatus ? "svText" : "svTextDisabled"}
         color={langCode !== serverLangCode ? "#c33" : ""}
       >
@@ -594,7 +522,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
         errTxt={lastError}
       />
       <HelpIcon
-        title="Help"
+        title={intl.get("ui.help.title")}
         className="svIconButton"
         style={{ float: "right" }}
         size={iconSize}

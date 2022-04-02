@@ -1,0 +1,31 @@
+{
+  "ui.languageselector.title": "Ses ve arayüz dilinizi seçiniz",
+  "ui.serverconnection.title.connect": "{serverAddr} sunucusuna bağlan",
+  "ui.serverconnection.title.connected": "{serverAddr} sunucusuna bağlı",
+  "ui.clientaudio.title.recording": "Kaydediyor. Sonlandırmak için tıklayın.",
+  "ui.clientaudio.title.notrecording": "Kayıt yapılmıyor. Başlatmak için tıklayın.",
+  "ui.clientlanguage": "İstemci dili",
+  "ui.serverlanguage": "Sunucu ses algılama dili",
+  "ui.currentplayer.title": "Sırası olan oyuncu",
+  "ui.laststt.title": "Son algılanan cümle",
+  "ui.recognizedmove.title": "Algılanan satranç hamlesi",
+  "ui.feedbackpanel.title": "Hata ve uyarılar",
+  "ui.incheck.title": "Şah durumunda",
+  "ui.incheckmate.title": "Şah-mat durumunda",
+  "ui.indraw.title": "Beraberlik durumu",
+  "ui.help.title": "Yardım",
+
+  "err.recordingfailure": "Kayıt girişimi başarısız: {msg}",
+  "err.serverfull": "Sunucu dolu, daha sonra yeniden deneyin",
+  "err.differentlanguages": "Farklı istemci & sunucu dilleri!",
+  "err.connecterror": "Bağlantı hatası: {msg}",
+
+  "err.move": "Hamlede hata!",
+  "err.move.wrongcoords": "Hatalı taş koordinatı!",
+  "err.move.cannotmovetotarget": "Taş hedefe gidemiyor!",
+  "err.move.piecenotfound": "Taş bulunamadı!",
+  "err.move.multiplepossibilities": "Birden fazla hamle seçeneği var!",
+  "err.move.nopiececouple": "Taş ikilisi bulunamadı!",
+
+  "": ""
+}
