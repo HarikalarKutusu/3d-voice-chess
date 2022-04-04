@@ -69,15 +69,26 @@ The following style sentences are generated and understood by the voice AI.
 "capture {toCol}{toRow}",
 ```
 
-**Other intents**
+**Other implemented intents**
+
+```python
+# KINGSIDE/QUEENSIDE CASTLING INTENTS
+iCastlingKingside = ["kingside castling"]
+iCastlingQueenside = ["queenside castling"]
+
+# IGNORED INTENTS
+iIgnored = ["check", "checkmate", "stalemate"]
+
+# GAME COMMAND INTENTS
+iCommandUndo = ["undo", "undo move", "take back"]
+iCommandReset = ["reset game"]
+```
+
+**Intents not implemented yet**
 
 ```python
 # Promotions
 iPromotion = ["promote to {piece}"]
-
-# KINGSIDE/QUEENSIDE CASTLING INTENTS
-iCastlingKingside = ["kingside castling"]
-iCastlingQueenside = ["queenside castling"]
 
 # RESIGN INTENTS
 iResign = ["i resign", "black resigns", "white resigns"]
@@ -86,14 +97,9 @@ iResign = ["i resign", "black resigns", "white resigns"]
 iDrawOffer = ["i offer draw"]
 iDrawAccept = ["i accept draw"]
 
-# IGNORED INTENTS
-iIgnored = ["check", "checkmate", "stalemate"]
-
 # GAME COMMAND INTENTS
-iCommandUndo = ["undo", "undo move", "take back"]
 iCommandPlayBlack = ["play black"]
 iCommandPlayWhite = ["play white"]
-iCommandReset = ["reset game"]
 iCommandFinish = ["finish game"]
 iCommandReplay = ["replay game"]
 iCommandHelp = ["help", "show help"]
