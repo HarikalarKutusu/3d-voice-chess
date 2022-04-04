@@ -30,10 +30,10 @@ import { FaMicrophone as MicrophoneIcon } from "@react-icons/all-files/fa/FaMicr
 import { BiTransfer as TransferIcon } from "@react-icons/all-files/bi/BiTransfer";
 import { BiHelpCircle as HelpIcon } from "@react-icons/all-files/bi/BiHelpCircle";
 
-import {
-  SERVER_PORT_DEFAULT,
-  SERVER_URL_DEFAULT,
-} from "../helpers/voiceHelper";
+// import {
+//   SERVER_PORT_DEFAULT,
+//   SERVER_URL_DEFAULT,
+// } from "../helpers/voiceHelper";
 import {
   intlInit,
   LanguageCodesType,
@@ -61,39 +61,23 @@ export type ISocketVoiceProps = {
 
 const SocketVoice = (props: ISocketVoiceProps) => {
   // props defaults
-  const { serverURL = SERVER_URL_DEFAULT, serverPort = SERVER_PORT_DEFAULT } =
-    props;
+  // const { serverURL = SERVER_URL_DEFAULT, serverPort = SERVER_PORT_DEFAULT } = props;
 
   // store
   const { langCode, setLangCode } = useStore();
   const { lastRecognition, setLastRecognition } = useStore();
-  const { lastError, setLastError } = useStore();
+  const { lastError, setLastError, setTimedError } = useStore();
 
-  // state - Language
-  // const [langRecord, setLangRecord] = useState<VoiceLanguageType>();
+  // state - Server
+  const [connectedServer, setConnectedServer] = useState<string>("");
 
   // state - SocketAudio Module
-  const [connectedStatus, setConnectedStatus] = useState(false);
+  const [connectedStatus, setConnectedStatus] = useState<boolean>(false);
   const [serverLangCode, setServerLangCode] = useState<string>("??");
-  const [recordingStatus, setRecordingStatus] = useState(false);
+  const [recordingStatus, setRecordingStatus] = useState<boolean>(false);
 
-  // state - SIO
-  //const cert = fs.readFileSync("./../")
   // Create & save socket - no AutoConnect
-  const [socket] = useState<Socket>(
-    io(serverURL + ":" + serverPort, {
-      autoConnect: false,
-      transports: ["websocket"],
-      timestampRequests: true,
-      reconnection: true,
-      reconnectionDelay: 1000,
-      reconnectionDelayMax: 5000,
-      reconnectionAttempts: 10,
-      rejectUnauthorized: false,
-      timeout: 10000,
-      secure: true,
-    }),
-  );
+  const [socket, setSocket] = useState<Socket>();
 
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLangCode = e.target.value as LanguageCodesType;
@@ -210,8 +194,11 @@ const SocketVoice = (props: ISocketVoiceProps) => {
 
       // FAIL function: User Media could not be obtained
       const fail = (e: MediaStreamError) => {
-        console.error("WA: Recording failure-", e);
-        setLastError(intl.get("err.recordingfailure", { msg: e.message }));
+        // debugSocketVoice && console.error("WA: Recording failure-", e);
+        setTimedError(
+          intl.get("err.recordingfailure", { msg: e.message }),
+          3000,
+        );
       };
 
       // TRY TO ACCESS USER MEDIA
@@ -335,31 +322,85 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     // ref
     const isMounted = useRef(true);
 
+    const RECON_TRIALS = 3;
+    const RECON_DELAY = 1000;
+    const RECON_MAX = 3000;
+    const TIMEOUT = 5000;
+    const MAX_SCANS = 1;
+
+    let unSuccessfulCount = -1; // will increment first
+
+    // Server Pool
+    const serverNames = process.env.REACT_APP_SERVER_NAMES!.split(",") || [
+      "localhost",
+    ];
+    const serverPool = process.env.REACT_APP_SERVER_POOL!.split(",") || [
+      "localhost",
+    ];
+    let serverPoolInx = -1; // will increment first - TODO - make random
+    //let serverPoolInx = Math.floor(serverPool.length * Math.random()) - 1;
+    let intervalID: NodeJS.Timer;
+
     //
     // Function: serverConnect
     //
-    const serverConnect = () => {
-      // debugSocketVoice &&
+    const serverConnect = (server: string) => {
       // debugSocketVoice && console.log("SIO-serverConnect", serverURL + ":" + serverPort);
-      if (socket) {
-        // create the socket & connect
-        socket.connect();
 
-        // set status when connected
-        socket.on("refuse", () => {
+      const socket = io(server, {
+        autoConnect: true,
+        // forceNew: true,
+        // multiplex: true,
+        transports: ["websocket"],
+        timestampRequests: true,
+        reconnection: true,
+        reconnectionAttempts: RECON_TRIALS,
+        reconnectionDelay: RECON_DELAY,
+        reconnectionDelayMax: RECON_MAX,
+        rejectUnauthorized: false,
+        timeout: TIMEOUT,
+        secure: true,
+      });
+
+      //
+      // "reconnect_failed" after N attempts, so try next server
+      //
+      socket.io.on("reconnect_failed", () => {
+        // debugSocketVoice && console.log("CONNECT-FAIL:", serverPool[serverPoolInx]);
+        socket.close();
+      });
+
+      // set status when connected
+      socket.on("connect", () => {
+        // debugSocketVoice && console.log("CONNECT-SUCCESS:", serverPool[serverPoolInx]);
+
+        // server sends "full" signal
+        socket.on("full", () => {
           // debugSocketVoice && console.log("SIO: Server full!");
-          setLastError(intl.get("err.serverfull"));
+          socket.disconnect();
+          socket.close();
+          setTimedError(
+            intl.get("err.serverfull", { server: serverNames[serverPoolInx] }),
+            3000,
+          );
         });
 
-        // set status when connected
-        socket.on("connect", () => {
-          // debugSocketVoice &&
-          // debugSocketVoice && console.log("SIO: Connect event, send lang:", langCode);
+        // server sends "accept" signal
+        socket.on("accept", () => {
+          // debugSocketVoice && console.log("SIO: Accept!");
+          setSocket(socket);
+          clearInterval(intervalID); // no need to try another server
           setConnectedStatus(true);
+          setConnectedServer(serverNames[serverPoolInx]);
+          setTimedError(
+            intl.get("msg.connectedto", { server: serverNames[serverPoolInx] }),
+            3000,
+          );
+          // send language request to server
           socket.emit("lang-code", langCode);
         });
 
-        // receive server STT language
+        // server replies language request with "sttlang"
         socket.on("sttlang", (result) => {
           // debugSocketVoice && console.log("SIO: Server STT Lang:", result);
           setServerLangCode(result);
@@ -368,31 +409,31 @@ const SocketVoice = (props: ISocketVoiceProps) => {
           }
         });
 
-        // received disconnected from server
-        socket.on("disconnect", () => {
-          // debugSocketVoice && console.log("SIO: Socket disconnected");
-          setConnectedStatus(false);
-          setRecordingStatus(false);
-          //setSVAction("stoprecording");
-        });
-
         // received voice recognition
         socket.on("recognize", (results: ISTTResult) => {
           // debugSocketVoice && console.log("SIO-STT: Recognized:", results);
-          //setRecognitionCount(recognitionCount+1)
-          //results.id = recognitionCount;
+          // setRecognitionCount(recognitionCount+1)
+          // results.id = recognitionCount;
           // post process
           setLastRecognition(results.text);
           //this.STTPostProcess(results.text);
         });
+      });
 
-        // Connect error
-        socket.on("connect_error", (err) => {
-          // debugSocketVoice &&
-          // debugSocketVoice && console.log("SIO: " + Date.now() + ` connect_error: ${err}`);
-          setLastError(intl.get("err.connecterror", { msg: err.message }));
-        });
-      }
+      // received disconnected from server
+      socket.on("disconnect", () => {
+        // debugSocketVoice && console.log("SIO: Socket disconnected");
+        setConnectedServer("");
+        setConnectedStatus(false);
+        setRecordingStatus(false);
+      });
+
+      // Connect error
+      socket.on("connect_error", (err) => {
+        // debugSocketVoice && console.log("SIO: " + Date.now() + ` connect_error: ${err}`);
+        setTimedError(intl.get("err.connecterror", { msg: err.message }), 2000);
+      });
+      // }
     };
 
     //
@@ -403,15 +444,49 @@ const SocketVoice = (props: ISocketVoiceProps) => {
       socket?.disconnect();
       setConnectedStatus(false);
       setRecordingStatus(false);
+      setTimedError(intl.get("msg.disconnected"), 3000);
     };
 
     //
     // Click Handler
     //
     const handleNetworkClick = () => {
+      // timer connected retrials
+      const tryConnect = () => {
+        console.log("tryConnect", unSuccessfulCount + 1);
+        clearInterval(intervalID); // let us make sure to clear first
+        // put a maximum retrial limit
+        if (unSuccessfulCount < MAX_SCANS * serverPool.length) {
+          // should not be already connected
+          if (connectedStatus !== true) {
+            unSuccessfulCount++; // increase fail count
+            serverPoolInx = Math.min(serverPoolInx + 1, serverPool.length - 1);
+            // not connected yet, right?
+            setTimedError(
+              intl.get("msg.tryconnectto", {
+                server: serverNames[serverPoolInx],
+              }),
+              3000,
+            );
+            serverConnect(serverPool[serverPoolInx]); // Try it with new server
+            // prep for next if not already connected
+            intervalID = setInterval(tryConnect, TIMEOUT);
+          } else {
+            // nope, already connected, nothing to do here
+          }
+        } else {
+          // end of all trials reached
+          // debugSocketVoice && console.log("CONNECT-FAILED-FOR-ALL-SERVERS");
+          setTimedError(intl.get("err.allserversfull"), 3000);
+        }
+      };
+
       // debugSocketVoice && console.log("NW-Click");
-      if (!connectedStatus) {
-        serverConnect();
+      //console.log(process.env.REACT_APP_SERVER_POOL);
+
+      if (connectedStatus !== true) {
+        unSuccessfulCount = -1; // reset count
+        tryConnect();
       } else {
         serverDisconnect();
       }
@@ -430,18 +505,14 @@ const SocketVoice = (props: ISocketVoiceProps) => {
       };
     }, []);
 
-    const serverAddr = serverURL + ":" + serverPort;
-
     return (
       <NetWorkIcon
         title={
           connectedStatus
             ? intl.get("ui.serverconnection.title.connected", {
-                serverAddr: serverAddr,
+                server: connectedServer,
               })
-            : intl.get("ui.serverconnection.title.connect", {
-                serverAddr: serverAddr,
-              })
+            : intl.get("ui.serverconnection.title.connect")
         }
         className="svIconButton"
         /* size={iconSize} */

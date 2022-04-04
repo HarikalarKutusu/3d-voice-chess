@@ -1,7 +1,7 @@
 {
   "ui.languageselector.title": "Ses ve arayüz dilinizi seçiniz",
-  "ui.serverconnection.title.connect": "{serverAddr} sunucusuna bağlan",
-  "ui.serverconnection.title.connected": "{serverAddr} sunucusuna bağlı",
+  "ui.serverconnection.title.connect": "Sunucuya bağlan",
+  "ui.serverconnection.title.connected": "{server} sunucusuna bağlı. Bağlantıyı kesmek için tıklayın.",
   "ui.clientaudio.title.recording": "Kaydediyor. Sonlandırmak için tıklayın.",
   "ui.clientaudio.title.notrecording": "Kayıt yapılmıyor. Başlatmak için tıklayın.",
   "ui.clientlanguage": "İstemci dili",
@@ -16,9 +16,13 @@
   "ui.help.title": "Yardım",
 
   "err.recordingfailure": "Kayıt girişimi başarısız: {msg}",
-  "err.serverfull": "Sunucu dolu, daha sonra yeniden deneyin",
   "err.differentlanguages": "Farklı istemci & sunucu dilleri!",
   "err.connecterror": "Bağlantı hatası: {msg}",
+  "err.serverfull": "Sunucu dolu: {server}",
+  "err.allserversfull": "Tüm sunucular dolu, daha sonra yeniden deneyin",
+  "msg.tryconnectto": "{server} sunucusuna bağlanmayı deniyor",
+  "msg.connectedto": "Bağlanıldı: {server}",
+  "msg.disconnected": "Sunucu bağlantısı kesildi...",
 
   "err.move": "Hamlede hata!",
   "err.move.wrongcoords": "Hatalı taş koordinatı!",

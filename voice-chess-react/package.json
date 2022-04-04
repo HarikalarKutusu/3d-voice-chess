@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
+    "start:remote": "env-cmd -f .env.devremote.local react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -53,8 +54,7 @@
     "@types/three": "^0.139.0",
     "@types/webaudioapi": "^0.0.27",
     "@types/webrtc": "^0.0.31",
-    "cross-env": "^7.0.3",
-    "dotenv": "^16.0.0"
+    "env-cmd": "^10.1.0"
   },
   "eslintConfig": {
     "extends": [

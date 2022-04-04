@@ -17,6 +17,7 @@ export type StoreType = {
   setLastRecognition: (lastRecognition: string) => void;
   lastError: string; // Any error feedback from Audio & Network processes
   setLastError: (lastError: string) => void;
+  setTimedError: (msg: string, duration: number) => void;
   // Chess
   chess: ChessInstance;
   setChess: (chess: ChessInstance) => void;
@@ -35,10 +36,18 @@ const useStore = create<StoreType>((set) => ({
   // STT
   lastRecognition: "",
   setLastRecognition: (lastRecognition) =>
-    set((state) => ({ ...state, lastRecognition: lastRecognition, lastError: "" })),
+    set((state) => ({
+      ...state,
+      lastRecognition: lastRecognition,
+      lastError: "",
+    })),
   lastError: "",
   setLastError: (lastError) =>
     set((state) => ({ ...state, lastError: lastError })),
+  setTimedError: (msg, duration=2000) => {
+    set((state) => ({ ...state, lastError: msg }));
+    setTimeout(() => set((state) => ({ ...state, lastError: "" })), duration);
+  },
 
   // Chess
   chess: new Chess(),
@@ -48,7 +57,6 @@ const useStore = create<StoreType>((set) => ({
   //   set((state) => ({ ...state, turnColor: playerColor })),
 
   // Chess Timing
-
 }));
 
 export { useStore };

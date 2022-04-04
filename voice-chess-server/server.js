@@ -317,8 +317,9 @@ ioServer.on("connection", (socket) => {
 
   // check server load and send accept/reject
   if (ioServer.engine.clientsCount > MAX_CLIENTS) {
-    console.log("SIO-REJECT: Server in use");
-    socket.disconnect();
+    console.log("SIO-REJECT: Server full!");
+    socket.emit("full");
+    // socket.disconnect(); // disconnection done in client
   } else {
     socket.emit("accept");
   }
