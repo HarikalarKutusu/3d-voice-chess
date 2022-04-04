@@ -1,5 +1,3 @@
-//import "./App.scss";
-
 // React
 import { Suspense, useEffect, useState } from "react";
 import intl from "react-intl-universal";

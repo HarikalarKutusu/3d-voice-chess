@@ -1,7 +1,4 @@
-import React, {
-  useCallback,
-  useState,
-} from "react";
+import React, { useCallback, useState } from "react";
 import { MeshPhysicalMaterial, BoxBufferGeometry, Euler } from "three";
 import { Text } from "@react-three/drei";
 import {
@@ -130,7 +127,6 @@ const ChessBoard = (props: any) => {
             color="#f33"
             anchorX="center"
             anchorY="middle"
-            font="Roboto"
             fontSize={12}
             scale={BOARD_LABELSCALE}
             position={[-TILESIZE / 4, row + TILESIZE / 2, 0]}
@@ -141,7 +137,6 @@ const ChessBoard = (props: any) => {
             color="#f33"
             anchorX="center"
             anchorY="middle"
-            font="Roboto"
             fontSize={12}
             scale={BOARD_LABELSCALE}
             rotation={new Euler(0, 0, Math.PI)}
@@ -173,7 +168,6 @@ const ChessBoard = (props: any) => {
             color="#f33"
             anchorX="center"
             anchorY="middle"
-            font="Roboto"
             fontSize={12}
             scale={BOARD_LABELSCALE}
             position={[col + TILESIZE / 2, -TILESIZE / 2, 0]}
@@ -184,7 +178,6 @@ const ChessBoard = (props: any) => {
             color="#f33"
             anchorX="center"
             anchorY="middle"
-            font="Roboto"
             fontSize={7}
             scale={BOARD_LABELSCALE}
             position={[col + TILESIZE / 2, -TILESIZE, 0]}
@@ -195,7 +188,6 @@ const ChessBoard = (props: any) => {
             color="#f33"
             anchorX="center"
             anchorY="middle"
-            font="Roboto"
             fontSize={12}
             scale={BOARD_LABELSCALE}
             rotation={new Euler(0, 0, Math.PI)}
@@ -211,7 +203,6 @@ const ChessBoard = (props: any) => {
             color="#f33"
             anchorX="center"
             anchorY="middle"
-            font="Roboto"
             fontSize={7}
             scale={BOARD_LABELSCALE}
             rotation={new Euler(0, 0, Math.PI)}
