@@ -6,12 +6,14 @@ Please note: This repo is not production ready. It is somewhere between alpha an
 
 Current capabilities:
 
-- Single user server for Speech To Text STT inference (nodejs) (i.e. it works on a single core free node)
+- Single user server for Speech To Text STT inference (nodejs) (i.e. it works on a single core free node - but we support a server pool)
 - 3D Frontend (voice only multi-lingual interface with some buttons & output areas)
 - Currently Supported Languages: de (German), en (English), tr (Turkish)
 - You play against yourself :)
 
 ![image](https://user-images.githubusercontent.com/8849617/160528210-26fd85c0-5d49-478f-bb5b-05466171590a.png)
+
+We have opened a [test site](https://voicechess.netlify.app) which is supported by a server pool for our tests.
 
 ## Content Summary
 
