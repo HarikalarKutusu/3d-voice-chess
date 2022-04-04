@@ -44,8 +44,8 @@ const App = () => {
 
   // const CLIENT_HOST = process.env.HOST || "https://localhost";
   // const CLIENT_PORT = process.env.PORT || 3000;
-  const SERVER_HOST = process.env.REACT_APP_SERVER_HOST || "https://localhost";
-  const SERVER_PORT = process.env.REACT_APP_SERVER_PORT || 4000;
+  // const SERVER_HOST = process.env.REACT_APP_SERVER_HOST || "https://localhost";
+  // const SERVER_PORT = process.env.REACT_APP_SERVER_PORT || 4000;
 
   useEffect(() => {
     // debugApp && console.log("APP - useEffect");
@@ -87,7 +87,8 @@ const App = () => {
     <></>
   ) : (
     <>
-      <SocketVoice serverURL={SERVER_HOST} serverPort={SERVER_PORT} />
+      {/* <SocketVoice serverURL={SERVER_HOST} serverPort={SERVER_PORT} /> */}
+      <SocketVoice />
       <Canvas camera={{ position: [2, -5, 9], fov: 60 }} dpr={[1, 2]} shadows>
         {/* World & Environment */}
         <Stars />

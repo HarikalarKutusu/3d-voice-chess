@@ -1,7 +1,7 @@
 {
   "ui.languageselector.title": "Select your voice & interface language",
-  "ui.serverconnection.title.connect": "Connect to {serverAddr}",
-  "ui.serverconnection.title.connected": "Connected to {serverAddr}",
+  "ui.serverconnection.title.connect": "Connect to server",
+  "ui.serverconnection.title.connected": "Connected to server {server}. Click to disconnect.",
   "ui.clientaudio.title.recording": "Recording. Click to stop recording.",
   "ui.clientaudio.title.notrecording": "Not recording. Click to start recording.",
   "ui.clientlanguage": "Client language",
@@ -16,9 +16,13 @@
   "ui.help.title": "Help",
 
   "err.recordingfailure": "Recording failed: {msg}",
-  "err.serverfull": "Server is full, try again later",
   "err.differentlanguages": "Different client & server languages!",
   "err.connecterror": "Connect error: {msg}",
+  "err.serverfull": "Server is full: {server}",
+  "err.allserversfull": "All servers are full, try again later",
+  "msg.tryconnectto": "Trying to connect to {server}",
+  "msg.connectedto": "Connected to: {server}",
+  "msg.disconnected": "Disconnected from server...",
 
   "err.move": "Error in move!",
   "err.move.wrongcoords": "Wrong piece coordinates!",

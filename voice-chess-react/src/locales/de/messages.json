@@ -1,8 +1,8 @@
 {
   "ui.languageselector.title": "Wählen Sie Ihre Sprache für Sprache und Benutzeroberfläche aus",
-  "ui.serverconnection.title.connect": "Verbindung zu {serverAddr} herstellen",
-  "ui.serverconnection.title.connected": "Mit {ServerAddr} verbunden",
-  "ui.clientaudio.title.recording": "Aufnahme. Klicken Sie auf , um die Aufnahme zu stoppen.",
+  "ui.serverconnection.title.connect": "Verbindung zum server herstellen",
+  "ui.serverconnection.title.connected": "Mit server {server} verbunden. Klicken Sie hier, um die Verbindung zum Server zu trennen.",
+  "ui.clientaudio.title.recording": "Aufnahme. Klicken Sie auf, um die Aufnahme zu stoppen.",
   "ui.clientaudio.title.notrecording": "Keine Aufnahme. Klicken Sie auf, um die Aufnahme zu starten.",
   "ui.clientlanguage": "Client-Sprache",
   "ui.serverlanguage": "Server-SZT-Sprache",
@@ -16,9 +16,13 @@
   "ui.help.title": "Hilfe",
 
   "err.recordingfailure": "Die Aufnahme ist fehlgeschlagen: {msg}",
-  "err.serverfull": "Server ist voll, versuchen Sie es später erneut",
   "err.differentlanguages": "Verschiedene Client- und Serversprachen!",
   "err.connecterror": "Verbindungsfehler: {msg}",
+  "err.serverfull": "Server ist voll: {server}",
+  "err.allserversfull": "Alle Server sind voll, versuchen Sie es später erneut",
+  "msg.tryconnectto": "Verbunden zum: {server}",
+  "msg.connectedto": "Verbunden zum: {server}",
+  "msg.disconnected": "Vom server getrenned...",
 
   "err.move": "Fehler im Schachzug!",
   "err.move.wrongcoords": "Falsche Schachfigurkoordinaten!",
