@@ -70,12 +70,12 @@ const App = () => {
       });
 
       // Pre-Load piece models
-      useGLTF.preload("assets/models/Bishop.gtlf");
+      useGLTF.preload("assets/models/Bishop.gltf");
       useGLTF.preload("assets/models/King.gltf");
-      useGLTF.preload("assets/models/Knight.gtlf");
-      useGLTF.preload("assets/models/Pawn.gtlf");
-      useGLTF.preload("assets/models/Queen.gtlf");
-      useGLTF.preload("assets/models/Rook.gtlf");
+      useGLTF.preload("assets/models/Knight.gltf");
+      useGLTF.preload("assets/models/Pawn.gltf");
+      useGLTF.preload("assets/models/Queen.gltf");
+      useGLTF.preload("assets/models/Rook.gltf");
 
       // set initDone
       setInitDone(true);
