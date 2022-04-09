@@ -339,14 +339,13 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     ];
     let serverPoolInx = -1; // will increment first - TODO - make random
     //let serverPoolInx = Math.floor(serverPool.length * Math.random()) - 1;
-    let intervalID: NodeJS.Timer;
 
     //
     // Function: serverConnect
     //
     const serverConnect = (server: string) => {
       // debugSocketVoice && console.log("SIO-serverConnect", serverURL + ":" + serverPort);
-
+      console.log("Trying Server:", server);
       const socket = io(server, {
         autoConnect: true,
         // forceNew: true,
@@ -367,6 +366,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
       //
       socket.io.on("reconnect_failed", () => {
         // debugSocketVoice && console.log("CONNECT-FAIL:", serverPool[serverPoolInx]);
+        console.log("CONNECT-FAIL:", server);
         socket.close();
       });
 
@@ -383,13 +383,13 @@ const SocketVoice = (props: ISocketVoiceProps) => {
             intl.get("err.serverfull", { server: serverNames[serverPoolInx] }),
             3000,
           );
+          retryConnect(); // retry on another server
         });
 
         // server sends "accept" signal
         socket.on("accept", () => {
           // debugSocketVoice && console.log("SIO: Accept!");
           setSocket(socket);
-          clearInterval(intervalID); // no need to try another server
           setConnectedStatus(true);
           setConnectedServer(serverNames[serverPoolInx]);
           setTimedError(
@@ -432,6 +432,7 @@ const SocketVoice = (props: ISocketVoiceProps) => {
       socket.on("connect_error", (err) => {
         // debugSocketVoice && console.log("SIO: " + Date.now() + ` connect_error: ${err}`);
         setTimedError(intl.get("err.connecterror", { msg: err.message }), 2000);
+        retryConnect(); // retry on another server
       });
       // }
     };
@@ -448,45 +449,47 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     };
 
     //
+    // Try connection
+    //
+    const retryConnect = () => {
+      // console.log("retryConnect", unSuccessfulCount + 1);
+      // put a maximum retrial limit
+      if (unSuccessfulCount < MAX_SCANS * serverPool.length) {
+        // should not be already connected
+        if (connectedStatus !== true) {
+          unSuccessfulCount++; // increase fail count
+          serverPoolInx = Math.min(serverPoolInx + 1, serverPool.length - 1);
+          // not connected yet, right?
+          setTimedError(
+            intl.get("msg.tryconnectto", {
+              server: serverNames[serverPoolInx],
+            }),
+            3000,
+          );
+          serverConnect(serverPool[serverPoolInx]); // Try it with new server
+          // prep for next if not already connected
+        } else {
+          // nope, already connected, nothing to do here
+        }
+      } else {
+        // end of all trials reached
+        // debugSocketVoice && console.log("CONNECT-FAILED-FOR-ALL-SERVERS");
+        setTimedError(intl.get("err.allserversfull"), 5000);
+      }
+    };
+
+    //
     // Click Handler
     //
     const handleNetworkClick = () => {
-      // timer connected retrials
-      const tryConnect = () => {
-        console.log("tryConnect", unSuccessfulCount + 1);
-        clearInterval(intervalID); // let us make sure to clear first
-        // put a maximum retrial limit
-        if (unSuccessfulCount < MAX_SCANS * serverPool.length) {
-          // should not be already connected
-          if (connectedStatus !== true) {
-            unSuccessfulCount++; // increase fail count
-            serverPoolInx = Math.min(serverPoolInx + 1, serverPool.length - 1);
-            // not connected yet, right?
-            setTimedError(
-              intl.get("msg.tryconnectto", {
-                server: serverNames[serverPoolInx],
-              }),
-              3000,
-            );
-            serverConnect(serverPool[serverPoolInx]); // Try it with new server
-            // prep for next if not already connected
-            intervalID = setInterval(tryConnect, TIMEOUT);
-          } else {
-            // nope, already connected, nothing to do here
-          }
-        } else {
-          // end of all trials reached
-          // debugSocketVoice && console.log("CONNECT-FAILED-FOR-ALL-SERVERS");
-          setTimedError(intl.get("err.allserversfull"), 3000);
-        }
-      };
-
       // debugSocketVoice && console.log("NW-Click");
       //console.log(process.env.REACT_APP_SERVER_POOL);
 
       if (connectedStatus !== true) {
         unSuccessfulCount = -1; // reset count
-        tryConnect();
+        serverPoolInx = 0;
+        serverConnect(serverPool[serverPoolInx]);
+        //tryConnect();
       } else {
         serverDisconnect();
       }
