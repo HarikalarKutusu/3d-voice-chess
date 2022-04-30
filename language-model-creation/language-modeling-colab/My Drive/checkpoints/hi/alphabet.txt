@@ -12,6 +12,7 @@
 ई
 उ
 ऊ
+ऋ
 ए
 ऐ
 ऑ
@@ -72,5 +73,4 @@
 ्
 ॎ
 ॏ
-ऋ
 # The last (non-comment) line needs to end with a newline.
