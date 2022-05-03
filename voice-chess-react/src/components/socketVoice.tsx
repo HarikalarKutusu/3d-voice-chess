@@ -340,6 +340,19 @@ const SocketVoice = (props: ISocketVoiceProps) => {
     let serverPoolInx = -1; // will increment first - TODO - make random
     //let serverPoolInx = Math.floor(serverPool.length * Math.random()) - 1;
 
+    // WAKE UP SERVERS
+    // Dummy read from server url in case it is sleeping (added for herokuapp.com)
+    /**/
+    serverPool.forEach(url => {
+      console.log(url);
+      fetch(url, {mode: 'no-cors'})
+        .then(response => {
+          console.log('Pinged: ' + url)
+        })
+      // no return processed from promise, we just wanted to ping them
+    });
+    /**/
+
     //
     // Function: serverConnect
     //
